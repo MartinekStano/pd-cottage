@@ -4,7 +4,7 @@ Si senior frontend developer v existujúcom projekte `pd-cottage`. Tvojou úloho
 
 ## Kontext projektu
 
-Pallov Dvor je súkromná chata v obci Lutiše, Ulica 373. Web má prezentovať pokojné krátkodobé ubytovanie v súkromí pre rodiny, páry, dospelých hostí a menšie firemné kolektívy.
+Pallov Dvor je súkromná chata na adrese Lutiše Adamovci 373. Web má prezentovať pokojné krátkodobé ubytovanie v súkromí pre rodiny, páry, dospelých hostí a menšie firemné kolektívy.
 
 Web nemá pôsobiť ako hotelový portál, penzión, reštaurácia ani web pre hlučné oslavy. Hlavný cieľ je dostať návštevníka k akcii `Overiť dostupnosť termínu`.
 
@@ -76,7 +76,7 @@ Kontaktné údaje:
 
 - Telefón: `0911 455 600`
 - E-mail: `oddych@pallovdvor.sk`
-- Adresa: `Lutiše, Ulica 373`
+- Adresa: `Lutiše Adamovci 373`
 
 ## Fotografie
 
@@ -184,7 +184,8 @@ Formulár má obsahovať:
 - Meno a priezvisko
 - E-mail
 - Telefón
-- Požadovaný termín pobytu
+- Termín od
+- Termín do
 - Počet osôb
 - Typ prenájmu
 - Typ pobytu

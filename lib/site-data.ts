@@ -7,6 +7,7 @@ export const site = {
   subtitle: "Súkromná chata v Lutišiach",
   description:
     "Súkromná chata pre pokojný oddych a spoločné chvíle v obci Lutiše.",
+  brandLogo: "/brand/logo.svg",
   primaryCta: "Overiť dostupnosť termínu",
   headerCta: "Overiť termín",
   ctaHref: "/kontakt#formular",
@@ -18,12 +19,12 @@ export const contact = {
   phoneHref: "tel:+421911455600",
   email: "oddych@pallovdvor.sk",
   emailHref: "mailto:oddych@pallovdvor.sk",
-  address: "Lutiše, Ulica 373",
+  address: "Lutiše Adamovci 373",
   parking: "4 parkovacie miesta priamo pri objekte",
   mapsHref:
-    "https://www.google.com/maps/search/?api=1&query=Luti%C5%A1e%2C%20Ulica%20373",
+    "https://www.google.com/maps/search/?api=1&query=Luti%C5%A1e%20Adamovci%20373",
   mapEmbed:
-    "https://www.google.com/maps?q=Luti%C5%A1e%2C%20Ulica%20373&output=embed",
+    "https://www.google.com/maps?q=Luti%C5%A1e%20Adamovci%20373&output=embed",
 };
 
 export const navItems = [

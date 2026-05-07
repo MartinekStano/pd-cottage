@@ -104,7 +104,7 @@ export default function ContactPage() {
             <SectionHeader
               eyebrow="Poloha chaty"
               title="Kde nás nájdete"
-              text="Pallov Dvor sa nachádza v obci Lutiše, Ulica 373. Poloha je vhodná pre hostí, ktorí hľadajú pokojné ubytovanie v súkromí s možnosťou oddychu, výletov a spoločných chvíľ."
+              text={`Pallov Dvor sa nachádza na adrese ${contact.address}. Poloha je vhodná pre hostí, ktorí hľadajú pokojné ubytovanie v súkromí s možnosťou oddychu, výletov a spoločných chvíľ.`}
             />
             <div className="mt-8">
               <CTAButton external href={contact.mapsHref} variant="secondary">
@@ -118,7 +118,7 @@ export default function ContactPage() {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               src={contact.mapEmbed}
-              title="Mapa Pallov Dvor, Lutiše, Ulica 373"
+              title={`Mapa Pallov Dvor, ${contact.address}`}
             />
           </div>
         </div>

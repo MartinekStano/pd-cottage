@@ -4,7 +4,7 @@
 
 - Názov: Pallov Dvor
 - Typ objektu: súkromná chata na krátkodobé ubytovanie
-- Lokalita: Lutiše, Ulica 373
+- Lokalita: Lutiše Adamovci 373
 - Kapacita: až 16 osôb
 - Rozdelenie: 2 samostatné ubytovacie jednotky
 - Kapacita jednej jednotky: max. 8 osôb

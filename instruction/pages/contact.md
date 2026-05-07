@@ -42,7 +42,8 @@ Polia formulára:
 - Meno a priezvisko
 - E-mail
 - Telefón
-- Požadovaný termín pobytu
+- Termín od
+- Termín do
 - Počet osôb
 - Typ prenájmu
 - Typ pobytu
@@ -64,7 +65,7 @@ Použiť údaje zo `shared/contact.md`:
 
 - Telefón: 0911 455 600
 - E-mail: oddych@pallovdvor.sk
-- Adresa: Lutiše, Ulica 373
+- Adresa: Lutiše Adamovci 373
 - Parkovanie: 4 parkovacie miesta priamo pri objekte
 
 ## Poloha chaty
@@ -75,7 +76,7 @@ Kde nás nájdete
 
 Text:
 
-Pallov Dvor sa nachádza v obci Lutiše, Ulica 373. Poloha je vhodná pre hostí, ktorí hľadajú pokojné ubytovanie v súkromí s možnosťou oddychu, výletov a spoločných chvíľ.
+Pallov Dvor sa nachádza na adrese Lutiše Adamovci 373. Poloha je vhodná pre hostí, ktorí hľadajú pokojné ubytovanie v súkromí s možnosťou oddychu, výletov a spoločných chvíľ.
 
 Mapa:
 

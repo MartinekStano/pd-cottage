@@ -27,7 +27,7 @@ Rýchly prehľad:
 - 2 samostatné jednotky
 - sauna a vonkajšia kaďa
 - altánok, gril a Wi-Fi
-- Lutiše, Ulica 373
+- Lutiše Adamovci 373
 - od 159 € / noc za 1 samostatnú jednotku
 
 ## Krátke predstavenie

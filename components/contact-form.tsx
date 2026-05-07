@@ -36,8 +36,7 @@ export function ContactForm() {
   return (
     <form
       action={formAction}
-      className="grid gap-5 rounded-lg border border-[var(--border)] bg-[var(--surface)] p-5 shadow-sm sm:p-7"
-      data-animate
+      className="grid scroll-mt-28 gap-5 rounded-lg border border-[var(--border)] bg-[var(--surface)] p-5 shadow-sm sm:p-7"
       id="formular"
       ref={formRef}
     >
@@ -96,14 +95,24 @@ export function ContactForm() {
           <FieldError message={state.fieldErrors?.telefon} />
         </label>
         <label className="grid gap-2 text-sm font-semibold text-[var(--text)]">
-          Požadovaný termín pobytu
+          Termín od
           <input
-            aria-invalid={Boolean(state.fieldErrors?.termin)}
+            aria-invalid={Boolean(state.fieldErrors?.termin_od)}
             className={inputClass}
-            name="termin"
-            type="text"
+            name="termin_od"
+            type="date"
           />
-          <FieldError message={state.fieldErrors?.termin} />
+          <FieldError message={state.fieldErrors?.termin_od} />
+        </label>
+        <label className="grid gap-2 text-sm font-semibold text-[var(--text)]">
+          Termín do
+          <input
+            aria-invalid={Boolean(state.fieldErrors?.termin_do)}
+            className={inputClass}
+            name="termin_do"
+            type="date"
+          />
+          <FieldError message={state.fieldErrors?.termin_do} />
         </label>
         <label className="grid gap-2 text-sm font-semibold text-[var(--text)]">
           Počet osôb

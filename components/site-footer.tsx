@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { contact, navItems, site } from "@/lib/site-data";
 import { CTAButton } from "./cta-button";
@@ -7,7 +8,13 @@ export function SiteFooter() {
     <footer className="border-t border-[var(--border)] bg-[var(--dark)] text-[var(--surface)]">
       <div className="mx-auto grid w-full max-w-7xl gap-10 px-5 py-12 sm:px-8 lg:grid-cols-[1.3fr_0.8fr_0.9fr] lg:px-10">
         <div>
-          <p className="font-serif text-3xl">{site.name}</p>
+          <Image
+            alt={site.name}
+            className="h-24 w-auto brightness-0 invert"
+            height={333}
+            src={site.brandLogo}
+            width={455}
+          />
           <p className="mt-4 max-w-md text-base leading-7 text-white/72">
             Súkromná chata pre pokojný oddych a spoločné chvíle.
           </p>

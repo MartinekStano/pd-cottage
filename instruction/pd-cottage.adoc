@@ -6,7 +6,7 @@
 
 Tento dokument je hlavne technicke a implementacne zadanie pre frontend webu `Pallov Dvor`.
 
-Pallov Dvor je sukromna chata v obci Lutise, Ulica 373. Web ma prezentovat pokojne kratkodobe ubytovanie v sukromi, nie hotel, penzion, restauraciu ani wellness rezort.
+Pallov Dvor je sukromna chata na adrese Lutise Adamovci 373. Web ma prezentovat pokojne kratkodobe ubytovanie v sukromi, nie hotel, penzion, restauraciu ani wellness rezort.
 
 Detailny obsah jednotlivych stranok je rozdeleny v priecinku `instruction/pages/`. Globalne pravidla su v `instruction/shared/`.
 
@@ -87,7 +87,7 @@ Sekundarne CTA podla kontextu:
 Komunikuj iba tieto fakty:
 
 * Pallov Dvor
-* Lutise, Ulica 373
+* Lutise Adamovci 373
 * kratkodobe ubytovanie v sukromi
 * kapacita az 16 osob
 * 2 samostatne ubytovacie jednotky

@@ -9,7 +9,8 @@ type ContactField =
   | "pocet_osob"
   | "sprava"
   | "telefon"
-  | "termin"
+  | "termin_do"
+  | "termin_od"
   | "typ_pobytu"
   | "typ_prenajmu";
 
@@ -42,7 +43,8 @@ function buildEmailText(data: Record<ContactField, string>) {
     `Meno a priezvisko: ${data.meno}`,
     `E-mail: ${data.email}`,
     `Telefón: ${data.telefon || "neuvedené"}`,
-    `Požadovaný termín pobytu: ${data.termin || "neuvedené"}`,
+    `Termín od: ${data.termin_od || "neuvedené"}`,
+    `Termín do: ${data.termin_do || "neuvedené"}`,
     `Počet osôb: ${data.pocet_osob || "neuvedené"}`,
     `Typ prenájmu: ${data.typ_prenajmu || "neuvedené"}`,
     `Typ pobytu: ${data.typ_pobytu || "neuvedené"}`,
@@ -71,7 +73,8 @@ export async function submitContactForm(
     pocet_osob: readSingleLine(formData, "pocet_osob", 3),
     sprava: readValue(formData, "sprava", 3000),
     telefon: readSingleLine(formData, "telefon", 60),
-    termin: readSingleLine(formData, "termin", 160),
+    termin_do: readSingleLine(formData, "termin_do", 10),
+    termin_od: readSingleLine(formData, "termin_od", 10),
     typ_pobytu: readSingleLine(formData, "typ_pobytu", 120),
     typ_prenajmu: readSingleLine(formData, "typ_prenajmu", 120),
   };
@@ -88,6 +91,10 @@ export async function submitContactForm(
 
   if (data.pocet_osob && Number(data.pocet_osob) < 1) {
     fieldErrors.pocet_osob = "Počet osôb musí byť aspoň 1.";
+  }
+
+  if (data.termin_od && data.termin_do && data.termin_od > data.termin_do) {
+    fieldErrors.termin_do = "Dátum odchodu musí byť po dátume príchodu.";
   }
 
   if (

@@ -4,7 +4,7 @@
 
 - Telefón: 0911 455 600
 - E-mail: oddych@pallovdvor.sk
-- Adresa: Lutiše, Ulica 373
+- Adresa: Lutiše Adamovci 373
 - Parkovanie: 4 parkovacie miesta priamo pri objekte
 
 Tieto údaje použiť na stránke Kontakt a v pätičke webu.
@@ -15,7 +15,7 @@ Odporúčaný krátky text:
 
 Pallov Dvor  
 Súkromná chata pre pokojný oddych a spoločné chvíle.  
-Lutiše, Ulica 373  
+Lutiše Adamovci 373  
 0911 455 600  
 oddych@pallovdvor.sk
 
@@ -28,7 +28,8 @@ Polia:
 - Meno a priezvisko
 - E-mail
 - Telefón
-- Požadovaný termín pobytu
+- Termín od
+- Termín do
 - Počet osôb
 - Typ prenájmu
 - Typ pobytu
@@ -65,4 +66,4 @@ Na stránke Kontakt pripraviť:
 
 Adresa pre mapu:
 
-- Lutiše, Ulica 373
+- Lutiše Adamovci 373
