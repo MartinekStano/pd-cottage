@@ -1,0 +1,167 @@
+[
+  {
+    "file": "public/images/pallov-dvor/hero-chata-pallov-dvor.jpg",
+    "source": "instruction/Fotky - Chata/Exterier Chata/WhatsApp Image 2026-04-28 at 09.09.45 (2).jpeg",
+    "contactSheet": "Exterier Chata #10"
+  },
+  {
+    "file": "public/images/pallov-dvor/exterier-pallov-dvor.jpg",
+    "source": "instruction/Fotky - Chata/Exterier Chata/WhatsApp Image 2026-04-28 at 09.09.44 (2).jpeg",
+    "contactSheet": "Exterier Chata #5"
+  },
+  {
+    "file": "public/images/pallov-dvor/o-nas-pallov-dvor-exterier.jpg",
+    "source": "instruction/Fotky - Chata/Exterier Chata/WhatsApp Image 2026-04-28 at 09.09.45.jpeg",
+    "contactSheet": "Exterier Chata #11"
+  },
+  {
+    "file": "public/images/pallov-dvor/cely-objekt-pallov-dvor.jpg",
+    "source": "instruction/Fotky - Chata/Exterier Chata/WhatsApp Image 2026-04-28 at 09.09.45 (2).jpeg",
+    "contactSheet": "Exterier Chata #10"
+  },
+  {
+    "file": "public/images/pallov-dvor/kontakt-hero-pallov-dvor.jpg",
+    "source": "instruction/Fotky - Chata/Exterier Chata/WhatsApp Image 2026-04-28 at 09.09.44.jpeg",
+    "contactSheet": "Exterier Chata #8"
+  },
+  {
+    "file": "public/images/pallov-dvor/kontakt-exterier-pallov-dvor.jpg",
+    "source": "instruction/Fotky - Chata/Exterier Chata/WhatsApp Image 2026-04-28 at 09.09.44 (2).jpeg",
+    "contactSheet": "Exterier Chata #5"
+  },
+  {
+    "file": "public/images/pallov-dvor/altanok-pallov-dvor.jpg",
+    "source": "instruction/Fotky - Chata/Exterier Chata/WhatsApp Image 2026-04-28 at 09.10.10.jpeg",
+    "contactSheet": "Exterier Chata #16"
+  },
+  {
+    "file": "public/images/pallov-dvor/altanok-vecer-pallov-dvor.jpg",
+    "source": "instruction/Fotky - Chata/Exterier Chata/WhatsApp Image 2026-04-28 at 09.09.51.jpeg",
+    "contactSheet": "Exterier Chata #14"
+  },
+  {
+    "file": "public/images/pallov-dvor/gril-pallov-dvor.jpg",
+    "source": "instruction/Fotky - Chata/Exterier Chata/WhatsApp Image 2026-04-28 at 09.10.11.jpeg",
+    "contactSheet": "Exterier Chata #19"
+  },
+  {
+    "file": "public/images/pallov-dvor/sauna-pallov-dvor.jpg",
+    "source": "instruction/Fotky - Chata/Exterier Chata/WhatsApp Image 2026-04-28 at 09.10.12 (3).jpeg",
+    "contactSheet": "Exterier Chata #22"
+  },
+  {
+    "file": "public/images/pallov-dvor/vonkajsia-kada-pallov-dvor.jpg",
+    "source": "instruction/Fotky - Chata/Exterier Chata/WhatsApp Image 2026-04-28 at 09.10.11 (1).jpeg",
+    "contactSheet": "Exterier Chata #17"
+  },
+  {
+    "file": "public/images/pallov-dvor/sauna-kada-pallov-dvor.jpg",
+    "source": "instruction/Fotky - Chata/Exterier Chata/WhatsApp Image 2026-04-28 at 09.10.13 (1).jpeg",
+    "contactSheet": "Exterier Chata #24"
+  },
+  {
+    "file": "public/images/pallov-dvor/wellness-hero-pallov-dvor.jpg",
+    "source": "instruction/Fotky - Chata/Exterier Chata/WhatsApp Image 2026-04-28 at 09.10.13 (1).jpeg",
+    "contactSheet": "Exterier Chata #24"
+  },
+  {
+    "file": "public/images/pallov-dvor/wellness-sauna-kada.jpg",
+    "source": "instruction/Fotky - Chata/Exterier Chata/WhatsApp Image 2026-04-28 at 09.10.13 (1).jpeg",
+    "contactSheet": "Exterier Chata #24"
+  },
+  {
+    "file": "public/images/pallov-dvor/interier-pallov-dvor.jpg",
+    "source": "instruction/Fotky - Chata/Chata 2. obytná jednotka/WhatsApp Image 2026-04-28 at 09.11.40 (1).jpeg",
+    "contactSheet": "Chata 2. obytná jednotka #19"
+  },
+  {
+    "file": "public/images/pallov-dvor/o-nas-interier.jpg",
+    "source": "instruction/Fotky - Chata/Chata 1. obytná jednotka/WhatsApp Image 2026-04-28 at 09.11.44 (2).jpeg",
+    "contactSheet": "Chata 1. obytná jednotka #4"
+  },
+  {
+    "file": "public/images/pallov-dvor/obyvacka-kuchyna-pallov-dvor.jpg",
+    "source": "instruction/Fotky - Chata/Chata 2. obytná jednotka/WhatsApp Image 2026-04-28 at 09.11.40 (2).jpeg",
+    "contactSheet": "Chata 2. obytná jednotka #20"
+  },
+  {
+    "file": "public/images/pallov-dvor/jedalensky-priestor-pallov-dvor.jpg",
+    "source": "instruction/Fotky - Chata/Chata 2. obytná jednotka/WhatsApp Image 2026-04-28 at 09.11.39.jpeg",
+    "contactSheet": "Chata 2. obytná jednotka #18"
+  },
+  {
+    "file": "public/images/pallov-dvor/spolocensky-priestor.jpg",
+    "source": "instruction/Fotky - Chata/Spoločný priestor/WhatsApp Image 2026-04-28 at 09.11.50 (2).jpeg",
+    "contactSheet": "Spoločný priestor #4"
+  },
+  {
+    "file": "public/images/pallov-dvor/spolocensky-priestor-projektor.jpg",
+    "source": "instruction/Fotky - Chata/Spoločný priestor/WhatsApp Image 2026-04-28 at 09.11.50 (2).jpeg",
+    "contactSheet": "Spoločný priestor #4"
+  },
+  {
+    "file": "public/images/pallov-dvor/detail-chaty.jpg",
+    "source": "instruction/Fotky - Chata/Chata 1. obytná jednotka/WhatsApp Image 2026-04-28 at 09.11.49 (1).jpeg",
+    "contactSheet": "Chata 1. obytná jednotka #23"
+  },
+  {
+    "file": "public/images/pallov-dvor/izba-1-pallov-dvor-1.jpg",
+    "source": "instruction/Fotky - Chata/Chata 2. obytná jednotka/WhatsApp Image 2026-04-28 at 09.11.31 (2).jpeg",
+    "contactSheet": "Chata 2. obytná jednotka #10"
+  },
+  {
+    "file": "public/images/pallov-dvor/izba-1-pallov-dvor-2.jpg",
+    "source": "instruction/Fotky - Chata/Chata 2. obytná jednotka/WhatsApp Image 2026-04-28 at 09.11.31.jpeg",
+    "contactSheet": "Chata 2. obytná jednotka #11"
+  },
+  {
+    "file": "public/images/pallov-dvor/izba-1-pallov-dvor-3.jpg",
+    "source": "instruction/Fotky - Chata/Chata 2. obytná jednotka/WhatsApp Image 2026-04-28 at 09.11.29 (1).jpeg",
+    "contactSheet": "Chata 2. obytná jednotka #2"
+  },
+  {
+    "file": "public/images/pallov-dvor/izba-2-pallov-dvor-1.jpg",
+    "source": "instruction/Fotky - Chata/Chata 2. obytná jednotka/WhatsApp Image 2026-04-28 at 09.11.30 (2).jpeg",
+    "contactSheet": "Chata 2. obytná jednotka #6"
+  },
+  {
+    "file": "public/images/pallov-dvor/izba-2-pallov-dvor-2.jpg",
+    "source": "instruction/Fotky - Chata/Chata 2. obytná jednotka/WhatsApp Image 2026-04-28 at 09.11.33.jpeg",
+    "contactSheet": "Chata 2. obytná jednotka #14"
+  },
+  {
+    "file": "public/images/pallov-dvor/izba-2-pallov-dvor-3.jpg",
+    "source": "instruction/Fotky - Chata/Chata 2. obytná jednotka/WhatsApp Image 2026-04-28 at 09.11.34.jpeg",
+    "contactSheet": "Chata 2. obytná jednotka #15"
+  },
+  {
+    "file": "public/images/pallov-dvor/izba-3-pallov-dvor-1.jpg",
+    "source": "instruction/Fotky - Chata/Chata 1. obytná jednotka/WhatsApp Image 2026-04-28 at 09.11.49.jpeg",
+    "contactSheet": "Chata 1. obytná jednotka #24"
+  },
+  {
+    "file": "public/images/pallov-dvor/izba-3-pallov-dvor-2.jpg",
+    "source": "instruction/Fotky - Chata/Chata 1. obytná jednotka/WhatsApp Image 2026-04-28 at 09.11.48 (4).jpeg",
+    "contactSheet": "Chata 1. obytná jednotka #21"
+  },
+  {
+    "file": "public/images/pallov-dvor/izba-3-pallov-dvor-3.jpg",
+    "source": "instruction/Fotky - Chata/Chata 1. obytná jednotka/WhatsApp Image 2026-04-28 at 09.11.46 (2).jpeg",
+    "contactSheet": "Chata 1. obytná jednotka #10"
+  },
+  {
+    "file": "public/images/pallov-dvor/kupelna-prizemie-pallov-dvor.jpg",
+    "source": "instruction/Fotky - Chata/Chata 2. obytná jednotka/WhatsApp Image 2026-04-28 at 09.11.40.jpeg",
+    "contactSheet": "Chata 2. obytná jednotka #22"
+  },
+  {
+    "file": "public/images/pallov-dvor/kupelna-poschodie-pallov-dvor.jpg",
+    "source": "instruction/Fotky - Chata/Chata 1. obytná jednotka/WhatsApp Image 2026-04-28 at 09.11.48 (1).jpeg",
+    "contactSheet": "Chata 1. obytná jednotka #18"
+  },
+  {
+    "file": "public/images/pallov-dvor/cennik-pallov-dvor-hero.jpg",
+    "source": "instruction/Fotky - Chata/Exterier Chata/WhatsApp Image 2026-04-28 at 09.09.45 (2).jpeg",
+    "contactSheet": "Exterier Chata #10"
+  }
+]

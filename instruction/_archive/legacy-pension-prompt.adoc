@@ -1,0 +1,150 @@
+= Zadanie Pre ChatGPT Codex
+:toc:
+:sectnums:
+
+== Kontext
+
+Tento dokument obsahuje zadanie pre ChatGPT Codex na vyvoj webovej stranky penzionu v prostredi `Next.js`.
+
+Primarne sa sustredime len na navrh a realizaciu webu. Neriesime AI dokumentaciu, prezentaciu ani formalnu cast projektu. Cielom je vytvorit kvalitny frontend prototyp, ktory bude posobit profesionalne a bude orientovany na rezervacie.
+
+== Strucne Zadanie Projektu
+
+Penzion ponuka tieto sluzby:
+
+* ubytovanie: izby a apartmany roznych kategorii
+* restauracia: ranajky, vecere, eventy
+* wellness: bazen, 5 saun, 1 virivka
+* doplnkove sluzby: masaze a perlickovy kupel
+
+Hlavny ciel webu:
+
+* prezentovat penzion profesionalnym sposobom
+* podporit priame rezervacie
+* zvyraznit atmosferu, komfort a wellness zazitok
+
+Povinne podstranky:
+
+* Domov
+* O nas
+* Ubytovanie
+* Restauracia
+* Wellness a sluzby
+* Kontakt
+
+== Prompt Pre ChatGPT Codex
+
+[source,text]
+----
+Si senior frontend developer a mas navrhnut a naprogramovat prezentacny web pre penzion v frameworku Next.js.
+
+Ciel projektu:
+Vytvor moderny, profesionalny a konverzny web penzionu, ktory ma podporit priame rezervacie a kvalitne odprezentovat sluzby zariadenia.
+
+Kontext penzionu:
+Penzion ponuka:
+- ubytovanie: izby a apartmany roznych kategorii
+- restauraciu: ranajky, vecere, eventy
+- wellness: bazen, 5 saun, 1 virivka
+- doplnkove sluzby: masaze a perlickovy kupel
+
+Technicke poziadavky:
+- pouzi Next.js s App Router
+- pouzi TypeScript
+- vytvor responzivny web pre desktop aj mobil
+- dizajn ma byt moderny, cisty, doveryhodny a vhodny pre segment penzionu a wellness
+- web moze byt bez backendu, ale musi posobit realisticky a produkcne
+- ak nie je rezervacny system, pouzi CTA tlacidla typu "Rezervovat pobyt", "Kontaktujte nas", "Zistit viac"
+- kod ma byt prehladny, komponentovy a lahko rozsiritelny
+
+Obsah webu:
+Vytvor tieto podstranky:
+1. Domov
+2. O nas
+3. Ubytovanie
+4. Restauracia
+5. Wellness a sluzby
+6. Kontakt
+
+Poziadavky na jednotlive stranky:
+
+1. Domov
+- vyrazna hero sekcia s headline, podheadline a CTA
+- strucne predstavenie penzionu
+- zvyraznenie hlavnych benefitov
+- sekcia s ponukou ubytovania
+- sekcia wellness
+- sekcia restauracie
+- sekcia s odporucanymi pobytovymi balikmi
+- kontakt alebo CTA blok na konci
+
+2. O nas
+- pribeh penzionu
+- hodnoty znacky
+- atmosfera miesta
+- doraz na oddych, komfort a zazitok
+
+3. Ubytovanie
+- prehlad kategorii izieb a apartmanov
+- pri kazdej kategorii nazov, kratky popis, kapacita a hlavne vyhody
+- CTA na rezervaciu
+
+4. Restauracia
+- predstavenie gastronomie
+- text o ranajkach, veceriach a eventoch
+- sekcia o atmosfere a zazitku
+- ukazkove polozky menu alebo tematicke bloky
+
+5. Wellness a sluzby
+- predstavenie wellness zony
+- bazen, 5 saun a virivka
+- masaze a perlickovy kupel
+- popisy relaxacnych zazitkov
+- pobytove baliky typu wellness vikend pre dvoch
+
+6. Kontakt
+- kontaktne udaje
+- adresa
+- telefon
+- email
+- prevadzkove informacie
+- kontaktny formular
+- mapa alebo placeholder pre mapu
+
+Obsahove a marketingove poziadavky:
+- napis putave marketingove texty v slovencine
+- vymysli profesionalne slogany a nadpisy
+- vytvor nazvy pobytovych balikv
+- texty maju byt prirodzene, nie genericke
+- tone of voice: elegantny, pokojny, doveryhodny, orientovany na zazitok a oddych
+
+UX a dizajn:
+- intuitivna navigacia
+- jasne CTA prvky
+- vizual vhodny pre hospitality a wellness segment
+- sekcie nech su dobre citatelne a prehladne
+- pouzitelne aj na mobile
+- pridaj jemne animacie alebo hover efekty, ale s mierou
+
+Pozadovany vystup:
+- kompletna struktura Next.js projektu
+- vsetky potrebne komponenty a stranky
+- zakladne styly
+- pripravene demo data a texty
+- projekt musi byt spustitelny lokalne
+
+Dodatocne poziadavky:
+- vytvor cistu komponentovu architekturu
+- rozdel UI na znovupouzitelne sekcie
+- ak pouzijes obrazky, pouzi placeholdery alebo navrhni, kam maju ist
+- pridaj zakladne SEO metadata pre kazdu stranku
+- pridaj favicon, title a description
+- neimplementuj backend rezervacii, len kvalitny frontend prototyp
+
+Postup:
+Najprv navrhni strukturu projektu a potom vygeneruj kompletny kod.
+----
+
+== Poznamka
+
+Tento prompt je pripraveny priamo pre ChatGPT Codex a moze sa dalej upravit podla poziadaviek na styl, farebnost alebo technicke preferencie projektu.

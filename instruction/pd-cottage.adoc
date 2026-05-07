@@ -1,0 +1,174 @@
+= Zadanie pre Codex - Pallov Dvor
+:toc:
+:sectnums:
+
+== Kontext
+
+Tento dokument je hlavne technicke a implementacne zadanie pre frontend webu `Pallov Dvor`.
+
+Pallov Dvor je sukromna chata v obci Lutise, Ulica 373. Web ma prezentovat pokojne kratkodobe ubytovanie v sukromi, nie hotel, penzion, restauraciu ani wellness rezort.
+
+Detailny obsah jednotlivych stranok je rozdeleny v priecinku `instruction/pages/`. Globalne pravidla su v `instruction/shared/`.
+
+== Zdroj pravdy
+
+* `instruction/shared/project-brief.md` - fakty o objekte, navigacia, obsahove pravidla.
+* `instruction/shared/brand-ui.md` - vizualny smer, UI pravidla, komponentove odporucania.
+* `instruction/shared/contact.md` - kontaktne udaje, formular, mapa a paticka.
+* `instruction/shared/photo-map.md` - pripravene nazvy fotiek a odporucane pouzitie.
+* `instruction/pages/home.md` - Domov.
+* `instruction/pages/about.md` - O nas.
+* `instruction/pages/accommodation.md` - Ubytovanie.
+* `instruction/pages/pricing.md` - Cennik.
+* `instruction/pages/attractions.md` - Atrakcie a zazitky v okoli.
+* `instruction/pages/wellness.md` - Wellness & Oddych.
+* `instruction/pages/contact.md` - Kontakt.
+
+Archiv povodneho textu je v `instruction/_archive/source-instruction.md`.
+Povodny konfliktne vseobecny prompt pre penzion je v `instruction/_archive/legacy-pension-prompt.adoc`.
+Hotovy prompt pre implementaciu je v `instruction/codex-implementation-prompt.md`.
+
+== Technicke poziadavky
+
+* Pouzi existujuci projekt v Next.js.
+* Projekt pouziva Next.js `16.2.4`, React `19.2.4`, TypeScript a Tailwind CSS `4`.
+* Pouzi App Router.
+* Pred upravami Next.js kodu precitaj relevantnu dokumentaciu v `node_modules/next/dist/docs/`, pretoze aktualna verzia ma zmeny oproti starsim znalostiam.
+* Web ma byt bez backendu; rezervacny formular moze byt staticky frontend prototyp.
+* CTA prvky maju viest na kontakt alebo formular s dopytom.
+* Kod rozdel na znovupouzitelne komponenty a datove struktury.
+* Texty a opakovane hodnoty drz centralizovane, aby sa neskor dali lahko menit.
+* Pridaj SEO metadata pre kazdu podstranku.
+* Web musi byt responzivny pre mobil aj desktop.
+* Na mobile musia byt formularove polia, CTA tlacidla, tabulky cien a karty citatelne bez horizontalneho scrollu, okrem pripadov, kde je scroll tabulky explicitne lepsie riesenie.
+
+== Povinne podstranky
+
+* Domov
+* O nas
+* Ubytovanie
+* Cennik
+* Atrakcie a zazitky v okoli
+* Wellness & Oddych
+* Kontakt
+
+== Globalna navigacia
+
+Pouzi hlavne menu:
+
+* Domov
+* O nas
+* Ubytovanie
+* Cennik
+* Atrakcie
+* Wellness
+* Kontakt
+
+V hlavicke ponechat vyrazne CTA:
+
+* Overit termin
+
+== Hlavne CTA
+
+Primarne CTA napriec webom:
+
+* Overit dostupnost terminu
+
+Sekundarne CTA podla kontextu:
+
+* Pozriet ubytovanie
+* Pozriet cennik
+* Poslat nezavazny dopyt
+* Kontaktovat nas
+* Zobrazit v navigacii
+
+== Realne vybavenie
+
+Komunikuj iba tieto fakty:
+
+* Pallov Dvor
+* Lutise, Ulica 373
+* kratkodobe ubytovanie v sukromi
+* kapacita az 16 osob
+* 2 samostatne ubytovacie jednotky
+* 1 jednotka max. 8 osob
+* kazda jednotka ma 3 spalne
+* 2 kupelne so sprchami
+* kuchyna spojena s obyvackou
+* jedalensky stol
+* TV
+* Wi-Fi
+* spolocensky priestor s platnom, projektorom a hernym vybavenim
+* altanok
+* letna kuchynka bez varnej dosky
+* gril
+* sauna pre 6 osob
+* vonkajsia kada
+* oploteny objekt
+* 4 parkovacie miesta
+
+== Obsahove zakazy
+
+Nepouzivaj komunikaciu spojenu s tymito temami:
+
+* party
+* hlucne oslavy
+* mlade partie
+* nocny zivot
+* zur
+* divoky vikend
+* restauracia
+* menu
+* gastronomia ako sluzba objektu
+* masaze
+* bazen
+* virivka
+
+== Fotografie a assety
+
+Do repozitara patria optimalizovane a pomenovane kópie v `public/images/pallov-dvor/`.
+Atrakcie maju pripravene fotky v `public/images/attractions/`.
+Surove importy fotiek nie su sucastou commitu. Mapovanie optimalizovanych suborov na povodne nazvy importu je v `public/images/pallov-dvor/manifest.json`.
+
+Pri implementacii vyber realne fotografie z tychto kategorii v optimalizovanych assetoch:
+
+* `Exterier Chata`
+* `Chata 1. obytna jednotka`
+* `Chata 2. obytna jednotka`
+* `Spolocny priestor`
+
+Ak fotka pre sekciu este nie je vybrana, priprav stabilny image placeholder a nazov suboru podla prislusneho page zadania.
+
+== UI smer
+
+Web ma posobit moderne, pokojne, vzdusne, prirodne a doveryhodne. Vizualny detail je v `instruction/shared/brand-ui.md`.
+
+Preferuj:
+
+* velke realne fotografie chaty a okolia,
+* pokojnu prirodnu paletu,
+* citatelnu typografiu,
+* vyrazne CTA,
+* prehladne karty pre opakovane informacie,
+* dostatok priestoru medzi sekciami,
+* jednoduche animacie a hover stavy iba tam, kde pomahaju orientacii.
+
+== Implementacny postup
+
+1. Precitaj `AGENTS.md` a relevantne Next.js docs v `node_modules/next/dist/docs/`.
+2. Navrhni centralne data pre navigaciu, kontakt, ceny, vybavenie a obsah stranok.
+3. Priprav layout, hlavicku, paticku a spolocne UI komponenty.
+4. Implementuj podstranky podla `instruction/pages/`.
+5. Pouzi realne fotografie alebo priprav image placeholdery.
+6. Over `npm run lint` a `npm run build`, ak to prostredie dovoli.
+7. Spusti dev server a skontroluj web na mobile aj desktope.
+
+== Ocakavany vystup
+
+* kompletne responzivne frontend stranky,
+* komponentova struktura,
+* centralizovane data,
+* zakladne SEO metadata,
+* funkcny lokalny dev server,
+* ziadny backend ani realna rezervacna integracia,
+* komunikacia konzistentna s Pallovym Dvorom.
