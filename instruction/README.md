@@ -35,6 +35,7 @@ Zdroj pravdy je Pallov Dvor ako súkromná chata v Lutišiach. Web nemá komunik
 
 Primárny cieľ webu je dostať návštevníka k akcii `Overiť dostupnosť termínu`.
 
+
 ## Pred implementáciou ešte potvrdiť
 
 - Presný cieľ CTA: či má ísť na kontaktný formulár, e-mail, telefón alebo externý rezervačný systém.
