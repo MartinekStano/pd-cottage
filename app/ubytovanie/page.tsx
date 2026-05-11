@@ -4,7 +4,6 @@ import { CTASection } from "@/components/cta-section";
 import { FeatureCard } from "@/components/feature-card";
 import { Hero } from "@/components/hero";
 import { ImageCard } from "@/components/image-card";
-import { PhotoGallery, type GalleryImage } from "@/components/photo-gallery";
 import { PhotoSection } from "@/components/photo-section";
 import { PriceCard } from "@/components/price-card";
 import { SectionHeader } from "@/components/section-header";
@@ -17,81 +16,6 @@ import {
   site,
   unitLayout,
 } from "@/lib/site-data";
-
-const accommodationGallery: GalleryImage[] = [
-  {
-    src: images.livingKitchen,
-    alt: "Obývacia miestnosť s kuchyňou v Pallovom Dvore",
-    title: "Obývačka s kuchyňou",
-    group: "Interiér",
-  },
-  {
-    src: images.dining,
-    alt: "Jedálenský priestor v Pallovom Dvore",
-    title: "Jedálenský priestor",
-    group: "Interiér",
-  },
-  {
-    src: images.social,
-    alt: "Spoločenský priestor v Pallovom Dvore",
-    title: "Spoločenský priestor",
-    group: "Spoločné priestory",
-  },
-  {
-    src: images.projector,
-    alt: "Spoločenský priestor s projektorom",
-    title: "Priestor s projektorom",
-    group: "Spoločné priestory",
-  },
-  {
-    src: "/images/pallov-dvor/izba-1-pallov-dvor-1.jpg",
-    alt: "Spálňa s dvojlôžkom a jednolôžkom",
-    title: "Spálňa s dvojlôžkom",
-    group: "Izby",
-  },
-  {
-    src: "/images/pallov-dvor/izba-2-pallov-dvor-1.jpg",
-    alt: "Spálňa s dvoma jednolôžkami",
-    title: "Spálňa s jednolôžkami",
-    group: "Izby",
-  },
-  {
-    src: "/images/pallov-dvor/izba-3-pallov-dvor-1.jpg",
-    alt: "Druhá spálňa s dvojlôžkom a jednolôžkom",
-    title: "Druhá spálňa",
-    group: "Izby",
-  },
-  {
-    src: images.bathroomGround,
-    alt: "Kúpeľňa na prízemí v Pallovom Dvore",
-    title: "Kúpeľňa prízemie",
-    group: "Kúpeľne",
-  },
-  {
-    src: images.bathroomUpper,
-    alt: "Kúpeľňa na poschodí v Pallovom Dvore",
-    title: "Kúpeľňa poschodie",
-    group: "Kúpeľne",
-  },
-  {
-    src: images.gazebo,
-    alt: "Altánok pri chate Pallov Dvor",
-    title: "Altánok",
-    group: "Exteriér",
-  },
-  {
-    src: images.grill,
-    alt: "Gril v exteriéri Pallovho Dvora",
-    title: "Gril",
-    group: "Exteriér",
-  },
-  {
-    src: images.saunaTub,
-    alt: "Sauna a vonkajšia kaďa pri chate Pallov Dvor",
-    title: "Sauna a kaďa",
-    group: "Wellness",
-  },
-];
 
 export const metadata: Metadata = pageMetadata({
   title: "Ubytovanie",
@@ -261,18 +185,6 @@ export default function AccommodationPage() {
               title="Gril"
             />
           </div>
-        </div>
-      </section>
-
-      <section className="section-pad">
-        <div className="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10">
-          <SectionHeader
-            align="center"
-            eyebrow="Fotogaléria"
-            title="Prezrite si priestory Pallovho Dvora"
-            text="Výber fotografií izieb, spoločných priestorov, kúpeľní, exteriéru a oddychovej zóny. Kliknutím otvoríte galériu a môžete prechádzať medzi zábermi."
-          />
-          <PhotoGallery images={accommodationGallery} />
         </div>
       </section>
 

@@ -32,6 +32,7 @@ export const navItems = [
   { label: "Domov", href: "/" },
   { label: "O nás", href: "/o-nas" },
   { label: "Ubytovanie", href: "/ubytovanie" },
+  { label: "Fotogaléria", href: "/fotogaleria" },
   { label: "Cenník", href: "/cennik" },
   { label: "Atrakcie", href: "/atrakcie" },
   { label: "Wellness", href: "/wellness" },
@@ -65,6 +66,105 @@ export const images = {
   contactExterior: "/images/pallov-dvor/kontakt-exterier-pallov-dvor.jpg",
   attractionsHero: "/images/attractions/vratna-dolina.jpg",
 };
+
+export const galleryImages = [
+  {
+    src: images.livingKitchen,
+    alt: "Obývacia miestnosť s kuchyňou v Pallovom Dvore",
+    title: "Obývačka s kuchyňou",
+    group: "Interiér",
+  },
+  {
+    src: images.dining,
+    alt: "Jedálenský priestor v Pallovom Dvore",
+    title: "Jedálenský priestor",
+    group: "Interiér",
+  },
+  {
+    src: images.social,
+    alt: "Spoločenský priestor v Pallovom Dvore",
+    title: "Spoločenský priestor",
+    group: "Spoločné priestory",
+  },
+  {
+    src: images.projector,
+    alt: "Spoločenský priestor s projektorom",
+    title: "Priestor s projektorom",
+    group: "Spoločné priestory",
+  },
+  {
+    src: "/images/pallov-dvor/izba-1-pallov-dvor-1.jpg",
+    alt: "Spálňa s dvojlôžkom a jednolôžkom",
+    title: "Spálňa s dvojlôžkom",
+    group: "Izby",
+  },
+  {
+    src: "/images/pallov-dvor/izba-1-pallov-dvor-2.jpg",
+    alt: "Detail spálne s dvojlôžkom a jednolôžkom",
+    title: "Detail prvej spálne",
+    group: "Izby",
+  },
+  {
+    src: "/images/pallov-dvor/izba-2-pallov-dvor-1.jpg",
+    alt: "Spálňa s dvoma jednolôžkami",
+    title: "Spálňa s jednolôžkami",
+    group: "Izby",
+  },
+  {
+    src: "/images/pallov-dvor/izba-3-pallov-dvor-1.jpg",
+    alt: "Druhá spálňa s dvojlôžkom a jednolôžkom",
+    title: "Druhá spálňa",
+    group: "Izby",
+  },
+  {
+    src: images.bathroomGround,
+    alt: "Kúpeľňa na prízemí v Pallovom Dvore",
+    title: "Kúpeľňa prízemie",
+    group: "Kúpeľne",
+  },
+  {
+    src: images.bathroomUpper,
+    alt: "Kúpeľňa na poschodí v Pallovom Dvore",
+    title: "Kúpeľňa poschodie",
+    group: "Kúpeľne",
+  },
+  {
+    src: images.gazebo,
+    alt: "Altánok pri chate Pallov Dvor",
+    title: "Altánok",
+    group: "Exteriér",
+  },
+  {
+    src: images.gazeboEvening,
+    alt: "Večerný altánok pri chate Pallov Dvor",
+    title: "Altánok večer",
+    group: "Exteriér",
+  },
+  {
+    src: images.grill,
+    alt: "Gril v exteriéri Pallovho Dvora",
+    title: "Gril",
+    group: "Exteriér",
+  },
+  {
+    src: images.saunaTub,
+    alt: "Sauna a vonkajšia kaďa pri chate Pallov Dvor",
+    title: "Sauna a kaďa",
+    group: "Wellness",
+  },
+  {
+    src: images.tub,
+    alt: "Vonkajšia kaďa pri chate Pallov Dvor",
+    title: "Vonkajšia kaďa",
+    group: "Wellness",
+  },
+  {
+    src: images.exterior,
+    alt: "Exteriér chaty Pallov Dvor",
+    title: "Exteriér chaty",
+    group: "Objekt",
+  },
+];
 
 export const quickFacts = [
   {

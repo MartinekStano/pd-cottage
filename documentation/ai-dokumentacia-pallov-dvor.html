@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="sk">
+  <head>
+    <meta charset="utf-8" />
+    <title>AI dokumentácia projektu Pallov Dvor</title>
+    <style>
+      @page {
+        size: A4;
+        margin: 16mm 15mm;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        background: #ffffff;
+      }
+
+      body {
+        background: #ffffff;
+        color: #1f1c18;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10.7pt;
+        line-height: 1.42;
+        margin: 0;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: #171512;
+        font-family: Georgia, "Times New Roman", serif;
+        line-height: 1.15;
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 25pt;
+        margin-bottom: 5mm;
+      }
+
+      h2 {
+        border-top: 1px solid rgba(31, 28, 24, 0.18);
+        font-size: 15.5pt;
+        margin-top: 7mm;
+        padding-top: 4mm;
+      }
+
+      h3 {
+        font-size: 12pt;
+        margin-top: 4mm;
+      }
+
+      p {
+        margin: 2.2mm 0;
+      }
+
+      ul {
+        margin: 2mm 0 3mm 5mm;
+        padding-left: 5mm;
+      }
+
+      li {
+        margin: 1.3mm 0;
+      }
+
+      .meta {
+        color: #6f665d;
+        font-size: 9.5pt;
+        margin-bottom: 7mm;
+      }
+
+      .lead {
+        background: #f3eee6;
+        border: 1px solid rgba(31, 28, 24, 0.1);
+        border-radius: 5mm;
+        margin-bottom: 6mm;
+        padding: 5mm;
+      }
+
+      .grid {
+        display: grid;
+        gap: 3mm;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .card {
+        background: #fffaf2;
+        border: 1px solid rgba(31, 28, 24, 0.12);
+        border-radius: 4mm;
+        padding: 4mm;
+      }
+
+      .label {
+        color: #7a5c3e;
+        display: block;
+        font-size: 8.5pt;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        margin-bottom: 1mm;
+        text-transform: uppercase;
+      }
+
+      .prompt {
+        background: #f8f3eb;
+        border-left: 3px solid #7a5c3e;
+        border-radius: 2mm;
+        font-size: 9.5pt;
+        margin: 2.5mm 0;
+        padding: 3mm 4mm;
+      }
+
+      .page-break {
+        page-break-before: always;
+      }
+
+      .compact li {
+        margin: 0.8mm 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>AI dokumentácia projektu Pallov Dvor</h1>
+    <p class="meta">
+      Projekt: webová stránka pre súkromnú chatu Pallov Dvor v Lutišiach |
+      Dokumentácia k použitiu AI nástrojov | 2026
+    </p>
+
+    <div class="lead">
+      <p>
+        Cieľom projektu bolo vytvoriť moderný prezentačný web pre krátkodobé
+        ubytovanie v súkromnej chate. Zadanie vychádzalo z témy digitálnej
+        transformácie penziónu pomocou AI, ale reálne zariadenie nebolo penzión.
+        Preto bolo potrebné upraviť stratégiu, obsah aj dizajn tak, aby web
+        komunikoval súkromie, pokoj, komfort a priamy dopyt na termín.
+      </p>
+      <p>
+        AI bola použitá ako konzultačný, textový, analytický a implementačný
+        nástroj. Finálne rozhodnutia, výber cieľových skupín, cenová logika,
+        obsahové obmedzenia a úpravy dizajnu boli kontrolované manuálne.
+      </p>
+    </div>
+
+    <h2>1. Použité AI nástroje</h2>
+    <div class="grid">
+      <div class="card">
+        <span class="label">ChatGPT</span>
+        <p>
+          Použitý na cenovú stratégiu, štruktúru webu, texty, formuláciu
+          cieľových skupín, obsahové zákazy a prípravu promptov pre jednotlivé
+          podstránky.
+        </p>
+      </div>
+      <div class="card">
+        <span class="label">Codex</span>
+        <p>
+          Použitý na implementáciu webu v Next.js, úpravu komponentov,
+          formulára, navigácie, galérie, responzívneho layoutu a kontrolu
+          cez lint a production build.
+        </p>
+      </div>
+      <div class="card">
+        <span class="label">AI generátor obrázkov</span>
+        <p>
+          Použitý na návrh logotypov Pallov Dvor. Výstupy bolo potrebné
+          pomenovať, presunúť do brand assetov a technicky upraviť.
+        </p>
+      </div>
+      <div class="card">
+        <span class="label">AI ako kontrolný partner</span>
+        <p>
+          AI pomáhala hľadať riziká v komunikácii, najmä aby web nepôsobil ako
+          ponuka párty ubytovania, reštaurácie alebo wellness služieb, ktoré
+          chata reálne neponúka.
+        </p>
+      </div>
+    </div>
+
+    <h2>2. Konkrétne použité prompty</h2>
+    <p>
+      Nižšie sú skrátené, ale konkrétne bloky promptov, ktoré boli použité pri
+      príprave stratégie, obsahu a implementácie. Dlhé zadania boli následne
+      rozdelené na menšie časti podľa podstránok.
+    </p>
+
+    <h3>Cenová stratégia</h3>
+    <div class="prompt">
+      Chcem nastaviť ceny krátkodobého ubytovania pre chatu v Lutišiach. Chata
+      má 2 samostatné jednotky, každá má 3 spálne, kapacitu 8 osôb, 2 kúpeľne,
+      kuchyňu s obývačkou, TV, Wi-Fi, altánok s grilom, kaďu, saunu pre 6 osôb,
+      4 parkovacie miesta a oplotený objekt. Navrhni ceny pre jednu jednotku,
+      celý objekt, wellness príplatky, Silvester a stratégiu zdražovania.
+    </div>
+    <p>
+      Výsledkom bol základný cenový rámec: jedna jednotka od 159 EUR za noc,
+      celý objekt od 319 EUR za noc, príplatky za kaďu a saunu a samostatný
+      silvestrovský balík. Tieto ceny boli následne upravené do prehľadných
+      tabuliek.
+    </p>
+
+    <h3>Hlavný projektový prompt</h3>
+    <div class="prompt">
+      Vytvor webovú stránku pre chatu Pallov Dvor, ktorá slúži na krátkodobé
+      ubytovanie. Web má vychádzať zo zadania digitálnej transformácie penziónu,
+      ale obsah má byť prispôsobený reálnemu zariadeniu - súkromnej chate, nie
+      klasickému penziónu. Komunikácia má zdôrazňovať pokoj, súkromie, relax,
+      pohodlie, rodinnú atmosféru a kultivovaný pobyt.
+    </div>
+
+    <h3>Základné fakty pre AI</h3>
+    <div class="prompt">
+      Použi fakty: názov Pallov Dvor, typ súkromná chata, adresa Lutiše
+      Adamovci 373, telefón 0911 455 600, e-mail oddych@pallovdvor.sk, 2
+      samostatné jednotky, kapacita jednej jednotky 8 osôb, celý objekt 16
+      osôb, sauna, vonkajšia kaďa, altánok, gril, spoločenský priestor s
+      projektorom, Wi-Fi, TV, oplotený objekt a 4 parkovacie miesta.
+    </div>
+
+    <h3>Cieľové skupiny a cieľ webu</h3>
+    <div class="prompt">
+      Texty a dizajn majú oslovovať rodiny s deťmi, dospelé skupiny priateľov,
+      menšie firemné kolektívy a páry. Hlavným cieľom webu je získať priame
+      dopyty a priviesť návštevníka k akcii Overiť dostupnosť termínu.
+    </div>
+
+    <h3>Prompt pre štruktúru a UI</h3>
+    <div class="prompt">
+      Vytvor moderný responzívny web pre chatu Pallov Dvor. Použi podstránky
+      Domov, O nás, Ubytovanie, Cenník, Atrakcie a zážitky v okolí, Wellness &
+      Oddych a Kontakt. Dizajn má byť pokojný, prírodný, dôveryhodný, s teplým
+      pozadím, veľkými fotografiami, serifovými nadpismi a jasným CTA.
+    </div>
+
+    <h3>Prompty pre podstránky</h3>
+    <ul class="compact">
+      <li>
+        Domov: predstaviť chatu, benefity, cenu od 159 EUR a hlavné CTA.
+      </li>
+      <li>
+        O nás: vysvetliť charakter súkromnej chaty, hodnoty pokoj, súkromie,
+        komfort a spoločné chvíle.
+      </li>
+      <li>
+        Ubytovanie: ukázať kapacitu, izby, kúpeľne, spoločné priestory a
+        možnosti prenájmu.
+      </li>
+      <li>
+        Cenník: zobraziť ceny za jednotku, celý objekt, wellness príplatky,
+        Silvester a minimálnu dĺžku pobytu.
+      </li>
+      <li>
+        Atrakcie: nahradiť reštauráciu okolím, výletmi, prírodou a návratom do
+        súkromia chaty.
+      </li>
+      <li>
+        Wellness: komunikovať iba reálne vybavenie, teda saunu, vonkajšiu kaďu
+        a relax v súkromí.
+      </li>
+      <li>
+        Kontakt: vytvoriť formulár pre nezáväzný dopyt, kontaktné údaje, mapu
+        a krátky cenový blok.
+      </li>
+    </ul>
+
+    <h3>Obsahové zákazy</h3>
+    <div class="prompt">
+      Nepoužívaj komunikáciu spojenú s párty, hlučnými oslavami, reštauráciou,
+      masážami, bazénom alebo vírivkou. Komunikuj iba reálne vybavenie:
+      ubytovanie, dve jednotky, kapacitu, saunu, vonkajšiu kaďu, altánok, gril,
+      spoločenský priestor, projektor, Wi-Fi, TV, oplotený objekt a parkovanie.
+    </div>
+
+    <h2>3. Čo AI navrhla dobre</h2>
+    <ul>
+      <li>
+        Pomohla rýchlo premeniť všeobecné zadanie penziónu na použiteľnú
+        stratégiu pre súkromnú chatu.
+      </li>
+      <li>
+        Navrhla vhodné cieľové skupiny a oddelila komunikáciu pre rodiny,
+        dospelých hostí, páry a menšie firemné kolektívy.
+      </li>
+      <li>
+        Pomohla vytvoriť logickú navigáciu webu a rozdeliť obsah na samostatné
+        podstránky.
+      </li>
+      <li>
+        Navrhla základnú cenovú štruktúru, ktorá sa dala ďalej upraviť podľa
+        hodnoty objektu, sezóny a rozsahu prenájmu.
+      </li>
+      <li>
+        Pri implementácii pomohla vytvoriť responzívne komponenty, formulár,
+        cenové tabuľky, galériu a konzistentné CTA prvky.
+      </li>
+    </ul>
+
+    <h2>4. Čo bolo potrebné manuálne upraviť</h2>
+    <ul>
+      <li>
+        Pôvodnú logiku zadania bolo potrebné očistiť od penziónových častí.
+        Pallov Dvor nemá reštauráciu, bazén, vírivku ani masáže, preto sa tieto
+        prvky nesmeli objaviť vo finálnom webe.
+      </li>
+      <li>
+        AI mala tendenciu navrhovať príliš všeobecné marketingové formulácie.
+        Texty bolo potrebné spresniť, aby pôsobili pokojne a nepriťahovali
+        nevhodný typ hostí.
+      </li>
+      <li>
+        Ceny bolo potrebné skontrolovať manažérsky: či sú zrozumiteľné,
+        obhájiteľné a použiteľné pre jednu jednotku aj celý objekt.
+      </li>
+      <li>
+        V dizajne bolo potrebné upravovať detaily: veľkosť loga, čitateľnosť
+        loga v pätičke, farby formulára, jednotnosť inputov a správanie
+        fotogalérie.
+      </li>
+      <li>
+        AI generované logá bolo potrebné premenovať, presunúť do správneho
+        priečinka a technicky upraviť, pretože pôvodné PNG súbory nemali
+        skutočnú transparentnosť.
+      </li>
+    </ul>
+
+    <h2>5. Manažérske zhodnotenie práce s AI</h2>
+    <p>
+      AI nebola použitá ako náhrada rozhodovania, ale ako nástroj na zrýchlenie
+      prípravy. Manažérsky prístup spočíval v tom, že najskôr bolo potrebné
+      presne definovať produkt: nejde o penzión, ale o súkromnú chatu s dvoma
+      jednotkami, konkrétnou kapacitou a reálnym vybavením. Až potom dávalo
+      zmysel žiadať AI o texty, štruktúru a dizajn.
+    </p>
+    <p>
+      Dôležitým rozhodnutím bolo nastavenie hraníc komunikácie. Web má predávať
+      pobyt, ale nie akýkoľvek pobyt. Preto boli v promptoch uvedené obsahové
+      zákazy a dôraz na pokoj, súkromie a kultivovaný charakter. Toto je
+      manažérsky dôležité, pretože nesprávny tón webu môže priniesť nevhodných
+      hostí a zhoršiť prevádzku.
+    </p>
+    <p>
+      Pri cenách AI poskytla orientačný návrh, ale finálne použiteľná stratégia
+      musela zohľadniť kapacitu, sezónnosť, prenájom jednej jednotky verzus
+      celého objektu a príplatkové služby. Manažérsky pohľad teda nebol len
+      "akú cenu navrhla AI", ale "či cena podporuje požadovaný typ rezervácií a
+      či je zrozumiteľná pre zákazníka".
+    </p>
+    <p>
+      Pri implementácii bolo potrebné AI výstupy kontrolovať cez reálne
+      správanie webu. Niektoré veci vyzerali v návrhu správne, ale v praxi
+      vyžadovali doladenie: jednotný formulár, viditeľné logo, správne brand
+      assety a fotogaléria s prechádzaním obrázkov. To ukazuje, že úloha
+      človeka bola najmä v kontrole kvality, prioritizácii a rozhodovaní, nie v
+      mechanickom kopírovaní AI odpovedí.
+    </p>
+
+    <h2>6. Výsledok</h2>
+    <p>
+      Výsledkom je responzívny web pre Pallov Dvor s podstránkami Domov, O nás,
+      Ubytovanie, Cenník, Atrakcie, Wellness a Kontakt. Web používa reálne
+      fakty o objekte, jasné CTA, pokojný vizuálny štýl, cenové bloky,
+      kontaktný formulár a fotogalériu. AI výrazne zrýchlila návrh a
+      implementáciu, ale finálna kvalita vznikla až kombináciou AI návrhov,
+      manuálnych úprav a manažérskeho posúdenia vhodnosti pre reálnu prevádzku.
+    </p>
+  </body>
+</html>
