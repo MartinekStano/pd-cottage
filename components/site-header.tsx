@@ -6,7 +6,7 @@ import { CTAButton } from "./cta-button";
 export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[color-mix(in_srgb,var(--surface)_88%,transparent)] backdrop-blur-xl">
-      <div className="mx-auto flex min-h-20 w-full max-w-7xl items-center justify-between gap-4 px-5 sm:px-8 lg:px-10">
+      <div className="mx-auto flex min-h-24 w-full max-w-7xl items-center justify-between gap-4 px-5 sm:min-h-28 sm:px-8 lg:px-10">
         <Link
           className="group flex min-w-0 items-center gap-3"
           href="/"
@@ -14,7 +14,7 @@ export function SiteHeader() {
         >
           <Image
             alt={site.name}
-            className="h-12 w-auto shrink-0 transition duration-300 group-hover:opacity-80 sm:h-14"
+            className="h-16 w-auto shrink-0 transition duration-300 group-hover:opacity-80 sm:h-20"
             height={887}
             preload
             src={site.brandLogo}

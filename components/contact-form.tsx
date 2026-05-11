@@ -5,7 +5,9 @@ import { submitContactForm, type ContactFormState } from "@/app/kontakt/actions"
 import { rentalTypeOptions, stayTypeOptions } from "@/lib/site-data";
 
 const inputClass =
-  "min-h-12 w-full rounded-md border border-[var(--border-strong)] bg-white px-4 py-3 text-base text-[var(--text)] outline-none transition placeholder:text-[var(--muted)] focus:border-[var(--accent)] focus:ring-2 focus:ring-[color-mix(in_srgb,var(--accent)_20%,transparent)]";
+  "min-h-12 w-full rounded-md border border-[var(--border-strong)] bg-[var(--bg)] px-4 py-3 text-base text-[var(--text)] outline-none transition placeholder:text-[var(--muted)] focus:border-[var(--accent)] focus:bg-[var(--surface)] focus:ring-2 focus:ring-[color-mix(in_srgb,var(--accent)_20%,transparent)] disabled:opacity-60 [color-scheme:light]";
+
+const selectClass = `${inputClass} appearance-none bg-[linear-gradient(45deg,transparent_50%,var(--muted)_50%),linear-gradient(135deg,var(--muted)_50%,transparent_50%)] bg-[length:5px_5px,5px_5px] bg-[position:calc(100%-20px)_52%,calc(100%-15px)_52%] bg-no-repeat pr-11`;
 
 const initialState: ContactFormState = {
   message: "",
@@ -129,7 +131,7 @@ export function ContactForm() {
           Typ prenájmu
           <select
             aria-invalid={Boolean(state.fieldErrors?.typ_prenajmu)}
-            className={inputClass}
+            className={selectClass}
             defaultValue=""
             name="typ_prenajmu"
           >
@@ -146,7 +148,7 @@ export function ContactForm() {
           Typ pobytu
           <select
             aria-invalid={Boolean(state.fieldErrors?.typ_pobytu)}
-            className={inputClass}
+            className={selectClass}
             defaultValue=""
             name="typ_pobytu"
           >

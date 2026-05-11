@@ -38,6 +38,53 @@ const practicalInfo = [
   },
 ];
 
+function ContactIcon({ name }: { name: "phone" | "mail" | "map" | "parking" }) {
+  const paths = {
+    phone: (
+      <path d="M7.4 4.5 9 8.1a1.5 1.5 0 0 1-.4 1.7l-1 1a12.5 12.5 0 0 0 5.6 5.6l1-1a1.5 1.5 0 0 1 1.7-.4l3.6 1.6a1.5 1.5 0 0 1 .9 1.5v2.1a1.5 1.5 0 0 1-1.6 1.5A16.8 16.8 0 0 1 2.8 5.2a1.5 1.5 0 0 1 1.5-1.6h2.1a1.5 1.5 0 0 1 1 .9Z" />
+    ),
+    mail: (
+      <>
+        <path d="M4 6h16v12H4z" />
+        <path d="m4 7 8 6 8-6" />
+      </>
+    ),
+    map: (
+      <>
+        <path d="M12 21s7-4.6 7-11a7 7 0 1 0-14 0c0 6.4 7 11 7 11Z" />
+        <circle cx="12" cy="10" r="2.5" />
+      </>
+    ),
+    parking: (
+      <>
+        <path d="M7 21V4h6.5a4.5 4.5 0 0 1 0 9H7" />
+        <path d="M7 13h6.5" />
+      </>
+    ),
+  };
+
+  return (
+    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[color-mix(in_srgb,var(--accent)_12%,var(--surface))] text-[var(--accent)]">
+      <svg
+        aria-hidden="true"
+        className="h-5 w-5"
+        fill="none"
+        focusable="false"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.8"
+        viewBox="0 0 24 24"
+      >
+        {paths[name]}
+      </svg>
+    </span>
+  );
+}
+
+const contactItemClass =
+  "flex min-h-16 items-center gap-3 rounded-md border border-[var(--border)] bg-[var(--bg)] p-4 text-base font-semibold text-[var(--text)] transition hover:border-[var(--accent)]";
+
 export const metadata: Metadata = pageMetadata({
   title: "Kontakt",
   description:
@@ -69,22 +116,26 @@ export default function ContactPage() {
               <p className="font-serif text-3xl text-[var(--text)]">Kontaktné údaje</p>
               <address className="mt-5 grid gap-4 not-italic">
                 <a
-                  className="rounded-md border border-[var(--border)] bg-[var(--bg)] p-4 text-base font-semibold text-[var(--text)] transition hover:border-[var(--accent)]"
+                  className={contactItemClass}
                   href={contact.phoneHref}
                 >
-                  Telefón: {contact.phone}
+                  <ContactIcon name="phone" />
+                  <span>{contact.phone}</span>
                 </a>
                 <a
-                  className="rounded-md border border-[var(--border)] bg-[var(--bg)] p-4 text-base font-semibold text-[var(--text)] transition hover:border-[var(--accent)]"
+                  className={contactItemClass}
                   href={contact.emailHref}
                 >
-                  E-mail: {contact.email}
+                  <ContactIcon name="mail" />
+                  <span>{contact.email}</span>
                 </a>
-                <span className="rounded-md border border-[var(--border)] bg-[var(--bg)] p-4 text-base font-semibold text-[var(--text)]">
-                  Adresa: {contact.address}
+                <span className={contactItemClass}>
+                  <ContactIcon name="map" />
+                  <span>{contact.address}</span>
                 </span>
-                <span className="rounded-md border border-[var(--border)] bg-[var(--bg)] p-4 text-base font-semibold text-[var(--text)]">
-                  {contact.parking}
+                <span className={contactItemClass}>
+                  <ContactIcon name="parking" />
+                  <span>{contact.parking}</span>
                 </span>
               </address>
             </div>

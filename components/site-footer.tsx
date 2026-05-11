@@ -10,9 +10,9 @@ export function SiteFooter() {
         <div>
           <Image
             alt={site.name}
-            className="h-24 w-auto"
+            className="h-28 w-auto brightness-0 invert sm:h-32"
             height={1086}
-            src={site.brandLogoLight}
+            src="/brand/logo-stacked-mono-dark.png"
             width={1448}
           />
           <p className="mt-4 max-w-md text-base leading-7 text-white/72">
