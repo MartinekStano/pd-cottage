@@ -13,21 +13,13 @@ export function SiteHeader() {
           aria-label="Pallov Dvor domov"
         >
           <Image
-            alt=""
+            alt={site.name}
             className="h-12 w-auto shrink-0 transition duration-300 group-hover:opacity-80 sm:h-14"
-            height={333}
+            height={887}
             preload
             src={site.brandLogo}
-            width={455}
+            width={1774}
           />
-          <span className="flex min-w-0 flex-col">
-            <span className="font-serif text-lg leading-none text-[var(--text)] transition group-hover:text-[var(--accent)] sm:text-xl">
-              {site.name}
-            </span>
-            <span className="mt-1 hidden text-xs font-medium uppercase text-[var(--muted)] sm:block">
-              {site.subtitle}
-            </span>
-          </span>
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Hlavná navigácia">

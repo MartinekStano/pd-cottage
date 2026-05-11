@@ -10,10 +10,10 @@ export function SiteFooter() {
         <div>
           <Image
             alt={site.name}
-            className="h-24 w-auto brightness-0 invert"
-            height={333}
-            src={site.brandLogo}
-            width={455}
+            className="h-24 w-auto"
+            height={1086}
+            src={site.brandLogoLight}
+            width={1448}
           />
           <p className="mt-4 max-w-md text-base leading-7 text-white/72">
             Súkromná chata pre pokojný oddych a spoločné chvíle.

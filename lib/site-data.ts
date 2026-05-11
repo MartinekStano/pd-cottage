@@ -7,7 +7,8 @@ export const site = {
   subtitle: "Súkromná chata v Lutišiach",
   description:
     "Súkromná chata pre pokojný oddych a spoločné chvíle v obci Lutiše.",
-  brandLogo: "/brand/logo.svg",
+  brandLogo: "/brand/logo-horizontal.png",
+  brandLogoLight: "/brand/logo-stacked-mono-light.png",
   primaryCta: "Overiť dostupnosť termínu",
   headerCta: "Overiť termín",
   ctaHref: "/kontakt#formular",
