@@ -144,14 +144,34 @@
       </p>
     </div>
 
-    <h2>1. Použité AI nástroje</h2>
+    <h2>1. Projekt a výsledný web</h2>
+    <p>
+      Výsledkom práce je webová stránka pre súkromnú chatu Pallov Dvor:
+      <strong>https://www.pallovdvor.sk</strong>. Zdrojový kód projektu je
+      dostupný v GitHub repozitári:
+      <strong>https://github.com/MartinekStano/pd-cottage</strong>.
+    </p>
+    <p>
+      Web obsahuje hlavné podstránky Domov, O nás, Ubytovanie, Cenník,
+      Fotogaléria, Atrakcie, Wellness a Kontakt. Návštevník na ňom nájde
+      základné informácie o chate, kapacite, izbách, cenách, okolí, wellness
+      vybavení, fotografiách a kontaktný formulár na overenie dostupnosti
+      termínu.
+    </p>
+    <p>
+      Technologicky ide o jednoduchý moderný web postavený v Next.js a Reacte,
+      s použitím TypeScriptu, Tailwind CSS, lokálnych fotografií a responzívnych
+      komponentov.
+    </p>
+
+    <h2>2. Použité AI nástroje</h2>
     <div class="grid">
       <div class="card">
         <span class="label">ChatGPT</span>
         <p>
           Použitý na cenovú stratégiu, štruktúru webu, texty, formuláciu
-          cieľových skupín, obsahové zákazy a prípravu promptov pre jednotlivé
-          podstránky.
+          cieľových skupín, prípravu promptov pre jednotlivé podstránky a
+          generovanie návrhov loga Pallov Dvor.
         </p>
       </div>
       <div class="card">
@@ -163,30 +183,67 @@
         </p>
       </div>
       <div class="card">
-        <span class="label">AI generátor obrázkov</span>
+        <span class="label">ChatGPT - obrazové výstupy</span>
         <p>
-          Použitý na návrh logotypov Pallov Dvor. Výstupy bolo potrebné
+          Použitý na vytvorenie viacerých variantov logotypu. Výstupy bolo potrebné
           pomenovať, presunúť do brand assetov a technicky upraviť.
-        </p>
-      </div>
-      <div class="card">
-        <span class="label">AI ako kontrolný partner</span>
-        <p>
-          AI pomáhala hľadať riziká v komunikácii, najmä aby web nepôsobil ako
-          ponuka párty ubytovania, reštaurácie alebo wellness služieb, ktoré
-          chata reálne neponúka.
         </p>
       </div>
     </div>
 
-    <h2>2. Konkrétne použité prompty</h2>
+    <h2>3. Východiskové dokumenty a pracovné súbory</h2>
     <p>
-      Nižšie sú skrátené, ale konkrétne bloky promptov, ktoré boli použité pri
-      príprave stratégie, obsahu a implementácie. Dlhé zadania boli následne
-      rozdelené na menšie časti podľa podstránok.
+      Práca nevznikala iba z jedného promptu. Najskôr bolo potrebné rozložiť
+      zadanie na menšie pracovné dokumenty, ktoré slúžili ako opora pri
+      promptovaní aj kontrole výsledku.
+    </p>
+    <ul class="compact">
+      <li>
+        <strong>instruction/shared/project-brief.md</strong> - základný
+        projektový kontext, cieľ webu, navigácia a obsahové obmedzenia.
+      </li>
+      <li>
+        <strong>instruction/shared/brand-ui.md</strong> - vizuálny smer,
+        typografia, farby, layout a pravidlá pre komponenty.
+      </li>
+      <li>
+        <strong>instruction/shared/contact.md</strong> a
+        <strong>instruction/shared/photo-map.md</strong> - kontaktné údaje,
+        mapa, pätička a odporúčané použitie fotografií.
+      </li>
+      <li>
+        <strong>instruction/pages/*.md</strong> - obsahové podklady pre
+        jednotlivé podstránky: Domov, O nás, Ubytovanie, Cenník, Atrakcie,
+        Wellness a Kontakt.
+      </li>
+      <li>
+        <strong>instruction/codex-implementation-prompt.md</strong> - finálny
+        implementačný prompt, ktorý spájal strategické rozhodnutia do jedného
+        zadania pre tvorbu webu.
+      </li>
+    </ul>
+
+    <h2>4. Konkrétne použité prompty podľa kategórií</h2>
+    <p>
+      Nižšie sú skrátené pracovné verzie promptov. Nejde o jeden doslovný
+      prompt, ale o kategórie, cez ktoré sa projekt postupne riešil: analýza
+      zadania, cena, obsah pre jednotlivé podstránky, UX/UI, brand a následná
+      implementácia.
     </p>
 
-    <h3>Cenová stratégia</h3>
+    <h3>Analýza zadania</h3>
+    <div class="prompt">
+      Analyzuj zadanie digitálnej transformácie penziónu pomocou AI a prispôsob
+      ho reálnemu projektu Pallov Dvor. Nejde o klasický penzión, ale o
+      súkromnú chatu na krátkodobé ubytovanie. Urči, ktoré časti zadania sa
+      dajú použiť, ktoré treba nahradiť a aký má byť hlavný obchodný cieľ webu.
+    </div>
+    <p>
+      Výstupom bolo rozhodnutie prezentovať projekt ako súkromnú chatu s
+      priamym dopytom na termín, nie ako hotelový alebo penziónový web.
+    </p>
+
+    <h3>Cena a obchodná stratégia</h3>
     <div class="prompt">
       Chcem nastaviť ceny krátkodobého ubytovania pre chatu v Lutišiach. Chata
       má 2 samostatné jednotky, každá má 3 spálne, kapacitu 8 osôb, 2 kúpeľne,
@@ -195,38 +252,52 @@
       celý objekt, wellness príplatky, Silvester a stratégiu zdražovania.
     </div>
     <p>
-      Výsledkom bol základný cenový rámec: jedna jednotka od 159 EUR za noc,
-      celý objekt od 319 EUR za noc, príplatky za kaďu a saunu a samostatný
-      silvestrovský balík. Tieto ceny boli následne upravené do prehľadných
-      tabuliek.
+      AI navrhla cenový rámec, ktorý bol následne zjednodušený do použiteľného
+      cenníka: jedna jednotka od 159 EUR za noc, celý objekt od 319 EUR za noc,
+      wellness príplatky a samostatný silvestrovský balík.
     </p>
 
-    <h3>Hlavný projektový prompt</h3>
-    <div class="prompt">
-      Vytvor webovú stránku pre chatu Pallov Dvor, ktorá slúži na krátkodobé
-      ubytovanie. Web má vychádzať zo zadania digitálnej transformácie penziónu,
-      ale obsah má byť prispôsobený reálnemu zariadeniu - súkromnej chate, nie
-      klasickému penziónu. Komunikácia má zdôrazňovať pokoj, súkromie, relax,
-      pohodlie, rodinnú atmosféru a kultivovaný pobyt.
-    </div>
+    <h3>Obsahové prompty pre podstránky</h3>
+    <p>
+      Obsah nebol generovaný naraz. Pre každú podstránku bol pripravený
+      samostatný prompt s cieľom stránky, sekciami, faktami a CTA prvkami.
+    </p>
+    <ul class="compact">
+      <li>
+        <strong>Domov:</strong> Vytvor landing page pre Pallov Dvor. Stránka má
+        predstaviť chatu, hlavné benefity, cenu od 159 EUR za noc a priviesť
+        návštevníka k CTA Overiť dostupnosť termínu.
+      </li>
+      <li>
+        <strong>O nás:</strong> Predstav Pallov Dvor ako súkromnú chatu v
+        Lutišiach. Zdôrazni pokoj, súkromie, komfort, oplotený objekt, dve
+        jednotky a vhodnosť pre rodiny, dospelých hostí a menšie firemné
+        kolektívy.
+      </li>
+      <li>
+        <strong>Ubytovanie:</strong> Popíš kapacitu, dve samostatné jednotky,
+        rozloženie izieb, kúpeľne, kuchyňu s obývacou miestnosťou, spoločenský
+        priestor, exteriér a možnosti prenájmu.
+      </li>
+      <li>
+        <strong>Cenník:</strong> Vytvor prehľad cien pre jednu jednotku, celý
+        objekt, wellness príplatky, minimálnu dĺžku pobytu a Silvester.
+      </li>
+      <li>
+        <strong>Atrakcie:</strong> Nahraď pôvodnú reštauračnú časť stránkou o
+        výletoch, prírode a zážitkoch v okolí Lutišov.
+      </li>
+      <li>
+        <strong>Wellness:</strong> Komunikuj iba reálne vybavenie: saunu,
+        vonkajšiu kaďu a relax v súkromí.
+      </li>
+      <li>
+        <strong>Kontakt:</strong> Navrhni praktickú stránku s formulárom,
+        kontaktnými údajmi, mapou, krátkym cenovým blokom a CTA.
+      </li>
+    </ul>
 
-    <h3>Základné fakty pre AI</h3>
-    <div class="prompt">
-      Použi fakty: názov Pallov Dvor, typ súkromná chata, adresa Lutiše
-      Adamovci 373, telefón 0911 455 600, e-mail oddych@pallovdvor.sk, 2
-      samostatné jednotky, kapacita jednej jednotky 8 osôb, celý objekt 16
-      osôb, sauna, vonkajšia kaďa, altánok, gril, spoločenský priestor s
-      projektorom, Wi-Fi, TV, oplotený objekt a 4 parkovacie miesta.
-    </div>
-
-    <h3>Cieľové skupiny a cieľ webu</h3>
-    <div class="prompt">
-      Texty a dizajn majú oslovovať rodiny s deťmi, dospelé skupiny priateľov,
-      menšie firemné kolektívy a páry. Hlavným cieľom webu je získať priame
-      dopyty a priviesť návštevníka k akcii Overiť dostupnosť termínu.
-    </div>
-
-    <h3>Prompt pre štruktúru a UI</h3>
+    <h3>UX, UI a vizuálny smer</h3>
     <div class="prompt">
       Vytvor moderný responzívny web pre chatu Pallov Dvor. Použi podstránky
       Domov, O nás, Ubytovanie, Cenník, Atrakcie a zážitky v okolí, Wellness &
@@ -234,38 +305,28 @@
       pozadím, veľkými fotografiami, serifovými nadpismi a jasným CTA.
     </div>
 
-    <h3>Prompty pre podstránky</h3>
-    <ul class="compact">
-      <li>
-        Domov: predstaviť chatu, benefity, cenu od 159 EUR a hlavné CTA.
-      </li>
-      <li>
-        O nás: vysvetliť charakter súkromnej chaty, hodnoty pokoj, súkromie,
-        komfort a spoločné chvíle.
-      </li>
-      <li>
-        Ubytovanie: ukázať kapacitu, izby, kúpeľne, spoločné priestory a
-        možnosti prenájmu.
-      </li>
-      <li>
-        Cenník: zobraziť ceny za jednotku, celý objekt, wellness príplatky,
-        Silvester a minimálnu dĺžku pobytu.
-      </li>
-      <li>
-        Atrakcie: nahradiť reštauráciu okolím, výletmi, prírodou a návratom do
-        súkromia chaty.
-      </li>
-      <li>
-        Wellness: komunikovať iba reálne vybavenie, teda saunu, vonkajšiu kaďu
-        a relax v súkromí.
-      </li>
-      <li>
-        Kontakt: vytvoriť formulár pre nezáväzný dopyt, kontaktné údaje, mapu
-        a krátky cenový blok.
-      </li>
-    </ul>
+    <h3>Brand a logo</h3>
+    <div class="prompt">
+      Vytvor viac variantov logotypu pre značku Pallov Dvor. Logo má pôsobiť
+      prírodne, pokojne a prémiovo, má odkazovať na chatu, stromy, kopce a
+      lokalitu Lutiše. Priprav horizontálnu verziu, vertikálnu verziu, samotný
+      symbol a jednoduchý monogram.
+    </div>
+    <p>
+      Logo bolo generované pomocou ChatGPT. Následne boli súbory manuálne
+      pomenované, presunuté do <strong>public/brand</strong>, upravené na
+      transparentné PNG a použité v hlavičke, pätičke a favicon.
+    </p>
 
-    <h3>Obsahové zákazy</h3>
+    <h3>Implementácia v Codexe</h3>
+    <div class="prompt">
+      Implementuj web v Next.js podľa pripravených inštrukcií. Použi dáta zo
+      súborov instruction/shared a instruction/pages, vytvor responzívne
+      komponenty, kontaktný formulár, cenník, fotogalériu s lightboxom a
+      konzistentnú navigáciu. Po úpravách spusti lint a production build.
+    </div>
+
+    <h3>Obsahové hranice</h3>
     <div class="prompt">
       Nepoužívaj komunikáciu spojenú s párty, hlučnými oslavami, reštauráciou,
       masážami, bazénom alebo vírivkou. Komunikuj iba reálne vybavenie:
@@ -273,7 +334,7 @@
       spoločenský priestor, projektor, Wi-Fi, TV, oplotený objekt a parkovanie.
     </div>
 
-    <h2>3. Čo AI navrhla dobre</h2>
+    <h2>5. Čo AI navrhla dobre</h2>
     <ul>
       <li>
         Pomohla rýchlo premeniť všeobecné zadanie penziónu na použiteľnú
@@ -297,7 +358,7 @@
       </li>
     </ul>
 
-    <h2>4. Čo bolo potrebné manuálne upraviť</h2>
+    <h2>6. Čo bolo potrebné manuálne upraviť</h2>
     <ul>
       <li>
         Pôvodnú logiku zadania bolo potrebné očistiť od penziónových častí.
@@ -325,7 +386,7 @@
       </li>
     </ul>
 
-    <h2>5. Manažérske zhodnotenie práce s AI</h2>
+    <h2>7. Manažérske zhodnotenie práce s AI</h2>
     <p>
       AI nebola použitá ako náhrada rozhodovania, ale ako nástroj na zrýchlenie
       prípravy. Manažérsky prístup spočíval v tom, že najskôr bolo potrebné
@@ -356,7 +417,7 @@
       mechanickom kopírovaní AI odpovedí.
     </p>
 
-    <h2>6. Výsledok</h2>
+    <h2>8. Výsledok</h2>
     <p>
       Výsledkom je responzívny web pre Pallov Dvor s podstránkami Domov, O nás,
       Ubytovanie, Cenník, Atrakcie, Wellness a Kontakt. Web používa reálne
