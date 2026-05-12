@@ -35,8 +35,8 @@ export function AnimationObserver() {
         });
       },
       {
-        rootMargin: "0px 0px -8% 0px",
-        threshold: 0.12,
+        rootMargin: "18% 0px 28% 0px",
+        threshold: 0.01,
       },
     );
 
