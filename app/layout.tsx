@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { AnimationObserver } from "@/components/animation-observer";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { metadataBase, site } from "@/lib/site-data";
+import { metadataBase, site, structuredData } from "@/lib/site-data";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -21,6 +21,8 @@ export const metadata: Metadata = {
   },
 };
 
+const structuredDataScript = JSON.stringify(structuredData).replace(/</g, "\\u003c");
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -29,6 +31,10 @@ export default function RootLayout({
   return (
     <html lang="sk" className="h-full scroll-smooth" data-scroll-behavior="smooth">
       <body className="flex min-h-full flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: structuredDataScript }}
+        />
         <AnimationObserver />
         <SiteHeader />
         <main className="flex-1">{children}</main>

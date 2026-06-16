@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
-const siteUrl = "https://pallovdvor.sk";
+export const siteUrl = "https://pallovdvor.sk";
+export const siteLastModified = "2026-06-16";
 
 export const site = {
   name: "Pallov Dvor",
@@ -165,6 +166,64 @@ export const galleryImages = [
     group: "Objekt",
   },
 ];
+
+type SitemapPage = {
+  path: string;
+  changeFrequency: "weekly" | "monthly";
+  priority: number;
+  images: string[];
+};
+
+export const sitemapPages = [
+  {
+    path: "/",
+    changeFrequency: "weekly",
+    priority: 1,
+    images: [images.hero],
+  },
+  {
+    path: "/o-nas",
+    changeFrequency: "monthly",
+    priority: 0.75,
+    images: [images.aboutExterior, images.aboutInterior],
+  },
+  {
+    path: "/ubytovanie",
+    changeFrequency: "weekly",
+    priority: 0.95,
+    images: [images.interior, images.livingKitchen, images.wholeObject],
+  },
+  {
+    path: "/fotogaleria",
+    changeFrequency: "monthly",
+    priority: 0.8,
+    images: galleryImages.map((image) => image.src),
+  },
+  {
+    path: "/cennik",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    images: [images.pricingHero, images.wholeObject, images.wellnessPackage],
+  },
+  {
+    path: "/atrakcie",
+    changeFrequency: "monthly",
+    priority: 0.7,
+    images: [images.attractionsHero],
+  },
+  {
+    path: "/wellness",
+    changeFrequency: "monthly",
+    priority: 0.85,
+    images: [images.wellnessHero, images.saunaTub, images.tub],
+  },
+  {
+    path: "/kontakt",
+    changeFrequency: "monthly",
+    priority: 0.85,
+    images: [images.contactHero, images.contactExterior],
+  },
+] satisfies SitemapPage[];
 
 export const quickFacts = [
   {
@@ -564,5 +623,71 @@ export function pageMetadata({
     },
   };
 }
+
+export function absoluteUrl(path: string): string {
+  return new URL(path, siteUrl).toString();
+}
+
+export const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": absoluteUrl("/#website"),
+      url: site.url,
+      name: site.name,
+      description: site.description,
+      inLanguage: "sk-SK",
+      publisher: {
+        "@id": absoluteUrl("/#pallov-dvor"),
+      },
+    },
+    {
+      "@type": "LodgingBusiness",
+      "@id": absoluteUrl("/#pallov-dvor"),
+      name: site.name,
+      alternateName: site.subtitle,
+      url: site.url,
+      description:
+        "Súkromná chata v Lutišiach pre krátkodobé ubytovanie, pokojný oddych, rodinné pobyty a menšie firemné stretnutia.",
+      image: [
+        absoluteUrl(images.hero),
+        absoluteUrl(images.exterior),
+        absoluteUrl(images.interior),
+        absoluteUrl(images.saunaTub),
+      ],
+      logo: absoluteUrl(site.brandLogo),
+      telephone: "+421911455600",
+      email: contact.email,
+      priceRange: "od 159 EUR / noc",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: contact.address,
+        addressLocality: "Lutiše",
+        addressCountry: "SK",
+      },
+      contactPoint: {
+        "@type": "ContactPoint",
+        telephone: "+421911455600",
+        email: contact.email,
+        contactType: "reservations",
+        availableLanguage: ["sk"],
+      },
+      amenityFeature: [
+        "Kapacita až 16 osôb",
+        "2 samostatné ubytovacie jednotky",
+        "Wi-Fi",
+        "Sauna pre 6 osôb",
+        "Vonkajšia kaďa",
+        "Altánok a gril",
+        "4 parkovacie miesta",
+      ].map((name) => ({
+        "@type": "LocationFeatureSpecification",
+        name,
+        value: true,
+      })),
+    },
+  ],
+} as const;
 
 export const metadataBase = new URL(siteUrl);
