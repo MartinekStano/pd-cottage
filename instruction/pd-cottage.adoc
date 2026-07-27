@@ -19,9 +19,11 @@ Detailny obsah jednotlivych stranok je rozdeleny v priecinku `instruction/pages/
 * `instruction/pages/home.md` - Domov.
 * `instruction/pages/about.md` - O nas.
 * `instruction/pages/accommodation.md` - Ubytovanie.
+* `instruction/pages/gallery.md` - Fotogaleria.
 * `instruction/pages/pricing.md` - Cennik.
 * `instruction/pages/attractions.md` - Atrakcie a zazitky v okoli.
 * `instruction/pages/wellness.md` - Wellness & Oddych.
+* `instruction/pages/janosikove-dni.md` - kampanova SEO stranka pre Janosikove dni.
 * `instruction/pages/contact.md` - Kontakt.
 
 Archiv povodneho textu je v `instruction/_archive/source-instruction.md`.
@@ -47,22 +49,28 @@ Hotovy prompt pre implementaciu je v `instruction/codex-implementation-prompt.md
 * Domov
 * O nas
 * Ubytovanie
+* Fotogaleria
 * Cennik
 * Atrakcie a zazitky v okoli
 * Wellness & Oddych
+* Akcia Janosikove dni
 * Kontakt
 
 == Globalna navigacia
 
 Pouzi hlavne menu:
 
+* Akcia: Janosikove dni ako prva zvyraznena polozka pocas kampane
 * Domov
 * O nas
 * Ubytovanie
+** Fotogaleria
+** Wellness
 * Cennik
 * Atrakcie
-* Wellness
 * Kontakt
+
+Fotogaleria a Wellness maju byt v hlavnom menu pod polozkou Ubytovanie. Na desktope ich zobraz ako dropdown, na mobile ako vnorene odkazy pod Ubytovanim.
 
 V hlavicke ponechat vyrazne CTA:
 

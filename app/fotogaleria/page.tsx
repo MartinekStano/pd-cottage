@@ -10,7 +10,7 @@ export const metadata: Metadata = pageMetadata({
   description:
     "Fotogaléria chaty Pallov Dvor v Lutišiach: izby, spoločné priestory, kúpeľne, exteriér, altánok, sauna a vonkajšia kaďa.",
   path: "/fotogaleria",
-  image: images.livingKitchen,
+  image: images.wholeObject,
 });
 
 export default function GalleryPage() {
@@ -18,8 +18,8 @@ export default function GalleryPage() {
     <>
       <Hero
         eyebrow="Fotogaléria"
-        image={images.livingKitchen}
-        imageAlt="Obývacia miestnosť s kuchyňou v Pallovom Dvore"
+        image={images.wholeObject}
+        imageAlt="Celý objekt chaty Pallov Dvor v Lutišiach"
         title="Fotogaléria chaty Pallov Dvor"
         subtitle="Prezrite si chatu v Lutišiach: izby, spoločné priestory, kúpeľne, exteriér a oddychovú zónu. Kliknutím na fotografiu otvoríte galériu a môžete prechádzať medzi zábermi."
         actions={[

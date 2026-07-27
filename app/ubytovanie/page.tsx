@@ -22,7 +22,7 @@ export const metadata: Metadata = pageMetadata({
   description:
     "Ubytovanie Lutiše v chate Pallov Dvor: dve samostatné jednotky, kapacita až 16 osôb, spálne, kúpeľne, kuchyňa, altánok a wellness zóna.",
   path: "/ubytovanie",
-  image: images.interior,
+  image: images.wholeObject,
 });
 
 export default function AccommodationPage() {
@@ -30,8 +30,8 @@ export default function AccommodationPage() {
     <>
       <Hero
         eyebrow="Ubytovanie Lutiše"
-        image={images.interior}
-        imageAlt="Interiér ubytovacej jednotky Pallov Dvor"
+        image={images.wholeObject}
+        imageAlt="Celý objekt chaty Pallov Dvor v Lutišiach"
         title="Ubytovanie v Pallovom Dvore"
         subtitle="Pohodlné krátkodobé ubytovanie v Lutišiach v dvoch samostatných jednotkách s celkovou kapacitou až 16 osôb. Vhodné pre rodiny, dospelých hostí aj menšie firemné kolektívy, ktoré hľadajú chatu na prenájom s komfortným zázemím."
         actions={[

@@ -36,14 +36,57 @@ export const contactForm = {
     "Kontaktný formulár pripravujeme. Zatiaľ nás, prosím, kontaktujte telefonicky alebo e-mailom.",
 };
 
-export const navItems = [
+export const janosikoveDniOffer = {
+  href: "/janosikove-dni-ubytovanie",
+  navLabel: "Akcia: Jánošíkove dni",
+  title: "Jánošíkove dni 2026 v Terchovej",
+  eventDate: "29. júl - 2. august 2026",
+  eventDateShort: "29. 7. - 2. 8. 2026",
+  eventStartDate: "2026-07-29",
+  eventEndDate: "2026-08-02",
+  location: "Terchová",
+  distance: "cca 20-30 min autom",
+  unitOriginalPrice: "249 € / noc",
+  unitPromoPrice: "229 € / noc",
+  unitPromoPriceValue: 229,
+  unitSavings: "ušetríte 20 € / noc",
+  unitCapacity: "maximálne 8 osôb",
+  wholeObjectOriginalPrice: "498 € / noc",
+  wholeObjectPromoPrice: "419 € / noc",
+  wholeObjectPromoPriceValue: 419,
+  wholeObjectSavings: "ušetríte 79 € / noc",
+  priceCurrency: "EUR",
+  wholeObjectCapacity: "až 16 osôb",
+  officialProgramUrl: "https://www.janosikovedni.sk/program-janosikove",
+  availabilityNote:
+    "Ponuka platí pre pobyt počas Jánošíkových dní 2026 podľa dostupnosti termínu.",
+};
+
+export type NavItem = {
+  label: string;
+  href: string;
+  featured?: boolean;
+  children?: NavItem[];
+};
+
+export const navItems: NavItem[] = [
+  {
+    label: janosikoveDniOffer.navLabel,
+    href: janosikoveDniOffer.href,
+    featured: true,
+  },
   { label: "Domov", href: "/" },
   { label: "O nás", href: "/o-nas" },
-  { label: "Ubytovanie", href: "/ubytovanie" },
-  { label: "Fotogaléria", href: "/fotogaleria" },
+  {
+    label: "Ubytovanie",
+    href: "/ubytovanie",
+    children: [
+      { label: "Fotogaléria", href: "/fotogaleria" },
+      { label: "Wellness", href: "/wellness" },
+    ],
+  },
   { label: "Cenník", href: "/cennik" },
   { label: "Atrakcie", href: "/atrakcie" },
-  { label: "Wellness", href: "/wellness" },
   { label: "Kontakt", href: "/kontakt" },
 ];
 
@@ -73,6 +116,33 @@ export const images = {
   contactHero: "/images/pallov-dvor/kontakt-hero-pallov-dvor.jpg",
   contactExterior: "/images/pallov-dvor/kontakt-exterier-pallov-dvor.jpg",
   attractionsHero: "/images/attractions/vratna-dolina.jpg",
+  janosikoveDniHero:
+    "/images/campaigns/janosikove-dni/janosikove-dni-folklor-2.jpg",
+  janosikoveDniFolklore:
+    "/images/campaigns/janosikove-dni/janosikove-dni-folklor-1.jpg",
+  janosikStatue: "/images/campaigns/janosikove-dni/janosik-socha-terchova.jpg",
+};
+
+export const imageCredits = {
+  janosikoveDniHero: {
+    label: "Foto: Andrij Bulba / Wikimedia Commons",
+    sourceHref: "https://commons.wikimedia.org/wiki/File:Jánošíkove_dni_8.jpg",
+    licenseLabel: "CC BY 2.0",
+    licenseHref: "https://creativecommons.org/licenses/by/2.0/",
+  },
+  janosikoveDniFolklore: {
+    label: "Foto: Andrij Bulba / Wikimedia Commons",
+    sourceHref: "https://commons.wikimedia.org/wiki/File:Jánošíkove_dni_2.jpg",
+    licenseLabel: "CC BY 2.0",
+    licenseHref: "https://creativecommons.org/licenses/by/2.0/",
+  },
+  janosikStatue: {
+    label: "Foto: Jerzy Opioła / Wikimedia Commons",
+    sourceHref:
+      "https://commons.wikimedia.org/wiki/File:Terchová_Juraj_Jánošík_MF1.jpg",
+    licenseLabel: "CC BY-SA 3.0",
+    licenseHref: "https://creativecommons.org/licenses/by-sa/3.0/",
+  },
 };
 
 export const galleryImages = [
@@ -207,6 +277,17 @@ export const sitemapPages = [
     images: galleryImages.map((image) => image.src),
   },
   {
+    path: janosikoveDniOffer.href,
+    changeFrequency: "weekly",
+    priority: 0.92,
+    images: [
+      images.janosikoveDniHero,
+      images.janosikoveDniFolklore,
+      images.janosikStatue,
+      images.wholeObject,
+    ],
+  },
+  {
     path: "/cennik",
     changeFrequency: "weekly",
     priority: 0.9,
@@ -296,6 +377,21 @@ export const homeBenefits = [
   {
     title: "Priestor na spoločné chvíle",
     text: "Altánok s grilom a spoločenský priestor s projektorom vytvárajú miesto na rodinné, priateľské aj firemné stretnutia.",
+  },
+];
+
+export const janosikoveDniBenefits = [
+  {
+    title: "Terchová na dosah",
+    text: `Z Pallovho Dvora v Lutišiach sa na program Jánošíkových dní v Terchovej dostanete orientačne za ${janosikoveDniOffer.distance}.`,
+  },
+  {
+    title: "Celý objekt pre skupinu",
+    text: "Dve samostatné ubytovacie jednotky vytvárajú praktické zázemie pre rodiny, priateľov alebo viac párov počas festivalového víkendu.",
+  },
+  {
+    title: "Oddych po programe",
+    text: "Po folklórnom programe sa môžete vrátiť do súkromia chaty, využiť altánok, gril, spoločenský priestor, saunu alebo vonkajšiu kaďu.",
   },
 ];
 
@@ -594,15 +690,18 @@ export function pageMetadata({
   description,
   path,
   image = images.hero,
+  keywords,
 }: {
   title: string;
   description: string;
   path: string;
   image?: string;
+  keywords?: string[];
 }): Metadata {
   return {
     title,
     description,
+    keywords,
     alternates: {
       canonical: path,
     },
@@ -682,6 +781,10 @@ export const structuredData = {
         {
           "@type": "Place",
           name: "Kysuce",
+        },
+        {
+          "@type": "Place",
+          name: "Terchová",
         },
         {
           "@type": "Place",

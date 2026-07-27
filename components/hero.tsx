@@ -7,12 +7,20 @@ type HeroAction = {
   variant?: "primary" | "secondary" | "light" | "ghost";
 };
 
+type ImageCredit = {
+  label: string;
+  sourceHref: string;
+  licenseLabel: string;
+  licenseHref: string;
+};
+
 type HeroProps = {
   eyebrow?: string;
   title: string;
   subtitle: string;
   image: string;
   imageAlt: string;
+  imageCredit?: ImageCredit;
   actions?: HeroAction[];
   home?: boolean;
 };
@@ -23,6 +31,7 @@ export function Hero({
   subtitle,
   image,
   imageAlt,
+  imageCredit,
   actions = [],
   home = false,
 }: HeroProps) {
@@ -42,6 +51,27 @@ export function Hero({
         src={image}
       />
       <div className="hero-overlay absolute inset-0" />
+      {imageCredit ? (
+        <p className="absolute bottom-3 right-4 z-20 max-w-[calc(100%-2rem)] rounded-full bg-black/30 px-3 py-1 text-right text-[11px] leading-5 text-white/72 backdrop-blur">
+          <a
+            className="underline decoration-white/30 underline-offset-2 hover:text-white"
+            href={imageCredit.sourceHref}
+            rel="noreferrer"
+            target="_blank"
+          >
+            {imageCredit.label}
+          </a>
+          {" · "}
+          <a
+            className="underline decoration-white/30 underline-offset-2 hover:text-white"
+            href={imageCredit.licenseHref}
+            rel="noreferrer"
+            target="_blank"
+          >
+            {imageCredit.licenseLabel}
+          </a>
+        </p>
+      ) : null}
       <div className="relative z-10 mx-auto flex w-full max-w-7xl items-center px-5 py-16 sm:px-8 lg:px-10">
         <div className="hero-copy max-w-3xl text-white">
           {eyebrow ? (

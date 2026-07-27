@@ -7,6 +7,12 @@ type ImageCardProps = {
   alt: string;
   meta?: string;
   aspect?: "wide" | "square" | "tall";
+  credit?: {
+    label: string;
+    sourceHref: string;
+    licenseLabel: string;
+    licenseHref: string;
+  };
 };
 
 const aspectClass = {
@@ -22,6 +28,7 @@ export function ImageCard({
   alt,
   meta,
   aspect = "wide",
+  credit,
 }: ImageCardProps) {
   return (
     <article
@@ -48,6 +55,27 @@ export function ImageCard({
         </h3>
         {text ? (
           <p className="mt-3 text-base leading-7 text-[var(--muted)]">{text}</p>
+        ) : null}
+        {credit ? (
+          <p className="mt-4 text-xs leading-5 text-[var(--muted)]">
+            <a
+              className="underline decoration-[var(--border-strong)] underline-offset-2 hover:text-[var(--text)]"
+              href={credit.sourceHref}
+              rel="noreferrer"
+              target="_blank"
+            >
+              {credit.label}
+            </a>
+            {" · "}
+            <a
+              className="underline decoration-[var(--border-strong)] underline-offset-2 hover:text-[var(--text)]"
+              href={credit.licenseHref}
+              rel="noreferrer"
+              target="_blank"
+            >
+              {credit.licenseLabel}
+            </a>
+          </p>
         ) : null}
       </div>
     </article>

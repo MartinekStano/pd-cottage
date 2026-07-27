@@ -32,13 +32,23 @@ export function SiteFooter() {
           <p className="text-sm font-semibold uppercase text-white/58">Navigácia</p>
           <nav className="mt-4 grid gap-2" aria-label="Navigácia v pätičke">
             {navItems.map((item) => (
-              <Link
-                className="text-sm text-white/72 transition hover:text-white"
-                href={item.href}
-                key={item.href}
-              >
-                {item.label}
-              </Link>
+              <div className="grid gap-2" key={item.href}>
+                <Link
+                  className="text-sm text-white/72 transition hover:text-white"
+                  href={item.href}
+                >
+                  {item.label}
+                </Link>
+                {item.children?.map((child) => (
+                  <Link
+                    className="pl-3 text-sm text-white/52 transition hover:text-white"
+                    href={child.href}
+                    key={child.href}
+                  >
+                    {child.label}
+                  </Link>
+                ))}
+              </div>
             ))}
           </nav>
         </div>

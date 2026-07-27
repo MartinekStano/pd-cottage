@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { CTASection } from "@/components/cta-section";
 import { Hero } from "@/components/hero";
 import { ImageCard } from "@/components/image-card";
+import { JanosikoveDniPromo } from "@/components/janosikove-dni-promo";
 import { PriceCard } from "@/components/price-card";
 import { ResponsiveTable } from "@/components/responsive-table";
 import { SectionHeader } from "@/components/section-header";
@@ -20,7 +21,7 @@ import {
 export const metadata: Metadata = pageMetadata({
   title: "Cenník chaty Lutiše",
   description:
-    "Cenník prenájmu chaty v Lutišiach: ceny za jednu samostatnú ubytovaciu jednotku, celý objekt, saunu a vonkajšiu kaďu v Pallovom Dvore.",
+    "Cenník prenájmu chaty v Lutišiach: ceny za jednotku, celý objekt, saunu, vonkajšiu kaďu a aktuálna akcia na Jánošíkove dni 2026.",
   path: "/cennik",
   image: images.pricingHero,
 });
@@ -39,6 +40,8 @@ export default function PricingPage() {
           { label: "Poslať nezáväzný dopyt", href: "/kontakt#formular" },
         ]}
       />
+
+      <JanosikoveDniPromo context="pricing" />
 
       <section className="section-pad">
         <div className="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10">

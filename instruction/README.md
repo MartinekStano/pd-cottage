@@ -12,9 +12,11 @@ Tento priečinok obsahuje upratané zadanie pre web chaty Pallov Dvor. Hlavný t
 - `pages/home.md` - Domov.
 - `pages/about.md` - O nás.
 - `pages/accommodation.md` - Ubytovanie.
+- `pages/gallery.md` - Fotogaléria.
 - `pages/pricing.md` - Cenník.
 - `pages/attractions.md` - Atrakcie a zážitky v okolí.
 - `pages/wellness.md` - Wellness & Oddych.
+- `pages/janosikove-dni.md` - kampaňová SEO stránka pre Jánošíkove dni.
 - `pages/contact.md` - Kontakt.
 - `_archive/source-instruction.md` - pôvodný veľký dokument, ponechaný ako záloha.
 - `_archive/legacy-pension-prompt.adoc` - pôvodný všeobecný prompt pre penzión, ktorý je mimo aktuálneho zadania.
@@ -26,6 +28,7 @@ Do commitu patria iba optimalizované a pomenované fotky:
 
 - `public/images/pallov-dvor/`
 - `public/images/attractions/`
+- `public/images/campaigns/janosikove-dni/`
 
 Surové importy z WhatsAppu a pracovné review náhľady sú zámerne mimo gitu. Ich pôvodné názvy ostávajú zachované v `public/images/pallov-dvor/manifest.json`, takže sa dá spätne dohľadať, z ktorého importu vznikol konkrétny webový asset.
 
