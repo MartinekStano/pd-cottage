@@ -63,8 +63,8 @@ Tlačidlo:
 
 Použiť údaje zo `shared/contact.md`:
 
-- Telefón: 0911 455 600
-- E-mail: oddych@pallovdvor.sk
+- Telefón: 0904 955 600
+- E-mail: martinmatostano@gmail.com
 - Adresa: Lutiše Adamovci 373
 - Parkovanie: 4 parkovacie miesta priamo pri objekte
 

@@ -18,9 +18,9 @@ import {
 } from "@/lib/site-data";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Cenník",
+  title: "Cenník chaty Lutiše",
   description:
-    "Cenník ubytovania Pallov Dvor pre jednu samostatnú ubytovaciu jednotku, celý objekt a doplnkové využitie sauny a vonkajšej kade.",
+    "Cenník prenájmu chaty v Lutišiach: ceny za jednu samostatnú ubytovaciu jednotku, celý objekt, saunu a vonkajšiu kaďu v Pallovom Dvore.",
   path: "/cennik",
   image: images.pricingHero,
 });
@@ -32,8 +32,8 @@ export default function PricingPage() {
         eyebrow="Cenník ubytovania"
         image={images.pricingHero}
         imageAlt="Exteriér chaty Pallov Dvor"
-        title="Cenník ubytovania Pallov Dvor"
-        subtitle="Vyberte si prenájom jednej samostatnej ubytovacej jednotky alebo celého objektu podľa veľkosti skupiny, termínu a typu pobytu."
+        title="Cenník chaty Pallov Dvor v Lutišiach"
+        subtitle="Vyberte si prenájom jednej samostatnej ubytovacej jednotky alebo celej chaty podľa veľkosti skupiny, termínu a typu pobytu."
         actions={[
           { label: site.primaryCta, href: site.ctaHref },
           { label: "Poslať nezáväzný dopyt", href: "/kontakt#formular" },

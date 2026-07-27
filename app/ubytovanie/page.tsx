@@ -18,9 +18,9 @@ import {
 } from "@/lib/site-data";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Ubytovanie",
+  title: "Ubytovanie Lutiše",
   description:
-    "Ubytovanie v Pallovom Dvore ponúka dve samostatné jednotky, kapacitu až 16 osôb, spálne, kúpeľne, kuchyňu s obývacou miestnosťou a spoločenský priestor.",
+    "Ubytovanie Lutiše v chate Pallov Dvor: dve samostatné jednotky, kapacita až 16 osôb, spálne, kúpeľne, kuchyňa, altánok a wellness zóna.",
   path: "/ubytovanie",
   image: images.interior,
 });
@@ -29,11 +29,11 @@ export default function AccommodationPage() {
   return (
     <>
       <Hero
-        eyebrow="Ubytovanie v Pallovom Dvore"
+        eyebrow="Ubytovanie Lutiše"
         image={images.interior}
         imageAlt="Interiér ubytovacej jednotky Pallov Dvor"
         title="Ubytovanie v Pallovom Dvore"
-        subtitle="Pohodlné krátkodobé ubytovanie v dvoch samostatných jednotkách s celkovou kapacitou až 16 osôb. Vhodné pre rodiny, dospelých hostí aj menšie firemné kolektívy, ktoré hľadajú súkromie, komfort a praktické zázemie."
+        subtitle="Pohodlné krátkodobé ubytovanie v Lutišiach v dvoch samostatných jednotkách s celkovou kapacitou až 16 osôb. Vhodné pre rodiny, dospelých hostí aj menšie firemné kolektívy, ktoré hľadajú chatu na prenájom s komfortným zázemím."
         actions={[
           { label: site.primaryCta, href: site.ctaHref },
           { label: "Pozrieť cenník", href: "/cennik" },
@@ -44,7 +44,7 @@ export default function AccommodationPage() {
         <div className="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10">
           <SectionHeader
             title="Dve samostatné jednotky, viac súkromia a flexibility"
-            text="Pallov Dvor je rozdelený na dve samostatné ubytovacie jednotky. Každá jednotka má kapacitu maximálne 8 osôb, pričom celý objekt poskytuje ubytovanie až pre 16 hostí."
+            text="Pallov Dvor je chata v Lutišiach rozdelená na dve samostatné ubytovacie jednotky. Každá jednotka má kapacitu maximálne 8 osôb, pričom celý objekt poskytuje ubytovanie až pre 16 hostí."
           />
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {capacityCards.map((card) => (
@@ -204,8 +204,8 @@ export default function AccommodationPage() {
       </section>
 
       <CTASection
-        title="Overte si dostupnosť ubytovania"
-        text="Plánujete rodinný pobyt, pokojný víkend alebo menšie firemné stretnutie? Pallov Dvor ponúka komfortné ubytovanie v súkromí s kapacitou až 16 osôb."
+        title="Overte si dostupnosť ubytovania v Lutišiach"
+        text="Plánujete rodinný pobyt, pokojný víkend alebo menšie firemné stretnutie? Pallov Dvor ponúka komfortnú chatu na prenájom s kapacitou až 16 osôb."
         secondary={{ label: "Pozrieť cenník", href: "/cennik" }}
       />
     </>

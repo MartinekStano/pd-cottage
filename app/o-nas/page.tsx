@@ -8,9 +8,9 @@ import { SectionHeader } from "@/components/section-header";
 import { images, pageMetadata, site, values } from "@/lib/site-data";
 
 export const metadata: Metadata = pageMetadata({
-  title: "O nás",
+  title: "Chata Pallov Dvor Lutiše",
   description:
-    "Spoznajte Pallov Dvor, súkromnú chatu v obci Lutiše vytvorenú pre pokojné pobyty, rodinné chvíle a menšie firemné stretnutia.",
+    "Pallov Dvor je chata v obci Lutiše na Kysuciach pre pokojné pobyty, rodinné chvíle, skupiny dospelých hostí a menšie firemné stretnutia.",
   path: "/o-nas",
   image: images.aboutExterior,
 });
@@ -23,7 +23,7 @@ export default function AboutPage() {
         image={images.aboutExterior}
         imageAlt="Exteriér chaty Pallov Dvor"
         title="O Pallovom Dvore"
-        subtitle="Súkromná chata v obci Lutiše vytvorená pre pokojné pobyty, rodinné chvíle, oddych dospelých hostí a menšie firemné stretnutia."
+        subtitle="Chata v obci Lutiše vytvorená pre pokojné pobyty, rodinné chvíle, oddych dospelých hostí a menšie firemné stretnutia."
         actions={[{ label: site.primaryCta, href: site.ctaHref }]}
       />
 
@@ -33,7 +33,7 @@ export default function AboutPage() {
         eyebrow="Charakter chaty"
         title="Miesto, kde má pobyt pokojnejšie tempo"
         text={[
-          "Pallov Dvor je chata určená pre hostí, ktorí si chcú oddýchnuť od bežného tempa a stráviť čas v súkromí. Atmosféra je postavená na kultivovanom pobyte, spoločných rozhovoroch, rodinnom oddychu a pokojnom stretnutí.",
+          "Pallov Dvor je chata v Lutišiach určená pre hostí, ktorí si chcú oddýchnuť od bežného tempa a stráviť čas v súkromí. Atmosféra je postavená na kultivovanom pobyte, spoločných rozhovoroch, rodinnom oddychu a pokojnom stretnutí.",
           "Chata spája praktické vybavenie s útulnou atmosférou. Vďaka dvom samostatným ubytovacím jednotkám ponúka dostatok priestoru aj súkromia pre rodiny, dospelých hostí aj menšie firemné kolektívy.",
         ]}
       />

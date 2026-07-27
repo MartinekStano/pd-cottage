@@ -14,7 +14,7 @@ Pallov Dvor
 
 Podnadpis:
 
-Súkromná chata pre pokojný oddych a spoločné chvíle v obci Lutiše. Komfortné krátkodobé ubytovanie až pre 16 osôb so saunou, vonkajšou kaďou, altánkom s grilom a spoločenským priestorom s projektorom.
+Hľadáte chatu v Lutišiach alebo ubytovanie na Kysuciach pre rodinu či skupinu? Pallov Dvor ponúka krátkodobé ubytovanie až pre 16 osôb so saunou, vonkajšou kaďou, altánkom s grilom a spoločenským priestorom s projektorom.
 
 CTA:
 
@@ -34,11 +34,11 @@ Rýchly prehľad:
 
 Nadpis:
 
-Komfortné ubytovanie v súkromí
+Komfortné ubytovanie v Lutišiach
 
 Text:
 
-Pallov Dvor ponúka pohodlné zázemie pre hostí, ktorí hľadajú pokoj, súkromie a priestor na spoločné chvíle. Chata je vhodná pre rodiny s deťmi, dospelých hostí aj menšie firemné kolektívy.
+Pallov Dvor ponúka pohodlné zázemie pre hostí, ktorí hľadajú chatu v Lutišiach, pokoj, súkromie a priestor na spoločné chvíle. Chata je vhodná pre rodiny s deťmi, dospelých hostí aj menšie firemné kolektívy.
 
 V interiéri nájdete spálne, dve kúpeľne, kuchyňu s obývacou miestnosťou, Wi-Fi, TV a spoločenský priestor s projektorom. Vonku je k dispozícii altánok s grilom, sauna a vonkajšia kaďa.
 
@@ -54,19 +54,19 @@ Prečo si vybrať Pallov Dvor
 
 Karty:
 
-- Súkromie a pohodlie: Oplotený objekt, samostatné jednotky a dostatok priestoru vytvárajú vhodné podmienky na pokojný pobyt.
-- Relax priamo pri chate: Sauna pre 6 osôb a vonkajšia kaďa ponúkajú príjemný oddych po výletoch, pracovnom programe alebo spoločnom dni.
+- Súkromie a pohodlie: Oplotený objekt, samostatné jednotky a dostatok priestoru vytvárajú vhodné podmienky na pokojný pobyt v chate v Lutišiach.
+- Relax priamo pri chate: Sauna pre 6 osôb a vonkajšia kaďa ponúkajú príjemný oddych po výletoch na Kysuciach, pracovnom programe alebo spoločnom dni.
 - Priestor na spoločné chvíle: Altánok s grilom a spoločenský priestor s projektorom vytvárajú miesto na rodinné, priateľské aj firemné stretnutia.
 
 ## Krátky cenník
 
 Nadpis:
 
-Ubytovanie od 159 € / noc
+Prenájom chaty od 159 € / noc
 
 Text:
 
-Vyberte si prenájom jednej samostatnej ubytovacej jednotky alebo celého objektu podľa veľkosti skupiny a typu pobytu.
+Vyberte si prenájom jednej samostatnej ubytovacej jednotky alebo celej chaty v Lutišiach podľa veľkosti skupiny a typu pobytu.
 
 Ceny:
 
@@ -82,11 +82,11 @@ CTA:
 
 Nadpis:
 
-Naplánujte si pokojný pobyt v Pallovom Dvore
+Naplánujte si pobyt na chate v Lutišiach
 
 Text:
 
-Overte si dostupnosť termínu a pripravte si pobyt v súkromí s komfortným zázemím, saunou, vonkajšou kaďou a priestorom na spoločné chvíle.
+Overte si dostupnosť termínu a pripravte si pobyt na Kysuciach s komfortným zázemím, saunou, vonkajšou kaďou a priestorom na spoločné chvíle.
 
 CTA:
 

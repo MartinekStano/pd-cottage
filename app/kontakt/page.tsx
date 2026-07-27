@@ -86,9 +86,9 @@ const contactItemClass =
   "flex min-h-16 items-center gap-3 rounded-md border border-[var(--border)] bg-[var(--bg)] p-4 text-base font-semibold text-[var(--text)] transition hover:border-[var(--accent)]";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Kontakt",
+  title: "Kontakt - chata Lutiše",
   description:
-    "Kontaktujte Pallov Dvor v Lutišiach, overte dostupnosť termínu a pošlite nezáväzný dopyt na pobyt v súkromnej chate.",
+    "Kontaktujte Pallov Dvor, chatu v Lutišiach na Kysuciach. Overte dostupnosť termínu a pošlite nezáväzný dopyt na prenájom chaty.",
   path: "/kontakt",
   image: images.contactHero,
 });
@@ -101,7 +101,7 @@ export default function ContactPage() {
         image={images.contactHero}
         imageAlt="Exteriér chaty Pallov Dvor"
         title="Kontaktujte Pallov Dvor"
-        subtitle="Plánujete rodinný pobyt, pokojný víkend, oddych v súkromí alebo menšie firemné stretnutie? Napíšte nám a overte si dostupnosť termínu."
+        subtitle="Plánujete rodinný pobyt, pokojný víkend, chatu na prenájom v Lutišiach alebo menšie firemné stretnutie? Napíšte nám a overte si dostupnosť termínu."
         actions={[
           { label: site.primaryCta, href: "#formular" },
           { label: "Poslať nezáväzný dopyt", href: "#formular" },

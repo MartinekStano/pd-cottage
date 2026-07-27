@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const siteUrl = "https://pallovdvor.sk";
-export const siteLastModified = "2026-06-16";
+export const siteLastModified = "2026-07-27";
 
 export const site = {
   name: "Pallov Dvor",
-  subtitle: "Súkromná chata v Lutišiach",
+  subtitle: "Chata Lutiše na prenájom",
   description:
-    "Súkromná chata pre pokojný oddych a spoločné chvíle v obci Lutiše.",
+    "Chata Lutiše na prenájom pre rodiny, skupiny a menšie firemné pobyty na Kysuciach.",
   brandLogo: "/brand/logo-horizontal.png",
   brandLogoLight: "/brand/logo-stacked-mono-light.png",
   primaryCta: "Overiť dostupnosť termínu",
@@ -17,16 +17,23 @@ export const site = {
 };
 
 export const contact = {
-  phone: "0911 455 600",
-  phoneHref: "tel:+421911455600",
-  email: "oddych@pallovdvor.sk",
-  emailHref: "mailto:oddych@pallovdvor.sk",
+  phone: "0904 955 600",
+  phoneHref: "tel:+421904955600",
+  email: "martinmatostano@gmail.com",
+  emailHref: "mailto:martinmatostano@gmail.com",
   address: "Lutiše Adamovci 373",
   parking: "4 parkovacie miesta priamo pri objekte",
   mapsHref:
     "https://www.google.com/maps/search/?api=1&query=Luti%C5%A1e%20Adamovci%20373",
   mapEmbed:
     "https://www.google.com/maps?q=Luti%C5%A1e%20Adamovci%20373&output=embed",
+};
+
+export const contactForm = {
+  enabled: false,
+  statusLabel: "WIP",
+  unavailableMessage:
+    "Kontaktný formulár pripravujeme. Zatiaľ nás, prosím, kontaktujte telefonicky alebo e-mailom.",
 };
 
 export const navItems = [
@@ -249,7 +256,7 @@ export const quickFacts = [
   {
     icon: "map",
     value: contact.address,
-    label: "poloha chaty",
+    label: "chata v Lutišiach",
   },
   {
     icon: "euro",
@@ -280,11 +287,11 @@ export const coreEquipment = [
 export const homeBenefits = [
   {
     title: "Súkromie a pohodlie",
-    text: "Oplotený objekt, samostatné jednotky a dostatok priestoru vytvárajú vhodné podmienky na pokojný pobyt.",
+    text: "Oplotený objekt, samostatné jednotky a dostatok priestoru vytvárajú vhodné podmienky na pokojný pobyt v chate v Lutišiach.",
   },
   {
     title: "Relax priamo pri chate",
-    text: "Sauna pre 6 osôb a vonkajšia kaďa ponúkajú príjemný oddych po výletoch, pracovnom programe alebo spoločnom dni.",
+    text: "Sauna pre 6 osôb a vonkajšia kaďa ponúkajú príjemný oddych po výletoch na Kysuciach, pracovnom programe alebo spoločnom dni.",
   },
   {
     title: "Priestor na spoločné chvíle",
@@ -636,6 +643,7 @@ export const structuredData = {
       "@id": absoluteUrl("/#website"),
       url: site.url,
       name: site.name,
+      alternateName: ["Pallov Dvor Lutiše", "Chata Lutiše", site.subtitle],
       description: site.description,
       inLanguage: "sk-SK",
       publisher: {
@@ -646,10 +654,16 @@ export const structuredData = {
       "@type": "LodgingBusiness",
       "@id": absoluteUrl("/#pallov-dvor"),
       name: site.name,
-      alternateName: site.subtitle,
+      alternateName: [
+        site.subtitle,
+        "Chata Lutiše",
+        "Chata na prenájom Lutiše",
+        "Ubytovanie Lutiše",
+      ],
       url: site.url,
       description:
-        "Súkromná chata v Lutišiach pre krátkodobé ubytovanie, pokojný oddych, rodinné pobyty a menšie firemné stretnutia.",
+        "Chata na prenájom v Lutišiach s krátkodobým ubytovaním pre rodiny, skupiny dospelých hostí a menšie firemné stretnutia.",
+      slogan: "Chata Lutiše na prenájom s kapacitou až 16 osôb.",
       image: [
         absoluteUrl(images.hero),
         absoluteUrl(images.exterior),
@@ -657,9 +671,23 @@ export const structuredData = {
         absoluteUrl(images.saunaTub),
       ],
       logo: absoluteUrl(site.brandLogo),
-      telephone: "+421911455600",
+      telephone: "+421904955600",
       email: contact.email,
       priceRange: "od 159 EUR / noc",
+      areaServed: [
+        {
+          "@type": "Place",
+          name: "Lutiše",
+        },
+        {
+          "@type": "Place",
+          name: "Kysuce",
+        },
+        {
+          "@type": "Place",
+          name: "Žilina a okolie",
+        },
+      ],
       address: {
         "@type": "PostalAddress",
         streetAddress: contact.address,
@@ -668,7 +696,7 @@ export const structuredData = {
       },
       contactPoint: {
         "@type": "ContactPoint",
-        telephone: "+421911455600",
+        telephone: "+421904955600",
         email: contact.email,
         contactType: "reservations",
         availableLanguage: ["sk"],

@@ -33,6 +33,8 @@ Surové importy z WhatsAppu a pracovné review náhľady sú zámerne mimo gitu.
 
 Zdroj pravdy je Pallov Dvor ako súkromná chata v Lutišiach. Web nemá komunikovať penzión, reštauráciu, bazén, vírivku, masáže ani párty pobyty.
 
+SEO komunikácia má prirodzene cieliť hlavne na lokálne dopyty ako `chata Lutiše`, `chata na prenájom Lutiše`, `ubytovanie Lutiše` a širšie varianty pre Kysuce.
+
 Primárny cieľ webu je dostať návštevníka k akcii `Overiť dostupnosť termínu`.
 
 

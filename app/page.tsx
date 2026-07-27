@@ -17,9 +17,9 @@ import {
 } from "@/lib/site-data";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Súkromná chata v Lutišiach",
+  title: "Chata Lutiše na prenájom",
   description:
-    "Pallov Dvor je súkromná chata v obci Lutiše s kapacitou až 16 osôb, saunou, vonkajšou kaďou, altánkom a spoločenským priestorom.",
+    "Chata Lutiše na prenájom: Pallov Dvor ponúka ubytovanie v obci Lutiše až pre 16 osôb so saunou, vonkajšou kaďou, altánkom a grilom.",
   path: "/",
   image: images.hero,
 });
@@ -28,12 +28,12 @@ export default function Home() {
   return (
     <>
       <Hero
-        eyebrow="Súkromná chata v Lutišiach"
+        eyebrow="Chata Lutiše na prenájom"
         home
         image={images.hero}
         imageAlt="Exteriér chaty Pallov Dvor v Lutišiach"
         title="Pallov Dvor"
-        subtitle="Súkromná chata pre pokojný oddych a spoločné chvíle v obci Lutiše. Komfortné krátkodobé ubytovanie až pre 16 osôb so saunou, vonkajšou kaďou, altánkom s grilom a spoločenským priestorom s projektorom."
+        subtitle="Hľadáte chatu v Lutišiach alebo ubytovanie na Kysuciach pre rodinu či skupinu? Pallov Dvor ponúka krátkodobé ubytovanie až pre 16 osôb so saunou, vonkajšou kaďou, altánkom s grilom a spoločenským priestorom s projektorom."
         actions={[
           { label: site.primaryCta, href: site.ctaHref },
           { label: "Pozrieť ubytovanie", href: "/ubytovanie" },
@@ -65,9 +65,9 @@ export default function Home() {
         eyebrow="Komfort v súkromí"
         image={images.interior}
         alt="Interiér ubytovacej jednotky v Pallovom Dvore"
-        title="Komfortné ubytovanie v súkromí"
+        title="Komfortné ubytovanie v Lutišiach"
         text={[
-          "Pallov Dvor ponúka pohodlné zázemie pre hostí, ktorí hľadajú pokoj, súkromie a priestor na spoločné chvíle. Chata je vhodná pre rodiny s deťmi, dospelých hostí aj menšie firemné kolektívy.",
+          "Pallov Dvor ponúka pohodlné zázemie pre hostí, ktorí hľadajú chatu v Lutišiach, pokoj, súkromie a priestor na spoločné chvíle. Chata je vhodná pre rodiny s deťmi, dospelých hostí aj menšie firemné kolektívy.",
           "V interiéri nájdete spálne, dve kúpeľne, kuchyňu s obývacou miestnosťou, Wi-Fi, TV a spoločenský priestor s projektorom. Vonku je k dispozícii altánok s grilom, sauna a vonkajšia kaďa.",
         ]}
       />
@@ -92,8 +92,8 @@ export default function Home() {
           <div>
             <SectionHeader
               eyebrow="Prehľad cien"
-              title="Ubytovanie od 159 € / noc"
-              text="Vyberte si prenájom jednej samostatnej ubytovacej jednotky alebo celého objektu podľa veľkosti skupiny a typu pobytu."
+              title="Prenájom chaty od 159 € / noc"
+              text="Vyberte si prenájom jednej samostatnej ubytovacej jednotky alebo celej chaty v Lutišiach podľa veľkosti skupiny a typu pobytu."
             />
             <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
               {priceCards.map((card) => (
@@ -121,8 +121,8 @@ export default function Home() {
       </section>
 
       <CTASection
-        title="Naplánujte si pokojný pobyt v Pallovom Dvore"
-        text="Overte si dostupnosť termínu a pripravte si pobyt v súkromí s komfortným zázemím, saunou, vonkajšou kaďou a priestorom na spoločné chvíle."
+        title="Naplánujte si pobyt na chate v Lutišiach"
+        text="Overte si dostupnosť termínu a pripravte si pobyt na Kysuciach s komfortným zázemím, saunou, vonkajšou kaďou a priestorom na spoločné chvíle."
         secondary={{ label: "Pozrieť celý cenník", href: "/cennik" }}
       />
     </>

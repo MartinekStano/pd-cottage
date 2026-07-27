@@ -1,6 +1,12 @@
 "use server";
 
-import { contact, rentalTypeOptions, site, stayTypeOptions } from "@/lib/site-data";
+import {
+  contact,
+  contactForm,
+  rentalTypeOptions,
+  site,
+  stayTypeOptions,
+} from "@/lib/site-data";
 import { sendSMTPMail } from "@/lib/smtp";
 
 type ContactField =
@@ -58,6 +64,13 @@ export async function submitContactForm(
   _previousState: ContactFormState,
   formData: FormData,
 ): Promise<ContactFormState> {
+  if (!contactForm.enabled) {
+    return {
+      message: contactForm.unavailableMessage,
+      status: "error",
+    };
+  }
+
   const honeypot = formData.get("firma");
 
   if (typeof honeypot === "string" && honeypot.trim()) {

@@ -2,8 +2,8 @@
 
 ## Kontaktné údaje
 
-- Telefón: 0911 455 600
-- E-mail: oddych@pallovdvor.sk
+- Telefón: 0904 955 600
+- E-mail: martinmatostano@gmail.com
 - Adresa: Lutiše Adamovci 373
 - Parkovanie: 4 parkovacie miesta priamo pri objekte
 
@@ -13,11 +13,13 @@ Tieto údaje použiť na stránke Kontakt a v pätičke webu.
 
 Odporúčaný krátky text:
 
-Pallov Dvor  
-Súkromná chata pre pokojný oddych a spoločné chvíle.  
-Lutiše Adamovci 373  
-0911 455 600  
-oddych@pallovdvor.sk
+```text
+Pallov Dvor
+Súkromná chata pre pokojný oddych a spoločné chvíle.
+Lutiše Adamovci 373
+0904 955 600
+martinmatostano@gmail.com
+```
 
 ## Kontaktný formulár
 

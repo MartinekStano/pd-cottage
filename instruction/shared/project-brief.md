@@ -10,6 +10,19 @@
 - Kapacita jednej jednotky: max. 8 osôb
 - Parkovanie: 4 parkovacie miesta priamo pri objekte
 
+## SEO smer
+
+Primárne lokálne dopyty:
+
+- chata Lutiše
+- chata na prenájom Lutiše
+- ubytovanie Lutiše
+- chata Kysuce
+- ubytovanie Kysuce
+- chata pri Žiline
+
+Tieto frázy používaj prirodzene v title, description, nadpisoch a viditeľnom texte. Nepridávaj ich ako umelý zoznam do obsahu stránky.
+
 ## Charakter webu
 
 Web má pôsobiť ako profesionálna prezentácia pokojnej súkromnej chaty. Má komunikovať súkromie, komfort, prírodu, oddych, dôveru a kultivovaný pobyt.

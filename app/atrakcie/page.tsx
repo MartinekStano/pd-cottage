@@ -16,9 +16,9 @@ import {
 } from "@/lib/site-data";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Atrakcie",
+  title: "Chata Lutiše a výlety v okolí",
   description:
-    "Tipy na výlety a zážitky v okolí Pallovho Dvora: Vrátna dolina, Jánošíkove diery, Terchová, Veľká Rača, Vychylovka a Hrad Strečno.",
+    "Chata Lutiše s výletmi v okolí: tipy na Vrátna dolinu, Jánošíkove diery, Terchovú, Veľkú Raču, Vychylovku a Hrad Strečno.",
   path: "/atrakcie",
   image: images.attractionsHero,
 });
@@ -31,7 +31,7 @@ export default function AttractionsPage() {
         image={images.attractionsHero}
         imageAlt="Horská krajina Malej Fatry"
         title="Atrakcie a zážitky v okolí Pallovho Dvora"
-        subtitle="Spojte pokojný pobyt v súkromí s výletmi, prechádzkami, aktivitami v prírode a objavovaním okolia. Pallov Dvor je vhodným miestom pre hostí, ktorí chcú oddychovať a dopriať si aj príjemný program."
+        subtitle="Spojte pobyt na chate v Lutišiach s výletmi, prechádzkami, aktivitami v prírode a objavovaním okolia. Pallov Dvor je vhodným miestom pre hostí, ktorí chcú oddychovať a dopriať si aj príjemný program."
         actions={[
           { label: site.primaryCta, href: site.ctaHref },
           { label: "Kontaktovať nás", href: "/kontakt" },
@@ -44,7 +44,7 @@ export default function AttractionsPage() {
         eyebrow="Pobyt a výlety"
         title="Oddych na chate aj aktívne dni v okolí"
         text={[
-          "Pallov Dvor ponúka príjemné zázemie pre hostí, ktorí chcú počas pobytu spojiť oddych a zážitky. Ráno môžete vyraziť na prechádzku, výlet alebo nenáročnú aktivitu v okolí a večer sa vrátiť do súkromia chaty.",
+          "Pallov Dvor ponúka príjemné zázemie pre hostí, ktorí chcú počas pobytu spojiť oddych a zážitky na Kysuciach. Ráno môžete vyraziť na prechádzku, výlet alebo nenáročnú aktivitu v okolí a večer sa vrátiť do súkromia chaty.",
           "Po návrate môžete využiť altánok s grilom, spoločenský priestor, saunu alebo vonkajšiu kaďu. Vďaka tomu je pobyt vhodný pre rodiny s deťmi, páry, dospelých hostí aj menšie firemné kolektívy.",
         ]}
       />

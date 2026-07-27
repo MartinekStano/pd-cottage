@@ -16,7 +16,7 @@ export function SiteFooter() {
             width={1448}
           />
           <p className="mt-4 max-w-md text-base leading-7 text-white/72">
-            Súkromná chata pre pokojný oddych a spoločné chvíle.
+            Chata Lutiše na prenájom pre pokojný oddych a spoločné chvíle.
           </p>
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
             <CTAButton href={site.ctaHref} variant="light">
@@ -60,7 +60,7 @@ export function SiteFooter() {
       <div className="border-t border-white/10">
         <div className="mx-auto flex w-full max-w-7xl flex-col gap-2 px-5 py-5 text-xs text-white/50 sm:flex-row sm:items-center sm:justify-between sm:px-8 lg:px-10">
           <span>© {new Date().getFullYear()} {site.name}</span>
-          <span>Krátkodobé ubytovanie v súkromí v obci Lutiše.</span>
+          <span>Krátkodobé ubytovanie na chate v obci Lutiše.</span>
         </div>
       </div>
     </footer>

@@ -35,9 +35,9 @@ const relaxIdeas = [
 ];
 
 export const metadata: Metadata = pageMetadata({
-  title: "Wellness",
+  title: "Chata so saunou a kaďou Lutiše",
   description:
-    "Súkromný oddych v Pallovom Dvore so saunou pre 6 osôb, vonkajšou kaďou a pokojnou atmosférou priamo pri chate.",
+    "Chata so saunou a vonkajšou kaďou v Lutišiach. Pallov Dvor ponúka ubytovanie na Kysuciach s oddychovou zónou priamo pri chate.",
   path: "/wellness",
   image: images.wellnessHero,
 });
@@ -50,7 +50,7 @@ export default function WellnessPage() {
         image={images.wellnessHero}
         imageAlt="Sauna a vonkajšia kaďa pri chate Pallov Dvor"
         title="Wellness & Oddych v Pallovom Dvore"
-        subtitle="Súkromný relax priamo pri chate. Doprajte si pokojný oddych v saune, vonkajšej kadi a príjemnom prostredí, ktoré je vytvorené pre spomalenie, regeneráciu a spoločné chvíle."
+        subtitle="Súkromný relax priamo pri chate v Lutišiach. Doprajte si pokojný oddych v saune, vonkajšej kadi a príjemnom prostredí, ktoré je vytvorené pre spomalenie, regeneráciu a spoločné chvíle."
         actions={[
           { label: site.primaryCta, href: site.ctaHref },
           { label: "Pozrieť cenník", href: "/cennik" },

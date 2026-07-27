@@ -6,9 +6,9 @@ import { SectionHeader } from "@/components/section-header";
 import { galleryImages, images, pageMetadata, site } from "@/lib/site-data";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Fotogaléria",
+  title: "Fotogaléria chaty Lutiše",
   description:
-    "Fotogaléria Pallovho Dvora: izby, spoločné priestory, kúpeľne, exteriér, altánok, sauna a vonkajšia kaďa.",
+    "Fotogaléria chaty Pallov Dvor v Lutišiach: izby, spoločné priestory, kúpeľne, exteriér, altánok, sauna a vonkajšia kaďa.",
   path: "/fotogaleria",
   image: images.livingKitchen,
 });
@@ -20,8 +20,8 @@ export default function GalleryPage() {
         eyebrow="Fotogaléria"
         image={images.livingKitchen}
         imageAlt="Obývacia miestnosť s kuchyňou v Pallovom Dvore"
-        title="Fotogaléria Pallov Dvor"
-        subtitle="Prezrite si izby, spoločné priestory, kúpeľne, exteriér a oddychovú zónu. Kliknutím na fotografiu otvoríte galériu a môžete prechádzať medzi zábermi."
+        title="Fotogaléria chaty Pallov Dvor"
+        subtitle="Prezrite si chatu v Lutišiach: izby, spoločné priestory, kúpeľne, exteriér a oddychovú zónu. Kliknutím na fotografiu otvoríte galériu a môžete prechádzať medzi zábermi."
         actions={[
           { label: site.primaryCta, href: site.ctaHref },
           { label: "Pozrieť ubytovanie", href: "/ubytovanie" },
