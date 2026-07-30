@@ -7,8 +7,8 @@ type JanosikoveDniPromoProps = {
 };
 
 const introText = {
-  home: `Festival v Terchovej sa koná ${janosikoveDniOffer.eventDate}. Pallov Dvor v Lutišiach je ${janosikoveDniOffer.distance} od programu a má festivalové ceny pre jednu jednotku aj celý objekt.`,
-  pricing: `Počas festivalu ${janosikoveDniOffer.title} platia zvýhodnené ceny: jedna samostatná jednotka za ${janosikoveDniOffer.unitPromoPrice} a celý objekt za ${janosikoveDniOffer.wholeObjectPromoPrice}.`,
+  home: `Festival v Terchovej sa koná ${janosikoveDniOffer.eventDate}. Pallov Dvor v Lutišiach je ${janosikoveDniOffer.distance} od programu a v akcii má už len jednu samostatnú obytnú jednotku.`,
+  pricing: `Počas festivalu ${janosikoveDniOffer.title} platí zvýhodnená cena pre poslednú dostupnú samostatnú obytnú jednotku: ${janosikoveDniOffer.unitPromoPrice}.`,
 };
 
 function PromoPriceTile({
@@ -139,21 +139,14 @@ export function JanosikoveDniPromo({ context = "home" }: JanosikoveDniPromoProps
             </CTAButton>
           </div>
         </div>
-        <div className="grid gap-4 md:grid-cols-2" data-animate>
+        <div className="grid gap-4 lg:max-w-xl lg:justify-self-end" data-animate>
           <PromoPriceTile
-            title="1 samostatná jednotka"
+            highlighted
+            title="1 samostatná obytná jednotka"
             oldPrice={janosikoveDniOffer.unitOriginalPrice}
             newPrice={janosikoveDniOffer.unitPromoPrice}
             savings={janosikoveDniOffer.unitSavings}
             capacity={janosikoveDniOffer.unitCapacity}
-          />
-          <PromoPriceTile
-            highlighted
-            title="Celý objekt"
-            oldPrice={janosikoveDniOffer.wholeObjectOriginalPrice}
-            newPrice={janosikoveDniOffer.wholeObjectPromoPrice}
-            savings={janosikoveDniOffer.wholeObjectSavings}
-            capacity={janosikoveDniOffer.wholeObjectCapacity}
           />
         </div>
       </div>

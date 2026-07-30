@@ -22,9 +22,8 @@ Prirodzene používať frázy:
 Ceny majú byť zobrazené ako akciové, s pôvodnou cenou preškrtnutou:
 
 - 1 samostatná jednotka: pôvodne 249 € / noc, akciovo 229 € / noc
-- celý objekt: pôvodne 498 € / noc, akciovo 419 € / noc
 
-Komunikovať úsporu a obmedzenie podľa dostupnosti termínu.
+Komunikovať úsporu, že k dispozícii je už len jedna samostatná obytná jednotka, a obmedzenie podľa dostupnosti termínu.
 
 ## Vizuály a odkazy
 

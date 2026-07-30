@@ -74,7 +74,7 @@ V hlavičke má byť samostatné výrazné CTA `Overiť termín`.
 Počas Jánošíkových dní 2026 komunikovať špeciálnu ponuku cez prvú zvýraznenú položku v menu a samostatnú SEO stránku `/janosikove-dni-ubytovanie`.
 
 - 1 samostatná jednotka: pôvodne 249 € / noc, akciovo 229 € / noc
-- celý objekt: pôvodne 498 € / noc, akciovo 419 € / noc
+- k dispozícii je už len jedna samostatná obytná jednotka
 - komunikovať blízkosť k Terchovej a preklik na oficiálny program Jánošíkových dní
 
 ## Reálne vybavenie

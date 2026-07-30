@@ -21,7 +21,7 @@ import {
 export const metadata: Metadata = pageMetadata({
   title: "Cenník chaty Lutiše",
   description:
-    "Cenník prenájmu chaty v Lutišiach: ceny za jednotku, celý objekt, saunu, vonkajšiu kaďu a aktuálna akcia na Jánošíkove dni 2026.",
+    "Cenník prenájmu chaty v Lutišiach: ceny za jednotku, celý objekt, saunu, vonkajšiu kaďu a aktuálna akcia na jednu jednotku počas Jánošíkových dní 2026.",
   path: "/cennik",
   image: images.pricingHero,
 });
@@ -39,6 +39,11 @@ export default function PricingPage() {
           { label: site.primaryCta, href: site.ctaHref },
           { label: "Poslať nezáväzný dopyt", href: "/kontakt#formular" },
         ]}
+      />
+
+      <div
+        aria-hidden="true"
+        className="h-4 border-y border-[var(--border)] bg-[var(--bg)] sm:h-5"
       />
 
       <JanosikoveDniPromo context="pricing" />

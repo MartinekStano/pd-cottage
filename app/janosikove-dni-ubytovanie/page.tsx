@@ -17,7 +17,7 @@ import {
   site,
 } from "@/lib/site-data";
 
-const pageDescription = `Ubytovanie na Jánošíkove dni 2026 blízko Terchovej: Pallov Dvor v Lutišiach je ${janosikoveDniOffer.distance} od festivalu a ponúka akciu na jednu jednotku za ${janosikoveDniOffer.unitPromoPrice} a celý objekt za ${janosikoveDniOffer.wholeObjectPromoPrice}.`;
+const pageDescription = `Ubytovanie na Jánošíkove dni 2026 blízko Terchovej: Pallov Dvor v Lutišiach je ${janosikoveDniOffer.distance} od festivalu a v akcii je už len jedna samostatná obytná jednotka za ${janosikoveDniOffer.unitPromoPrice}.`;
 
 export const metadata: Metadata = pageMetadata({
   title: "Jánošíkove dni 2026 ubytovanie blízko Terchovej",
@@ -88,25 +88,6 @@ const structuredData = {
         name: "1 samostatná ubytovacia jednotka v Pallovom Dvore",
       },
     },
-    {
-      "@type": "Offer",
-      "@id": absoluteUrl(`${janosikoveDniOffer.href}#offer-whole-object`),
-      name: "Akcia na celý objekt počas Jánošíkových dní",
-      description: `Cena za celý objekt ${janosikoveDniOffer.wholeObjectPromoPrice} namiesto ${janosikoveDniOffer.wholeObjectOriginalPrice} počas festivalového termínu podľa dostupnosti.`,
-      price: janosikoveDniOffer.wholeObjectPromoPriceValue,
-      priceCurrency: janosikoveDniOffer.priceCurrency,
-      availability: "https://schema.org/InStock",
-      validFrom: "2026-07-27",
-      validThrough: janosikoveDniOffer.eventEndDate,
-      url: absoluteUrl(janosikoveDniOffer.href),
-      seller: {
-        "@id": absoluteUrl("/#pallov-dvor"),
-      },
-      itemOffered: {
-        "@type": "Accommodation",
-        name: "Celý objekt Pallov Dvor",
-      },
-    },
   ],
 } as const;
 
@@ -123,15 +104,11 @@ const offerFacts = [
   },
   {
     value: janosikoveDniOffer.unitPromoPrice,
-    label: "1 samostatná jednotka",
+    label: "posledná dostupná jednotka",
   },
   {
-    value: janosikoveDniOffer.wholeObjectPromoPrice,
-    label: "celý objekt",
-  },
-  {
-    value: janosikoveDniOffer.wholeObjectCapacity,
-    label: "kapacita celého objektu",
+    value: janosikoveDniOffer.unitCapacity,
+    label: "kapacita jednotky",
   },
 ];
 
@@ -220,7 +197,7 @@ export default function JanosikoveDniAccommodationPage() {
         imageAlt="Folklórni hudobníci počas Jánošíkových dní v Terchovej"
         imageCredit={imageCredits.janosikoveDniHero}
         title="Ubytovanie na Jánošíkove dni 2026"
-        subtitle={`Jánošíkove dni v Terchovej sa konajú ${janosikoveDniOffer.eventDate}. Pallov Dvor v Lutišiach ponúka súkromné ubytovanie ${janosikoveDniOffer.distance} od Terchovej: 1 samostatná jednotka za ${janosikoveDniOffer.unitPromoPrice}, celý objekt za ${janosikoveDniOffer.wholeObjectPromoPrice}.`}
+        subtitle={`Jánošíkove dni v Terchovej sa konajú ${janosikoveDniOffer.eventDate}. Pallov Dvor v Lutišiach ponúka súkromné ubytovanie ${janosikoveDniOffer.distance} od Terchovej. V akcii je už len jedna samostatná obytná jednotka za ${janosikoveDniOffer.unitPromoPrice}.`}
         actions={[
           { label: site.primaryCta, href: site.ctaHref },
           { label: "Pozrieť cenník", href: "/cennik" },
@@ -228,7 +205,7 @@ export default function JanosikoveDniAccommodationPage() {
       />
 
       <section className="soft-band border-b border-[var(--border)]">
-        <div className="stagger-list relative z-20 mx-auto grid w-full max-w-7xl gap-4 px-5 py-10 sm:grid-cols-2 sm:px-8 lg:grid-cols-5 lg:px-10">
+        <div className="stagger-list relative z-20 mx-auto grid w-full max-w-7xl gap-4 px-5 py-10 sm:grid-cols-2 sm:px-8 lg:grid-cols-4 lg:px-10">
           {offerFacts.map((fact) => (
             <article
               className="motion-card min-h-32 rounded-lg border border-[var(--border)] bg-[var(--surface)] p-5 shadow-sm"
@@ -251,8 +228,8 @@ export default function JanosikoveDniAccommodationPage() {
           <div>
             <SectionHeader
               eyebrow="Festivalová ponuka"
-              title="Cena, ktorú si všimnete hneď"
-              text={`Akciové ceny platia pre ubytovanie počas Jánošíkových dní 2026 v Terchovej. Jedna samostatná jednotka je za ${janosikoveDniOffer.unitPromoPrice}, celý objekt za ${janosikoveDniOffer.wholeObjectPromoPrice}.`}
+              title="Posledná jednotka v akciovej cene"
+              text={`Akciová cena platí pre ubytovanie počas Jánošíkových dní 2026 v Terchovej. K dispozícii je už len jedna samostatná obytná jednotka za ${janosikoveDniOffer.unitPromoPrice}.`}
             />
             <p className="mt-5 text-base leading-8 text-[var(--muted)] sm:text-lg">
               Pallov Dvor je vhodný pre hostí, ktorí chcú byť blízko festivalu, ale
@@ -265,21 +242,14 @@ export default function JanosikoveDniAccommodationPage() {
               </CTAButton>
             </div>
           </div>
-          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+          <div className="grid gap-5 lg:max-w-xl lg:justify-self-end">
             <OfferPriceCard
-              title="1 samostatná jednotka"
+              highlighted
+              title="1 samostatná obytná jednotka"
               oldPrice={janosikoveDniOffer.unitOriginalPrice}
               newPrice={janosikoveDniOffer.unitPromoPrice}
               savings={janosikoveDniOffer.unitSavings}
               capacity={janosikoveDniOffer.unitCapacity}
-            />
-            <OfferPriceCard
-              highlighted
-              title="Celý objekt"
-              oldPrice={janosikoveDniOffer.wholeObjectOriginalPrice}
-              newPrice={janosikoveDniOffer.wholeObjectPromoPrice}
-              savings={janosikoveDniOffer.wholeObjectSavings}
-              capacity={janosikoveDniOffer.wholeObjectCapacity}
             />
           </div>
         </div>
@@ -321,7 +291,7 @@ export default function JanosikoveDniAccommodationPage() {
         title="Festival v Terchovej, oddych v Lutišiach"
         text={[
           "Po dni v Terchovej sa môžete vrátiť do vlastného zázemia mimo hlavného ruchu festivalu. Chata je praktická pre skupiny, ktoré chcú mať spoločný priestor, kuchyňu, altánok a pohodlné izby.",
-          "Ak plánujete Jánošíkove dni ako rodinný alebo priateľský pobyt, celý objekt dáva skupine viac súkromia a flexibilitu počas celého festivalového víkendu.",
+          "Ak plánujete Jánošíkove dni ako rodinný alebo priateľský pobyt, posledná dostupná samostatná jednotka dáva menšej skupine vlastné zázemie počas festivalového víkendu.",
         ]}
         cta={{ label: "Pozrieť ubytovanie", href: "/ubytovanie" }}
       />
@@ -331,7 +301,7 @@ export default function JanosikoveDniAccommodationPage() {
           <SectionHeader
             align="center"
             title="Prečo riešiť Jánošíkove dni z Pallovho Dvora"
-            text="Blízkosť Terchovej, súkromie a kapacita celého objektu dávajú zmysel najmä pre skupiny, ktoré nechcú riešiť ubytovanie priamo v centre festivalového ruchu."
+            text="Blízkosť Terchovej, súkromie jednej obytnej jednotky a pokojné zázemie dávajú zmysel pre hostí, ktorí nechcú riešiť ubytovanie priamo v centre festivalového ruchu."
           />
           <div className="mt-10 grid gap-5 md:grid-cols-3">
             {janosikoveDniBenefits.map((benefit) => (
@@ -357,11 +327,11 @@ export default function JanosikoveDniAccommodationPage() {
           </div>
           <div className="grid gap-5 sm:grid-cols-2">
             <ImageCard
-              alt="Celý objekt Pallov Dvor"
-              image={images.wholeObject}
+              alt="Interiér ubytovacej jednotky v Pallovom Dvore"
+              image={images.livingKitchen}
               meta="Ubytovanie"
-              title="Celý objekt pre skupinu"
-              text="Kapacita až 16 osôb v dvoch samostatných jednotkách."
+              title="Samostatná jednotka pre pobyt"
+              text="Kapacita maximálne 8 osôb s kuchyňou, obývacou miestnosťou a pohodlným zázemím."
             />
             <ImageCard
               alt="Sauna a vonkajšia kaďa pri chate Pallov Dvor"

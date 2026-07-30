@@ -51,15 +51,10 @@ export const janosikoveDniOffer = {
   unitPromoPriceValue: 229,
   unitSavings: "ušetríte 20 € / noc",
   unitCapacity: "maximálne 8 osôb",
-  wholeObjectOriginalPrice: "498 € / noc",
-  wholeObjectPromoPrice: "419 € / noc",
-  wholeObjectPromoPriceValue: 419,
-  wholeObjectSavings: "ušetríte 79 € / noc",
   priceCurrency: "EUR",
-  wholeObjectCapacity: "až 16 osôb",
   officialProgramUrl: "https://www.janosikovedni.sk/program-janosikove",
   availabilityNote:
-    "Ponuka platí pre pobyt počas Jánošíkových dní 2026 podľa dostupnosti termínu.",
+    "K dispozícii je už len jedna samostatná obytná jednotka počas Jánošíkových dní 2026 podľa dostupnosti termínu.",
 };
 
 export type NavItem = {
@@ -386,8 +381,8 @@ export const janosikoveDniBenefits = [
     text: `Z Pallovho Dvora v Lutišiach sa na program Jánošíkových dní v Terchovej dostanete orientačne za ${janosikoveDniOffer.distance}.`,
   },
   {
-    title: "Celý objekt pre skupinu",
-    text: "Dve samostatné ubytovacie jednotky vytvárajú praktické zázemie pre rodiny, priateľov alebo viac párov počas festivalového víkendu.",
+    title: "Posledná dostupná jednotka",
+    text: "K dispozícii je jedna samostatná obytná jednotka s kapacitou maximálne 8 osôb pre rodinu, priateľov alebo menšiu skupinu počas festivalového termínu.",
   },
   {
     title: "Oddych po programe",
