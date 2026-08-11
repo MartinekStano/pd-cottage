@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { CTASection } from "@/components/cta-section";
 import { Hero } from "@/components/hero";
 import { ImageCard } from "@/components/image-card";
-import { JanosikoveDniPromo } from "@/components/janosikove-dni-promo";
 import { PriceCard } from "@/components/price-card";
 import { ResponsiveTable } from "@/components/responsive-table";
 import { SectionHeader } from "@/components/section-header";
@@ -21,7 +20,7 @@ import {
 export const metadata: Metadata = pageMetadata({
   title: "Cenník chaty Lutiše",
   description:
-    "Cenník prenájmu chaty v Lutišiach: ceny za jednotku, celý objekt, saunu, vonkajšiu kaďu a aktuálna akcia na jednu jednotku počas Jánošíkových dní 2026.",
+    "Cenník prenájmu chaty v Lutišiach: sezónne ceny za jednotku a celý objekt, sauna a kaďa za deň, upratovací poplatok a vratná kaucia.",
   path: "/cennik",
   image: images.pricingHero,
 });
@@ -46,14 +45,12 @@ export default function PricingPage() {
         className="h-4 border-y border-[var(--border)] bg-[var(--bg)] sm:h-5"
       />
 
-      <JanosikoveDniPromo context="pricing" />
-
       <section className="section-pad">
         <div className="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10">
           <SectionHeader
             align="center"
             title="Rýchly prehľad cien"
-            text="Základné ceny sa líšia podľa rozsahu prenájmu, sezóny a dňa v týždni."
+            text="Základné ceny sa líšia podľa rozsahu prenájmu, sezóny a dňa v týždni. Mimo sezóny je od 1. septembra do 30. júna, sezóna trvá od 1. júla do 31. augusta."
           />
           <div className="mt-10 grid gap-5 md:grid-cols-2">
             {priceCards.map((card, index) => (
@@ -120,7 +117,7 @@ export default function PricingPage() {
             <SectionHeader
               eyebrow="Sauna a kaďa"
               title="Doplnkové využitie oddychovej zóny"
-              text="Sauna a vonkajšia kaďa sú dostupné ako doplnkové služby k pobytu. Hostia si môžu vybrať samostatné využitie alebo zvýhodnený balík."
+              text="Sauna a vonkajšia kaďa sú dostupné ako doplnkové služby k pobytu. Uvedené ceny platia za jeden deň využitia."
             />
             <div className="mt-6">
               <ResponsiveTable

@@ -48,7 +48,6 @@ Vytvor tieto stránky:
 - Cenník: `/cennik`
 - Atrakcie: `/atrakcie`
 - Wellness: `/wellness`
-- Akcia Jánošíkove dni: `/janosikove-dni-ubytovanie`
 - Kontakt: `/kontakt`
 
 Každá stránka musí mať vlastné SEO metadata.
@@ -64,7 +63,6 @@ Obsah jednotlivých stránok čerpaj zo súborov:
 - `instruction/pages/pricing.md`
 - `instruction/pages/attractions.md`
 - `instruction/pages/wellness.md`
-- `instruction/pages/janosikove-dni.md`
 - `instruction/pages/contact.md`
 
 Globálne dáta drž centralizovane, napríklad v `lib/site-data.ts` alebo podobnom súbore:
@@ -90,7 +88,6 @@ Použi lokálne pripravené fotografie v:
 
 - `public/images/pallov-dvor/`
 - `public/images/attractions/`
-- `public/images/campaigns/janosikove-dni/`
 
 K dispozícii je aj mapovanie:
 
@@ -142,7 +139,6 @@ Vytvor spoločný layout:
 
 Navigácia:
 
-- Akcia: Jánošíkove dni (prvá zvýraznená položka počas kampane)
 - Domov
 - O nás
 - Ubytovanie

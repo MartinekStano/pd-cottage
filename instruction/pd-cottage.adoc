@@ -23,7 +23,6 @@ Detailny obsah jednotlivych stranok je rozdeleny v priecinku `instruction/pages/
 * `instruction/pages/pricing.md` - Cennik.
 * `instruction/pages/attractions.md` - Atrakcie a zazitky v okoli.
 * `instruction/pages/wellness.md` - Wellness & Oddych.
-* `instruction/pages/janosikove-dni.md` - kampanova SEO stranka pre Janosikove dni.
 * `instruction/pages/contact.md` - Kontakt.
 
 Archiv povodneho textu je v `instruction/_archive/source-instruction.md`.
@@ -53,14 +52,12 @@ Hotovy prompt pre implementaciu je v `instruction/codex-implementation-prompt.md
 * Cennik
 * Atrakcie a zazitky v okoli
 * Wellness & Oddych
-* Akcia Janosikove dni
 * Kontakt
 
 == Globalna navigacia
 
 Pouzi hlavne menu:
 
-* Akcia: Janosikove dni ako prva zvyraznena polozka pocas kampane
 * Domov
 * O nas
 * Ubytovanie

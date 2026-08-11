@@ -3,7 +3,6 @@ import { CTASection } from "@/components/cta-section";
 import { FeatureCard } from "@/components/feature-card";
 import { Hero } from "@/components/hero";
 import { ImageCard } from "@/components/image-card";
-import { JanosikoveDniPromo } from "@/components/janosikove-dni-promo";
 import { PhotoSection } from "@/components/photo-section";
 import { PriceCard } from "@/components/price-card";
 import { SectionHeader } from "@/components/section-header";
@@ -60,8 +59,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-
-      <JanosikoveDniPromo />
 
       <PhotoSection
         cta={{ label: "Zistiť viac o chate", href: "/o-nas" }}

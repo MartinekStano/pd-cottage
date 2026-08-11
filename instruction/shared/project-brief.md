@@ -55,7 +55,6 @@ Sekundárne CTA:
 
 ## Navigácia
 
-- Akcia: Jánošíkove dni (výrazná prvá položka počas kampane)
 - Domov
 - O nás
 - Ubytovanie
@@ -68,14 +67,6 @@ Sekundárne CTA:
 Fotogaléria a Wellness majú byť v hlavnom menu dostupné ako podsekcie pod položkou `Ubytovanie`, aby horná navigácia ostala kratšia a viac zameraná na ubytovaciu časť webu.
 
 V hlavičke má byť samostatné výrazné CTA `Overiť termín`.
-
-## Aktuálna kampaň
-
-Počas Jánošíkových dní 2026 komunikovať špeciálnu ponuku cez prvú zvýraznenú položku v menu a samostatnú SEO stránku `/janosikove-dni-ubytovanie`.
-
-- 1 samostatná jednotka: pôvodne 249 € / noc, akciovo 229 € / noc
-- k dispozícii je už len jedna samostatná obytná jednotka
-- komunikovať blízkosť k Terchovej a preklik na oficiálny program Jánošíkových dní
 
 ## Reálne vybavenie
 

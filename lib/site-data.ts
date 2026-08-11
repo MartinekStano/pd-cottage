@@ -36,27 +36,6 @@ export const contactForm = {
     "Kontaktný formulár pripravujeme. Zatiaľ nás, prosím, kontaktujte telefonicky alebo e-mailom.",
 };
 
-export const janosikoveDniOffer = {
-  href: "/janosikove-dni-ubytovanie",
-  navLabel: "Akcia: Jánošíkove dni",
-  title: "Jánošíkove dni 2026 v Terchovej",
-  eventDate: "29. júl - 2. august 2026",
-  eventDateShort: "29. 7. - 2. 8. 2026",
-  eventStartDate: "2026-07-29",
-  eventEndDate: "2026-08-02",
-  location: "Terchová",
-  distance: "cca 20-30 min autom",
-  unitOriginalPrice: "249 € / noc",
-  unitPromoPrice: "229 € / noc",
-  unitPromoPriceValue: 229,
-  unitSavings: "ušetríte 20 € / noc",
-  unitCapacity: "maximálne 8 osôb",
-  priceCurrency: "EUR",
-  officialProgramUrl: "https://www.janosikovedni.sk/program-janosikove",
-  availabilityNote:
-    "K dispozícii je už len jedna samostatná obytná jednotka počas Jánošíkových dní 2026 podľa dostupnosti termínu.",
-};
-
 export type NavItem = {
   label: string;
   href: string;
@@ -65,11 +44,6 @@ export type NavItem = {
 };
 
 export const navItems: NavItem[] = [
-  {
-    label: janosikoveDniOffer.navLabel,
-    href: janosikoveDniOffer.href,
-    featured: true,
-  },
   { label: "Domov", href: "/" },
   { label: "O nás", href: "/o-nas" },
   {
@@ -111,33 +85,6 @@ export const images = {
   contactHero: "/images/pallov-dvor/kontakt-hero-pallov-dvor.jpg",
   contactExterior: "/images/pallov-dvor/kontakt-exterier-pallov-dvor.jpg",
   attractionsHero: "/images/attractions/vratna-dolina.jpg",
-  janosikoveDniHero:
-    "/images/campaigns/janosikove-dni/janosikove-dni-folklor-2.jpg",
-  janosikoveDniFolklore:
-    "/images/campaigns/janosikove-dni/janosikove-dni-folklor-1.jpg",
-  janosikStatue: "/images/campaigns/janosikove-dni/janosik-socha-terchova.jpg",
-};
-
-export const imageCredits = {
-  janosikoveDniHero: {
-    label: "Foto: Andrij Bulba / Wikimedia Commons",
-    sourceHref: "https://commons.wikimedia.org/wiki/File:Jánošíkove_dni_8.jpg",
-    licenseLabel: "CC BY 2.0",
-    licenseHref: "https://creativecommons.org/licenses/by/2.0/",
-  },
-  janosikoveDniFolklore: {
-    label: "Foto: Andrij Bulba / Wikimedia Commons",
-    sourceHref: "https://commons.wikimedia.org/wiki/File:Jánošíkove_dni_2.jpg",
-    licenseLabel: "CC BY 2.0",
-    licenseHref: "https://creativecommons.org/licenses/by/2.0/",
-  },
-  janosikStatue: {
-    label: "Foto: Jerzy Opioła / Wikimedia Commons",
-    sourceHref:
-      "https://commons.wikimedia.org/wiki/File:Terchová_Juraj_Jánošík_MF1.jpg",
-    licenseLabel: "CC BY-SA 3.0",
-    licenseHref: "https://creativecommons.org/licenses/by-sa/3.0/",
-  },
 };
 
 export const galleryImages = [
@@ -272,17 +219,6 @@ export const sitemapPages = [
     images: galleryImages.map((image) => image.src),
   },
   {
-    path: janosikoveDniOffer.href,
-    changeFrequency: "weekly",
-    priority: 0.92,
-    images: [
-      images.janosikoveDniHero,
-      images.janosikoveDniFolklore,
-      images.janosikStatue,
-      images.wholeObject,
-    ],
-  },
-  {
     path: "/cennik",
     changeFrequency: "weekly",
     priority: 0.9,
@@ -372,21 +308,6 @@ export const homeBenefits = [
   {
     title: "Priestor na spoločné chvíle",
     text: "Altánok s grilom a spoločenský priestor s projektorom vytvárajú miesto na rodinné, priateľské aj firemné stretnutia.",
-  },
-];
-
-export const janosikoveDniBenefits = [
-  {
-    title: "Terchová na dosah",
-    text: `Z Pallovho Dvora v Lutišiach sa na program Jánošíkových dní v Terchovej dostanete orientačne za ${janosikoveDniOffer.distance}.`,
-  },
-  {
-    title: "Posledná dostupná jednotka",
-    text: "K dispozícii je jedna samostatná obytná jednotka s kapacitou maximálne 8 osôb pre rodinu, priateľov alebo menšiu skupinu počas festivalového termínu.",
-  },
-  {
-    title: "Oddych po programe",
-    text: "Po folklórnom programe sa môžete vrátiť do súkromia chaty, využiť altánok, gril, spoločenský priestor, saunu alebo vonkajšiu kaďu.",
   },
 ];
 
@@ -487,19 +408,19 @@ export const priceCards = [
 ];
 
 export const unitPriceRows = [
-  ["Mimo sezóny", "159 € / noc", "189 € / noc"],
-  ["Sezóna", "189 € / noc", "219 € / noc"],
+  ["Mimo sezóny (1. 9. – 30. 6.)", "159 € / noc", "189 € / noc"],
+  ["Sezóna (1. 7. – 31. 8.)", "189 € / noc", "219 € / noc"],
 ];
 
 export const wholeObjectPriceRows = [
-  ["Mimo sezóny", "319 € / noc", "379 € / noc"],
-  ["Sezóna", "379 € / noc", "439 € / noc"],
+  ["Mimo sezóny (1. 9. – 30. 6.)", "319 € / noc", "379 € / noc"],
+  ["Sezóna (1. 7. – 31. 8.)", "379 € / noc", "439 € / noc"],
 ];
 
 export const wellnessRows = [
-  ["Kaďa", "30 €"],
-  ["Sauna", "25 €"],
-  ["Kaďa + sauna spolu", "45 €"],
+  ["Kaďa", "30 € / deň"],
+  ["Sauna", "25 € / deň"],
+  ["Kaďa + sauna spolu", "45 € / deň"],
 ];
 
 export const minimumStay = [
@@ -510,10 +431,14 @@ export const minimumStay = [
 ];
 
 export const priceNotes = [
+  "Mimo sezóny trvá od 1. septembra do 30. júna.",
+  "Sezóna trvá od 1. júla do 31. augusta.",
   "Ceny sa môžu líšiť podľa sezóny, termínu a dĺžky pobytu.",
   "Minimálna dĺžka pobytu mimo sezóny je 2 noci.",
   "Počas leta, sviatkov, prázdnin a Silvestra platí minimálna dĺžka pobytu spravidla 3 noci.",
   "Sauna a vonkajšia kaďa sú účtované ako príplatok, ak nie je uvedené inak.",
+  "Za záverečné upratovanie sa účtuje poplatok 69 € za pobyt.",
+  "Pri nástupe sa vyberá vratná kaucia 200 € za pobyt. Po odubytovaní sa vracia v prípade, že na objekte nevznikli žiadne škody.",
   "Presná cena bude potvrdená pri overení dostupnosti termínu.",
   "Odoslanie dopytu je nezáväzné.",
 ];

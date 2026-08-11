@@ -40,8 +40,8 @@ Jedna samostatná jednotka je vhodná pre menší pobyt v súkromí s kapacitou 
 
 | Obdobie | Nedeľa - štvrtok | Piatok - sobota |
 | --- | ---: | ---: |
-| Mimo sezóny | 159 € / noc | 189 € / noc |
-| Sezóna | 189 € / noc | 219 € / noc |
+| Mimo sezóny (1. 9. - 30. 6.) | 159 € / noc | 189 € / noc |
+| Sezóna (1. 7. - 31. 8.) | 189 € / noc | 219 € / noc |
 
 ## Cenník - celý objekt
 
@@ -49,8 +49,8 @@ Prenájom celého objektu je vhodný pre väčšie skupiny hostí, rodiny alebo 
 
 | Obdobie | Nedeľa - štvrtok | Piatok - sobota |
 | --- | ---: | ---: |
-| Mimo sezóny | 319 € / noc | 379 € / noc |
-| Sezóna | 379 € / noc | 439 € / noc |
+| Mimo sezóny (1. 9. - 30. 6.) | 319 € / noc | 379 € / noc |
+| Sezóna (1. 7. - 31. 8.) | 379 € / noc | 439 € / noc |
 
 ## Minimálna dĺžka pobytu
 
@@ -65,9 +65,9 @@ Sauna a vonkajšia kaďa sú dostupné ako doplnkové služby k pobytu. Hostia s
 
 | Služba | Cena |
 | --- | ---: |
-| Kaďa | 30 € |
-| Sauna | 25 € |
-| Kaďa + sauna spolu | 45 € |
+| Kaďa | 30 € / deň |
+| Sauna | 25 € / deň |
+| Kaďa + sauna spolu | 45 € / deň |
 
 Poznámka: Balík kaďa + sauna pôsobí výhodnejšie než samostatné objednanie oboch služieb.
 
@@ -95,10 +95,14 @@ Počas Silvestra, sviatkov a vybraných termínov môžu platiť individuálne c
 
 ## Dôležité informácie
 
+- Mimo sezóny trvá od 1. septembra do 30. júna.
+- Sezóna trvá od 1. júla do 31. augusta.
 - Ceny sa môžu líšiť podľa sezóny, termínu a dĺžky pobytu.
 - Minimálna dĺžka pobytu mimo sezóny je 2 noci.
 - Počas leta, sviatkov, prázdnin a Silvestra platí minimálna dĺžka pobytu spravidla 3 noci.
 - Wellness služby sú účtované ako príplatok, ak nie je uvedené inak.
+- Za záverečné upratovanie sa účtuje poplatok 69 € za pobyt.
+- Pri nástupe sa vyberá vratná kaucia 200 € za pobyt. Po odubytovaní sa vracia v prípade, že na objekte nevznikli žiadne škody.
 - Presná cena bude potvrdená pri overení dostupnosti termínu.
 - Odoslanie dopytu je nezáväzné.
 
