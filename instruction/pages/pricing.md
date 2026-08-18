@@ -101,7 +101,7 @@ Počas Silvestra, sviatkov a vybraných termínov môžu platiť individuálne c
 - Minimálna dĺžka pobytu mimo sezóny je 2 noci.
 - Počas leta, sviatkov, prázdnin a Silvestra platí minimálna dĺžka pobytu spravidla 3 noci.
 - Wellness služby sú účtované ako príplatok, ak nie je uvedené inak.
-- Za záverečné upratovanie sa účtuje poplatok 69 € za pobyt.
+- Za záverečné upratovanie sa účtuje poplatok 69 € za jednu ubytovaciu jednotku alebo 129 € za celý objekt.
 - Pri nástupe sa vyberá vratná kaucia 200 € za pobyt. Po odubytovaní sa vracia v prípade, že na objekte nevznikli žiadne škody.
 - Presná cena bude potvrdená pri overení dostupnosti termínu.
 - Odoslanie dopytu je nezáväzné.

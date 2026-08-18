@@ -6,6 +6,7 @@ type CTAButtonProps = {
   variant?: "primary" | "secondary" | "light" | "ghost";
   className?: string;
   external?: boolean;
+  onClick?: React.MouseEventHandler<HTMLAnchorElement>;
 };
 
 const variants = {
@@ -25,19 +26,20 @@ export function CTAButton({
   variant = "primary",
   className = "",
   external = false,
+  onClick,
 }: CTAButtonProps) {
   const classes = `inline-flex min-h-12 items-center justify-center rounded-full px-6 py-3 text-center text-sm font-semibold transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)] ${variants[variant]} ${className}`;
 
   if (external) {
     return (
-      <a className={classes} href={href} target="_blank" rel="noreferrer">
+      <a className={classes} href={href} target="_blank" rel="noreferrer" onClick={onClick}>
         {children}
       </a>
     );
   }
 
   return (
-    <Link className={classes} href={href}>
+    <Link className={classes} href={href} onClick={onClick}>
       {children}
     </Link>
   );
