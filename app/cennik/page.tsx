@@ -11,6 +11,8 @@ import {
   pageMetadata,
   priceCards,
   priceNotes,
+  pricingIncluded,
+  pricingSurcharges,
   site,
   unitPriceRows,
   wellnessRows,
@@ -74,6 +76,33 @@ export default function PricingPage() {
             headers={["Obdobie", "Nedeľa - štvrtok", "Piatok - sobota"]}
             rows={unitPriceRows}
           />
+        </div>
+      </section>
+
+      <section className="section-pad">
+        <div className="mx-auto grid w-full max-w-7xl gap-6 px-5 sm:px-8 lg:grid-cols-2 lg:px-10">
+          <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-6 sm:p-8">
+            <SectionHeader eyebrow="V cene pobytu" title="Čo máte zahrnuté" />
+            <ul className="mt-6 grid gap-3">
+              {pricingIncluded.map((item) => (
+                <li className="flex gap-3 leading-7 text-[var(--muted)]" key={item}>
+                  <span className="text-[var(--sage)]" aria-hidden="true">✓</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="rounded-xl border border-[var(--border)] bg-[var(--bg)] p-6 sm:p-8">
+            <SectionHeader eyebrow="Doplatky a podmienky" title="Na čo myslieť pri rozpočte" />
+            <ul className="mt-6 grid gap-3">
+              {pricingSurcharges.map((item) => (
+                <li className="flex gap-3 leading-7 text-[var(--muted)]" key={item}>
+                  <span className="text-[var(--clay)]" aria-hidden="true">•</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 

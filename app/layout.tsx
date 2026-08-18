@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { AnimationObserver } from "@/components/animation-observer";
+import { MobileActionBar } from "@/components/mobile-action-bar";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { metadataBase, site, structuredData } from "@/lib/site-data";
@@ -37,7 +38,8 @@ export default function RootLayout({
         />
         <AnimationObserver />
         <SiteHeader />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 pb-20 lg:pb-0">{children}</main>
+        <MobileActionBar />
         <SiteFooter />
       </body>
     </html>

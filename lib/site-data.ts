@@ -13,6 +13,12 @@ export const site = {
   primaryCta: "Overiť dostupnosť termínu",
   headerCta: "Overiť termín",
   ctaHref: "/kontakt#formular",
+  bookingUrl: "https://www.booking.com/hotel/sk/pallov-dvor.sk.html",
+  bookingRating: {
+    value: "9,5",
+    numericValue: 9.5,
+    reviewCount: 2,
+  },
   url: siteUrl,
 };
 
@@ -443,6 +449,20 @@ export const priceNotes = [
   "Odoslanie dopytu je nezáväzné.",
 ];
 
+export const pricingIncluded = [
+  "Ubytovanie v jednej samostatnej jednotke alebo v celom objekte podľa rezervácie.",
+  "Wi-Fi, TV, kuchyňa a obývacia miestnosť.",
+  "Parkovanie pre 4 vozidlá priamo pri objekte.",
+  "Altánok, gril a oplotený exteriér.",
+];
+
+export const pricingSurcharges = [
+  "Záverečné upratovanie: 69 € za jednotku alebo 129 € za celý objekt.",
+  "Kaďa: 30 € / deň, sauna: 25 € / deň, spolu: 45 € / deň.",
+  "Vratná kaucia: 200 € za pobyt.",
+  "Počas leta, sviatkov a vybraných termínov môže platiť minimálne 3 noci.",
+];
+
 export const wellnessCards = [
   {
     title: "Sauna pre 6 osôb",
@@ -592,6 +612,34 @@ export const stayIdeas = [
   },
 ];
 
+export const faqItems = [
+  {
+    question: "Je možné prenajať iba jednu ubytovaciu jednotku?",
+    answer:
+      "Áno. Pallov Dvor môžete prenajať ako jednu samostatnú jednotku pre najviac 8 osôb alebo ako celý objekt s kapacitou až 16 osôb.",
+  },
+  {
+    question: "Aká je minimálna dĺžka pobytu?",
+    answer:
+      "Mimo sezóny sú to spravidla minimálne 2 noci. Počas leta, sviatkov, prázdnin a Silvestra platí spravidla minimálne 3 noci.",
+  },
+  {
+    question: "Koľko stojí sauna a vonkajšia kaďa?",
+    answer:
+      "Kaďa stojí 30 € za deň, sauna 25 € za deň a spoločné využitie sauny s kaďou 45 € za deň.",
+  },
+  {
+    question: "Koľko je vratná kaucia a poplatok za upratovanie?",
+    answer:
+      "Vratná kaucia je 200 €. Záverečné upratovanie stojí 69 € za jednu ubytovaciu jednotku alebo 129 € za celý objekt.",
+  },
+  {
+    question: "Je pri chate parkovanie?",
+    answer:
+      "Áno, priamo pri objekte sú k dispozícii 4 parkovacie miesta.",
+  },
+];
+
 export const rentalTypeOptions = [
   "1 samostatná ubytovacia jednotka",
   "Celý objekt",
@@ -724,6 +772,13 @@ export const structuredData = {
         contactType: "reservations",
         availableLanguage: ["sk"],
       },
+      sameAs: [site.bookingUrl],
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: site.bookingRating.numericValue,
+        bestRating: 10,
+        ratingCount: site.bookingRating.reviewCount,
+      },
       amenityFeature: [
         "Kapacita až 16 osôb",
         "2 samostatné ubytovacie jednotky",
@@ -736,6 +791,18 @@ export const structuredData = {
         "@type": "LocationFeatureSpecification",
         name,
         value: true,
+      })),
+    },
+    {
+      "@type": "FAQPage",
+      "@id": absoluteUrl("/#faq"),
+      mainEntity: faqItems.map((item) => ({
+        "@type": "Question",
+        name: item.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: item.answer,
+        },
       })),
     },
   ],

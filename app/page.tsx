@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { CTASection } from "@/components/cta-section";
+import { BookingReviewSection } from "@/components/booking-review-section";
+import { FAQSection } from "@/components/faq-section";
 import { FeatureCard } from "@/components/feature-card";
 import { Hero } from "@/components/hero";
 import { ImageCard } from "@/components/image-card";
@@ -119,6 +121,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <FAQSection />
+
+      <BookingReviewSection />
 
       <CTASection
         title="Naplánujte si pobyt na chate v Lutišiach"
