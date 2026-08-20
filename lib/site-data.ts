@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
-export const siteUrl = "https://pallovdvor.sk";
-export const siteLastModified = "2026-07-27";
+export const siteUrl = "https://www.pallovdvor.sk";
+export const siteLastModified = "2026-08-20";
 
 export const site = {
   name: "Pallov Dvor",
