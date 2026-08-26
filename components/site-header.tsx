@@ -24,7 +24,7 @@ export function SiteHeader() {
             alt={site.name}
             className="h-20 w-auto shrink-0 transition duration-300 group-hover:opacity-80 sm:h-24"
             height={887}
-            preload
+            sizes="(max-width: 639px) 160px, 192px"
             src={site.brandLogo}
             width={1774}
           />

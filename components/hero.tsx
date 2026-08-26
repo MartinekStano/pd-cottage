@@ -44,9 +44,8 @@ export function Hero({
       <Image
         alt={imageAlt}
         className="hero-image object-cover"
+        fetchPriority="high"
         fill
-        loading={home ? undefined : "eager"}
-        preload={home}
         sizes="100vw"
         src={image}
       />

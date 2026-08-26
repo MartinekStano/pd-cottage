@@ -12,6 +12,7 @@ export function SiteFooter() {
             alt={site.name}
             className="h-28 w-auto brightness-0 invert sm:h-32"
             height={1086}
+            sizes="(max-width: 639px) 149px, 171px"
             src="/brand/logo-stacked-mono-dark.png"
             width={1448}
           />

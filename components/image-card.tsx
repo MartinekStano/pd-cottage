@@ -40,7 +40,7 @@ export function ImageCard({
           alt={alt}
           className="object-cover transition duration-500 hover:scale-[1.03]"
           fill
-          sizes="(max-width: 768px) 100vw, 33vw"
+          sizes="(max-width: 639px) calc(100vw - 2.5rem), (max-width: 1023px) calc(50vw - 3rem), (max-width: 1279px) 33vw, 384px"
           src={image}
         />
       </div>
