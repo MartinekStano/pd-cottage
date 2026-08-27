@@ -52,7 +52,7 @@ export default function PricingPage() {
           <SectionHeader
             align="center"
             title="Rýchly prehľad cien"
-            text="Základné ceny sa líšia podľa rozsahu prenájmu, sezóny a dňa v týždni. Mimo sezóny je od 1. septembra do 30. júna, sezóna trvá od 1. júla do 31. augusta."
+            text="Základné ceny sa líšia podľa rozsahu prenájmu, sezóny a dňa v týždni. Mimo sezóny je od 1. októbra do 30. júna, sezóna trvá od 1. júla do 30. septembra."
           />
           <div className="mt-10 grid gap-5 md:grid-cols-2">
             {priceCards.map((card, index) => (

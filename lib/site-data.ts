@@ -414,12 +414,12 @@ export const priceCards = [
 ];
 
 export const unitPriceRows = [
-  ["Mimo sezóny (1. 9. – 30. 6.)", "159 € / noc", "189 € / noc"],
+  ["Mimo sezóny (1. 10. – 30. 6.)", "159 € / noc", "189 € / noc"],
   ["Sezóna (1. 7. – 31. 8.)", "189 € / noc", "219 € / noc"],
 ];
 
 export const wholeObjectPriceRows = [
-  ["Mimo sezóny (1. 9. – 30. 6.)", "319 € / noc", "379 € / noc"],
+  ["Mimo sezóny (1. 10. – 30. 6.)", "319 € / noc", "379 € / noc"],
   ["Sezóna (1. 7. – 31. 8.)", "379 € / noc", "439 € / noc"],
 ];
 
@@ -437,8 +437,8 @@ export const minimumStay = [
 ];
 
 export const priceNotes = [
-  "Mimo sezóny trvá od 1. septembra do 30. júna.",
-  "Sezóna trvá od 1. júla do 31. augusta.",
+  "Mimo sezóny trvá od 1. októbra do 30. júna.",
+  "Sezóna trvá od 1. júla do 30. septembra.",
   "Ceny sa môžu líšiť podľa sezóny, termínu a dĺžky pobytu.",
   "Minimálna dĺžka pobytu mimo sezóny je 2 noci.",
   "Počas leta, sviatkov, prázdnin a Silvestra platí minimálna dĺžka pobytu spravidla 3 noci.",
