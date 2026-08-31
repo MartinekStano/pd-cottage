@@ -62,9 +62,11 @@ Sekundárne CTA:
   - Wellness
 - Cenník
 - Atrakcie
+  - Letné a zimné atrakcie
+  - Aktuálne udalosti
 - Kontakt
 
-Fotogaléria a Wellness majú byť v hlavnom menu dostupné ako podsekcie pod položkou `Ubytovanie`, aby horná navigácia ostala kratšia a viac zameraná na ubytovaciu časť webu.
+Fotogaléria a Wellness majú byť v hlavnom menu dostupné ako podsekcie pod položkou `Ubytovanie`. Letné a zimné atrakcie a Aktuálne udalosti majú byť pod položkou `Atrakcie`, aby horná navigácia ostala krátka a prehľadná.
 
 V hlavičke má byť samostatné výrazné CTA `Overiť termín`.
 

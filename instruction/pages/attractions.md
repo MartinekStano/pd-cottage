@@ -22,7 +22,7 @@ Atrakcie a zážitky v okolí Pallovho Dvora
 
 Podnadpis:
 
-Spojte pokojný pobyt v súkromí s výletmi, prechádzkami, aktivitami v prírode a objavovaním okolia. Pallov Dvor je vhodným miestom pre hostí, ktorí chcú oddychovať, ale zároveň si počas pobytu dopriať aj príjemný program.
+Vyberte si program podľa ročného obdobia. V lete vás čaká turistika, lanovky, pamiatky a rodinné atrakcie, v zime lyžovanie, skialp, bežkovanie aj pokojné prechádzky.
 
 CTA:
 
@@ -54,13 +54,14 @@ Karty:
 - Rodinný program: Rodiny s deťmi ocenia nenáročné aktivity, výlety a prechádzky, ktoré môžu doplniť pohodový pobyt v súkromí chaty.
 - Spoločný program pre skupiny: Dospelí hostia a firemné kolektívy môžu pobyt doplniť o spoločné aktivity, výlety alebo pokojný teambuildingový program.
 
-## Odporúčané miesta v okolí
+## Letné a zimné atrakcie v okolí
 
-Táto sekcia má byť editovateľná galéria alebo zoznam atrakcií. Nižšie sú pripravené reálne tipy v okolí Lutiší. Vzdialenosti a časy sú orientačné a pri implementácii ich komunikuj mäkko, napríklad `cca 25 min autom`.
+Stránku rozdeľ na dve samostatné sekcie s kotvami `#leto` a `#zima`. Každá sekcia používa vlastnú dátovú kolekciu a vlastné obrázky. Vzdialenosti a časy sú orientačné a pri implementácii ich komunikuj mäkko, napríklad `cca 25 min autom`.
 
-Nadpis:
+Nadpisy:
 
-Odporúčané miesta v okolí
+- Letné atrakcie a výlety
+- Zimné atrakcie v okolí
 
 Štruktúra jednej atrakcie:
 
@@ -76,15 +77,25 @@ Odporúčané miesta v okolí
 }
 ```
 
-Pripravené atrakcie:
+### Letné atrakcie
 
-- Vrátna dolina / Malá Fatra: Výrazná horská dolina pri Terchovej, vhodná na turistiku, výhľady, prechádzky a zimné aktivity. Orientačne cca 30-40 min autom. Typ: príroda, turistika, hory. Vhodné pre: páry, dospelých hostí, rodiny so staršími deťmi, firemné kolektívy. Obrázok: `/images/attractions/vratna-dolina.jpg`. Zdroj: https://slovakia.travel/en/vratna-valley-mala-fatra-mts
-- Jánošíkove diery: Sústava tiesňav a kaňonov v Krivánskej Malej Fatre s lávkami, rebríkmi, reťazami a vodopádmi. Dolné diery sú vhodnejšie aj pre rodiny, Horné diery sú náročnejšie a v zime bývajú uzavreté. Orientačne cca 25-35 min autom. Typ: príroda, turistika, rodinný výlet. Vhodné pre: rodiny, páry, aktívnych hostí. Obrázok: `/images/attractions/janosikove-diery.jpg`. Zdroj: https://www.terchova.sk/en/navstevnik/turisticke-trasy/janosikove-diery
-- Terchová: Obec pod Malou Fatrou spojená s Jurajom Jánošíkom, folklórom a výletmi do okolia. Vhodná ako jednoduchý cieľ na kratší výlet alebo zastávka cestou do Vrátnej. Orientačne cca 20-30 min autom. Typ: kultúra, obec, výlety. Vhodné pre: rodiny, páry, dospelých hostí. Obrázok: `/images/attractions/vratna-dolina.jpg`. Zdroj: https://www.terchova.sk/
-- Veľká Rača / Oščadnica: Oblasť Kysúc vhodná na turistiku, cyklovýlety, zimné aktivity a rodinný program. V lete je známa aj letnými atrakciami v stredisku Dedovka. Orientačne cca 45-60 min autom. Typ: hory, turistika, rodinné aktivity, zima. Vhodné pre: rodiny, aktívnych hostí, firemné kolektívy. Obrázok: `/images/attractions/velka-raca.jpg`. Zdroj: https://slovakia.travel/en/snowparadise-velka-raca
-- Slovenský orloj v Starej Bystrici: Drevený orloj a výrazná dominanta námestia v Starej Bystrici. Vhodný ako pokojný kultúrny tip na kratší výlet. Orientačne cca 25-35 min autom. Typ: kultúra, technická zaujímavosť, rodinný výlet. Vhodné pre: rodiny, páry, dospelých hostí. Obrázok: `/images/attractions/slovensky-orloj-stara-bystrica.jpg`. Zdroj: https://slovakia.travel/en/things-to-see-and-do/lets-explore-slovakia-online/slovak-horologe-in-stara-bystrica
-- Vychylovka / Múzeum kysuckej dediny / lesná železnica: Skanzen s ľudovou architektúrou a historickou lesnou úvraťovou železnicou. Vhodné ako celodennejší rodinný alebo kultúrny výlet. Orientačne cca 45-60 min autom. Typ: kultúra, história, rodina, technická pamiatka. Vhodné pre: rodiny, dospelých hostí, menšie skupiny. Obrázok: `/images/attractions/vychylovka-lesna-zeleznica.jpg`. Zdroj: https://slovakia.travel/lesna-zeleznica-vychylovka
-- Hrad Strečno: Hrad na brale nad riekou Váh s výhľadmi na Strečniansky priesmyk a okolie Malej Fatry. Vhodný ako kultúrny výlet v kombinácii s prírodou. Orientačne cca 40-50 min autom. Typ: história, výhľad, kultúra. Vhodné pre: rodiny, páry, dospelých hostí. Obrázok: `/images/attractions/hrad-strecno.jpg`. Zdroj: https://slovakia.travel/hrad-strecno
+- Jánošíkove diery: `/images/attractions/janosikove-diery.jpg`
+- Vrátna dolina a Chleb: `/images/attractions/vratna-dolina.jpg`
+- Letné centrum Snowparadise Veľká Rača: `/images/attractions/velka-raca.jpg`
+- Slovenský orloj v Starej Bystrici: `/images/attractions/slovensky-orloj-stara-bystrica.jpg`
+- Vychylovka / Múzeum kysuckej dediny: `/images/attractions/vychylovka-lesna-zeleznica.jpg`
+- Hrad Strečno: `/images/attractions/hrad-strecno.jpg`
+
+### Zimné atrakcie
+
+- Lyžovanie vo Vrátnej: `/images/attractions/vratna-zima.jpg`
+- Snowparadise Veľká Rača: `/images/attractions/snowparadise-velka-raca-zima.jpg`
+- Zimná Oščadnica: `/images/attractions/oscadnica-zima.jpg`
+- Ski Makov a Makov–Kasárne: `/images/attractions/makov-kasarne-zima.jpg`
+
+Každá zimná karta používa samostatnú fotografiu. Pri horských strediskách uveď upozornenie, že prevádzka závisí od snehu, vetra a počasia, a návštevník si má aktuálny stav overiť cez odkaz pri konkrétnom tipe.
+
+Hlavné dátové kolekcie sú `summerAttractions` a `winterAttractions` v `lib/site-data.ts`. Zo stránky pridaj CTA na `/aktualne-udalosti`.
 
 ## Inšpirácie na pobyt
 
@@ -126,15 +137,4 @@ CTA:
 
 ## Fotografie
 
-Placeholdery:
-
-- atrakcie-hero-okolie-lutise.jpg
-- prechadzky-priroda.jpg
-- turistika-vylety.jpg
-- rodinny-program.jpg
-- spolocny-program.jpg
-- atrakcia-1.jpg
-- atrakcia-2.jpg
-- atrakcia-3.jpg
-- atrakcia-4.jpg
-- navrat-do-chaty.jpg
+Použi optimalizované súbory uvedené v sezónnych zoznamoch vyššie. Hero používa `/images/attractions/vratna-dolina.jpg`. Licencie a pôvod externých fotografií sú evidované v `public/images/attractions/credits.md`.

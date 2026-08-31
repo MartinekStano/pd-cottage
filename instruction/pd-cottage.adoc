@@ -22,6 +22,7 @@ Detailny obsah jednotlivych stranok je rozdeleny v priecinku `instruction/pages/
 * `instruction/pages/gallery.md` - Fotogaleria.
 * `instruction/pages/pricing.md` - Cennik.
 * `instruction/pages/attractions.md` - Atrakcie a zazitky v okoli.
+* `instruction/pages/events.md` - Aktualne udalosti v okoli a pravidla aktualizacie.
 * `instruction/pages/wellness.md` - Wellness & Oddych.
 * `instruction/pages/contact.md` - Kontakt.
 
@@ -51,6 +52,7 @@ Hotovy prompt pre implementaciu je v `instruction/codex-implementation-prompt.md
 * Fotogaleria
 * Cennik
 * Atrakcie a zazitky v okoli
+* Aktualne udalosti v okoli
 * Wellness & Oddych
 * Kontakt
 
@@ -65,9 +67,11 @@ Pouzi hlavne menu:
 ** Wellness
 * Cennik
 * Atrakcie
+** Letne a zimne atrakcie
+** Aktualne udalosti
 * Kontakt
 
-Fotogaleria a Wellness maju byt v hlavnom menu pod polozkou Ubytovanie. Na desktope ich zobraz ako dropdown, na mobile ako vnorene odkazy pod Ubytovanim.
+Fotogaleria a Wellness maju byt v hlavnom menu pod polozkou Ubytovanie. Letne a zimne atrakcie a Aktualne udalosti maju byt pod polozkou Atrakcie. Na desktope ich zobraz ako dropdown, na mobile ako vnorene odkazy.
 
 V hlavicke ponechat vyrazne CTA:
 

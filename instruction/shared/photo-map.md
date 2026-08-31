@@ -72,12 +72,23 @@ Stiahnuté otvorene licencované fotky atrakcií sú v:
 
 Odporúčané použitie:
 
+Letné atrakcie:
+
 - Vrátna dolina: `/images/attractions/vratna-dolina.jpg`
 - Jánošíkove diery: `/images/attractions/janosikove-diery.jpg`
 - Veľká Rača: `/images/attractions/velka-raca.jpg`
 - Slovenský orloj v Starej Bystrici: `/images/attractions/slovensky-orloj-stara-bystrica.jpg`
 - Vychylovka / lesná železnica: `/images/attractions/vychylovka-lesna-zeleznica.jpg`
 - Hrad Strečno: `/images/attractions/hrad-strecno.jpg`
+
+Zimné atrakcie:
+
+- Vrátna: `/images/attractions/vratna-zima.jpg`
+- Snowparadise Veľká Rača: `/images/attractions/snowparadise-velka-raca-zima.jpg`
+- Oščadnica: `/images/attractions/oscadnica-zima.jpg`
+- Makov–Kasárne: `/images/attractions/makov-kasarne-zima.jpg`
+
+Každá zimná atrakcia používa samostatnú fotografiu, aby sa obrázky na kartách neopakovali. Stránka Aktuálne udalosti používa spoločný hero obrázok Vrátnej doliny; samotné udalosti zatiaľ nemajú vlastné fotografie.
 
 Licencie a zdroje sú v:
 

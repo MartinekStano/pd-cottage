@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pallov Dvor
 
-## Getting Started
+Prezentačný web súkromnej chaty Pallov Dvor v Lutišiach. Projekt používa Next.js 16, React 19, TypeScript, Tailwind CSS 4 a App Router.
 
-First, run the development server:
+## Lokálny vývoj
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Web bude dostupný na [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Kontrola kvality a produkčný build:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run lint
+npx next build --webpack
+```
 
-## Learn More
+## Obsah webu
 
-To learn more about Next.js, take a look at the following resources:
+Hlavné podstránky sú v priečinku `app/`. Atrakcie sú rozdelené podľa sezóny:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `/atrakcie` – letné a zimné atrakcie v okolí,
+- `/aktualne-udalosti` – časovo obmedzený kalendár miestnych podujatí; aktuálne obsahuje september 2026.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Dáta atrakcií sú v `lib/site-data.ts`. Udalosti sú v `lib/events-data.ts` a pred ďalším publikovaným obdobím ich treba overiť na stránkach organizátorov. Navigácia a sitemap zahŕňajú obe podstránky.
 
-## Deploy on Vercel
+## Fotografie a zdroje
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Optimalizované fotografie chaty a atrakcií sú v:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `public/images/pallov-dvor/`
+- `public/images/attractions/`
+
+Licencie externých fotografií sú evidované v `public/images/attractions/credits.md`. Detailné obsahové a implementačné zadanie je v priečinku `instruction/`.

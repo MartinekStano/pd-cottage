@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const siteUrl = "https://www.pallovdvor.sk";
-export const siteLastModified = "2026-08-20";
+export const siteLastModified = "2026-08-31";
 
 export const site = {
   name: "Pallov Dvor",
@@ -61,7 +61,14 @@ export const navItems: NavItem[] = [
     ],
   },
   { label: "Cenník", href: "/cennik" },
-  { label: "Atrakcie", href: "/atrakcie" },
+  {
+    label: "Atrakcie",
+    href: "/atrakcie",
+    children: [
+      { label: "Letné a zimné atrakcie", href: "/atrakcie" },
+      { label: "Aktuálne udalosti", href: "/aktualne-udalosti" },
+    ],
+  },
   { label: "Kontakt", href: "/kontakt" },
 ];
 
@@ -234,6 +241,23 @@ export const sitemapPages = [
     path: "/atrakcie",
     changeFrequency: "monthly",
     priority: 0.7,
+    images: [
+      images.attractionsHero,
+      "/images/attractions/janosikove-diery.jpg",
+      "/images/attractions/velka-raca.jpg",
+      "/images/attractions/slovensky-orloj-stara-bystrica.jpg",
+      "/images/attractions/vychylovka-lesna-zeleznica.jpg",
+      "/images/attractions/hrad-strecno.jpg",
+      "/images/attractions/vratna-zima.jpg",
+      "/images/attractions/snowparadise-velka-raca-zima.jpg",
+      "/images/attractions/oscadnica-zima.jpg",
+      "/images/attractions/makov-kasarne-zima.jpg",
+    ],
+  },
+  {
+    path: "/aktualne-udalosti",
+    changeFrequency: "weekly",
+    priority: 0.75,
     images: [images.attractionsHero],
   },
   {
@@ -512,50 +536,38 @@ export const attractionTypes = [
   },
 ];
 
-export const attractions = [
-  {
-    title: "Vrátna dolina / Malá Fatra",
-    description:
-      "Výrazná horská dolina pri Terchovej, vhodná na turistiku, výhľady, prechádzky a zimné aktivity.",
-    distance: "cca 30-40 min autom",
-    category: "Príroda, turistika, hory",
-    suitableFor:
-      "Páry, dospelí hostia, rodiny so staršími deťmi, firemné kolektívy",
-    image: "/images/attractions/vratna-dolina.jpg",
-    url: "https://slovakia.travel/en/vratna-valley-mala-fatra-mts",
-    credit: "Foto: Juloml, CC BY-SA 3.0 / GFDL",
-  },
+export const summerAttractions = [
   {
     title: "Jánošíkove diery",
     description:
-      "Sústava tiesňav a kaňonov v Krivánskej Malej Fatre s lávkami, rebríkmi, reťazami a vodopádmi.",
+      "Sústava tiesňav a kaňonov v Malej Fatre s lávkami, rebríkmi, reťazami a vodopádmi. Trasu si vyberte podľa kondície a počasia.",
     distance: "cca 25-35 min autom",
     category: "Príroda, turistika, rodinný výlet",
-    suitableFor: "Rodiny, páry, aktívni hostia",
+    suitableFor: "Rodiny so staršími deťmi, páry, aktívni hostia",
     image: "/images/attractions/janosikove-diery.jpg",
-    url: "https://www.terchova.sk/en/navstevnik/turisticke-trasy/janosikove-diery",
+    url: "https://www.terchova.sk/navstevnik/turisticke-trasy/janosikove-diery",
     credit: "Foto: Sylwia Botev / Fundacja Nomos, CC BY 3.0 PL",
   },
   {
-    title: "Terchová",
+    title: "Vrátna dolina a Chleb",
     description:
-      "Obec pod Malou Fatrou spojená s folklórom a výletmi do okolia. Vhodná ako jednoduchý cieľ na kratší výlet.",
-    distance: "cca 20-30 min autom",
-    category: "Kultúra, obec, výlety",
-    suitableFor: "Rodiny, páry, dospelí hostia",
+      "Celoročné horské stredisko pri Terchovej. V lete ponúka turistiku, vývoz kabínkovou lanovkou na Chleb, výhľady a aktivity na Pasekách.",
+    distance: "cca 30-40 min autom",
+    category: "Turistika, lanovka, hory",
+    suitableFor: "Rodiny, páry, turisti a skupiny",
     image: "/images/attractions/vratna-dolina.jpg",
-    url: "https://www.terchova.sk/",
+    url: "https://vratna.sk/home/",
     credit: "Foto: Juloml, CC BY-SA 3.0 / GFDL",
   },
   {
-    title: "Veľká Rača / Oščadnica",
+    title: "Letné centrum Snowparadise Veľká Rača",
     description:
-      "Oblasť Kysúc vhodná na turistiku, cyklovýlety, zimné aktivity a rodinný program v horskom prostredí.",
+      "Lanovka na Dedovku, bobová dráha, rozhľadňa, bike park, horské kolobežky, trampolíny a ďalší rodinný program v Oščadnici.",
     distance: "cca 45-60 min autom",
-    category: "Hory, turistika, rodinné aktivity, zima",
-    suitableFor: "Rodiny, aktívni hostia, firemné kolektívy",
+    category: "Rodinné atrakcie, lanovka, cyklistika",
+    suitableFor: "Rodiny, aktívni hostia a skupiny",
     image: "/images/attractions/velka-raca.jpg",
-    url: "https://slovakia.travel/en/snowparadise-velka-raca",
+    url: "https://snowparadise.sk/",
     credit: "Foto: Michal Jakubský, CC BY 3.0",
   },
   {
@@ -566,7 +578,7 @@ export const attractions = [
     category: "Kultúra, technická zaujímavosť, rodinný výlet",
     suitableFor: "Rodiny, páry, dospelí hostia",
     image: "/images/attractions/slovensky-orloj-stara-bystrica.jpg",
-    url: "https://slovakia.travel/en/things-to-see-and-do/lets-explore-slovakia-online/slovak-horologe-in-stara-bystrica",
+    url: "https://www.starabystrica.sk/",
     credit: "Foto: Fry72, Karel Frydrýšek, CC BY-SA 4.0",
   },
   {
@@ -577,7 +589,7 @@ export const attractions = [
     category: "Kultúra, história, rodina, technická pamiatka",
     suitableFor: "Rodiny, dospelí hostia, menšie skupiny",
     image: "/images/attractions/vychylovka-lesna-zeleznica.jpg",
-    url: "https://slovakia.travel/lesna-zeleznica-vychylovka",
+    url: "https://vstupenky.kysuckemuzeum.sk/",
     credit: "Foto: Nils Öberg, CC BY-SA 3.0 / GFDL",
   },
   {
@@ -590,6 +602,53 @@ export const attractions = [
     image: "/images/attractions/hrad-strecno.jpg",
     url: "https://slovakia.travel/hrad-strecno",
     credit: "Foto: Pudelek, Marcin Szala, CC BY-SA 3.0",
+  },
+];
+
+export const winterAttractions = [
+  {
+    title: "Lyžovanie vo Vrátnej",
+    description:
+      "Stredisko v Malej Fatre ponúka zjazdové lyžovanie, snowboarding, detské zóny, večerné lyžovanie aj vyznačené možnosti pre skialp. Prevádzka závisí od snehu a počasia.",
+    distance: "cca 30-40 min autom",
+    category: "Lyžovanie, snowboarding, skialp",
+    suitableFor: "Rodiny, začiatočníci aj skúsení lyžiari",
+    image: "/images/attractions/vratna-zima.jpg",
+    url: "https://vratna.sk/vratna-v-zime/",
+    credit: "Foto: Peter Derer, CC BY 3.0",
+  },
+  {
+    title: "Snowparadise Veľká Rača",
+    description:
+      "Zimné stredisko v Oščadnici s lyžovaním, snowboardingom, skialpovými trasami a bobovou dráhou, ktorá premáva aj v zime pri vhodných podmienkach.",
+    distance: "cca 45-60 min autom",
+    category: "Lyžovanie, skialp, zimné atrakcie",
+    suitableFor: "Rodiny, páry, športovci a skupiny",
+    image: "/images/attractions/snowparadise-velka-raca-zima.jpg",
+    url: "https://snowparadise.sk/cennik-v-zime/",
+    credit: "Foto: Pudelek (Marcin Szala), CC BY-SA 3.0",
+  },
+  {
+    title: "Zimná Oščadnica",
+    description:
+      "Okolie Oščadnice ponúka okrem zjazdoviek aj skialp, bežkovanie, sánkovanie a zimné prechádzky. Aktuálny stav trás si overte pred odchodom.",
+    distance: "cca 45-55 min autom",
+    category: "Bežkovanie, sánkovanie, zimné prechádzky",
+    suitableFor: "Rodiny, rekreační športovci a páry",
+    image: "/images/attractions/oscadnica-zima.jpg",
+    url: "https://visit.oscadnica.sk/visit/zima.html",
+    credit: "Foto: Pudelek, CC BY-SA 4.0",
+  },
+  {
+    title: "Ski Makov a Makov–Kasárne",
+    description:
+      "Dve zimné lokality v Javorníkoch s ľahšími aj stredne náročnými zjazdovkami. Makov–Kasárne ponúka pri dostatku prírodného snehu aj upravené bežkárske trasy.",
+    distance: "cca 60-75 min autom",
+    category: "Lyžovanie, bežkovanie, Javorníky",
+    suitableFor: "Rodiny, začiatočníci aj pokročilí",
+    image: "/images/attractions/makov-kasarne-zima.jpg",
+    url: "https://www.makov.sk/cestovny-ruch/zjazdove-lyzovanie/",
+    credit: "Foto: Kirk, CC BY-SA 3.0",
   },
 ];
 

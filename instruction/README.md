@@ -15,6 +15,7 @@ Tento priečinok obsahuje upratané zadanie pre web chaty Pallov Dvor. Hlavný t
 - `pages/gallery.md` - Fotogaléria.
 - `pages/pricing.md` - Cenník.
 - `pages/attractions.md` - Atrakcie a zážitky v okolí.
+- `pages/events.md` - Aktuálne udalosti v okolí a pravidlá ich aktualizácie.
 - `pages/wellness.md` - Wellness & Oddych.
 - `pages/contact.md` - Kontakt.
 - `_archive/source-instruction.md` - pôvodný veľký dokument, ponechaný ako záloha.
@@ -37,6 +38,8 @@ Zdroj pravdy je Pallov Dvor ako súkromná chata v Lutišiach. Web nemá komunik
 SEO komunikácia má prirodzene cieliť hlavne na lokálne dopyty ako `chata Lutiše`, `chata na prenájom Lutiše`, `ubytovanie Lutiše` a širšie varianty pre Kysuce.
 
 Primárny cieľ webu je dostať návštevníka k akcii `Overiť dostupnosť termínu`.
+
+Stránka Atrakcie je rozdelená na letnú a zimnú časť. V jej navigačnom podmenu je aj stránka `Aktuálne udalosti`, ktorá momentálne pokrýva september 2026. Keďže ide o časovo citlivý obsah, údaje sa musia pred každým novým obdobím znovu overiť na oficiálnych stránkach organizátorov.
 
 
 ## Pred implementáciou ešte potvrdiť

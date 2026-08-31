@@ -7,18 +7,19 @@ import { PhotoSection } from "@/components/photo-section";
 import { SectionHeader } from "@/components/section-header";
 import {
   attractionTypes,
-  attractions,
   contact,
   images,
   pageMetadata,
   site,
   stayIdeas,
+  summerAttractions,
+  winterAttractions,
 } from "@/lib/site-data";
 
 export const metadata: Metadata = pageMetadata({
   title: "Chata Lutiše a výlety v okolí",
   description:
-    "Chata Lutiše s výletmi v okolí: tipy na Vrátna dolinu, Jánošíkove diery, Terchovú, Veľkú Raču, Vychylovku a Hrad Strečno.",
+    "Letné a zimné atrakcie pri chate v Lutišiach: Jánošíkove diery, Vrátna, Veľká Rača, Vychylovka, Strečno aj lyžovanie na Kysuciach.",
   path: "/atrakcie",
   image: images.attractionsHero,
 });
@@ -31,10 +32,10 @@ export default function AttractionsPage() {
         image={images.attractionsHero}
         imageAlt="Horská krajina Malej Fatry"
         title="Atrakcie a zážitky v okolí Pallovho Dvora"
-        subtitle="Spojte pobyt na chate v Lutišiach s výletmi, prechádzkami, aktivitami v prírode a objavovaním okolia. Pallov Dvor je vhodným miestom pre hostí, ktorí chcú oddychovať a dopriať si aj príjemný program."
+        subtitle="Vyberte si program podľa ročného obdobia. V lete vás čaká turistika, lanovky, pamiatky a rodinné atrakcie, v zime lyžovanie, skialp, bežkovanie aj pokojné prechádzky."
         actions={[
           { label: site.primaryCta, href: site.ctaHref },
-          { label: "Kontaktovať nás", href: "/kontakt" },
+          { label: "Aktuálne udalosti", href: "/aktualne-udalosti" },
         ]}
       />
 
@@ -64,21 +65,37 @@ export default function AttractionsPage() {
         </div>
       </section>
 
-      <section className="section-pad">
+      <section className="section-pad" id="leto">
         <div className="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10">
           <SectionHeader
-            title="Odporúčané miesta v okolí"
-            text="Vzdialenosti a časy sú orientačné. Pred výletom odporúčame overiť aktuálne podmienky priamo pri zvolenom mieste."
+            eyebrow="Leto a teplejšie dni"
+            title="Letné atrakcie a výlety"
+            text="Turistika, lanovky, kultúra aj rodinné atrakcie. Vzdialenosti sú orientačné; prevádzku, počasie a podmienky na trase si pred výletom overte cez odkaz pri každom tipe."
           />
-          <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {attractions.map((attraction) => (
+          <div className="stagger-list mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            {summerAttractions.map((attraction) => (
               <AttractionCard key={attraction.title} {...attraction} />
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section-pad bg-[var(--surface)]">
+      <section className="section-pad bg-[var(--surface)]" id="zima">
+        <div className="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10">
+          <SectionHeader
+            eyebrow="Zima a sneh"
+            title="Zimné atrakcie v okolí"
+            text="Tipy na lyžovanie, skialp, bežkovanie a zimné výlety. Horské strediská menia prevádzku podľa snehu, vetra a počasia, preto si v deň návštevy skontrolujte aktuálny stav."
+          />
+          <div className="stagger-list mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            {winterAttractions.map((attraction) => (
+              <AttractionCard key={attraction.title} {...attraction} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-pad">
         <div className="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10">
           <SectionHeader align="center" title="Inšpirácie na pobyt v Pallovom Dvore" />
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">

@@ -47,6 +47,7 @@ Vytvor tieto stránky:
 - Fotogaléria: `/fotogaleria`
 - Cenník: `/cennik`
 - Atrakcie: `/atrakcie`
+- Aktuálne udalosti: `/aktualne-udalosti`
 - Wellness: `/wellness`
 - Kontakt: `/kontakt`
 
@@ -62,6 +63,7 @@ Obsah jednotlivých stránok čerpaj zo súborov:
 - `instruction/pages/gallery.md`
 - `instruction/pages/pricing.md`
 - `instruction/pages/attractions.md`
+- `instruction/pages/events.md`
 - `instruction/pages/wellness.md`
 - `instruction/pages/contact.md`
 
@@ -74,6 +76,7 @@ Globálne dáta drž centralizovane, napríklad v `lib/site-data.ts` alebo podob
 - vybavenie,
 - wellness príplatky,
 - atrakcie,
+- aktuálne udalosti,
 - image paths.
 
 Kontaktné údaje:
@@ -215,7 +218,7 @@ Formulár nemusí odosielať dáta na backend, ale musí pôsobiť ako realistic
 
 ## Stránka Atrakcie
 
-Použi obsah z `instruction/pages/attractions.md`. Ak sú v dátach atrakcií iba placeholdery, priprav dátovú štruktúru tak, aby sa dala ľahko doplniť.
+Použi obsah z `instruction/pages/attractions.md` a rozdeľ atrakcie na samostatnú letnú a zimnú časť. Dáta drž oddelene tak, aby sa dali sezónne tipy jednoducho meniť bez zásahu do komponentov.
 
 Vhodné atrakcie v okolí, ktoré môžu byť zahrnuté:
 
@@ -238,6 +241,10 @@ Pri každej atrakcii použi polia:
 - voliteľný odkaz.
 
 Ak používaš externé informácie, preferuj oficiálne zdroje alebo Slovakia.travel. Nepíš neoverené konkrétne otváracie hodiny alebo ceny, ak ich nebudeš overovať.
+
+## Stránka Aktuálne udalosti
+
+Použi obsah a pravidlá z `instruction/pages/events.md`. Udalosti drž v samostatnom dátovom súbore, zoraď ich chronologicky a pri každej uveď dátum, názov, opis, miesto, kategóriu a odkaz na zdroj. Pred publikovaním vždy over termín a program na oficiálnej stránke organizátora. Stránku zahrň do navigácie a sitemap; pri zmene mesiaca aktualizuj aj metadata, nadpisy a dátum posledného overenia.
 
 ## Kvalita kódu
 
