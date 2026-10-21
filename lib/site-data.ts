@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
+import { propertyImages, propertyPhotos } from "@/lib/photography";
 
 export const siteUrl = "https://www.pallovdvor.sk";
-export const siteLastModified = "2026-08-31";
+export const siteLastModified = "2026-10-21";
 
 export const site = {
   name: "Pallov Dvor",
@@ -73,131 +74,11 @@ export const navItems: NavItem[] = [
 ];
 
 export const images = {
-  hero: "/images/pallov-dvor/hero-chata-pallov-dvor.jpg",
-  exterior: "/images/pallov-dvor/exterier-pallov-dvor.jpg",
-  wholeObject: "/images/pallov-dvor/cely-objekt-pallov-dvor.jpg",
-  aboutExterior: "/images/pallov-dvor/o-nas-pallov-dvor-exterier.jpg",
-  aboutInterior: "/images/pallov-dvor/o-nas-interier.jpg",
-  interior: "/images/pallov-dvor/interier-pallov-dvor.jpg",
-  livingKitchen: "/images/pallov-dvor/obyvacka-kuchyna-pallov-dvor.jpg",
-  dining: "/images/pallov-dvor/jedalensky-priestor-pallov-dvor.jpg",
-  social: "/images/pallov-dvor/spolocensky-priestor.jpg",
-  projector: "/images/pallov-dvor/spolocensky-priestor-projektor.jpg",
-  detail: "/images/pallov-dvor/detail-chaty.jpg",
-  bathroomGround: "/images/pallov-dvor/kupelna-prizemie-pallov-dvor.jpg",
-  bathroomUpper: "/images/pallov-dvor/kupelna-poschodie-pallov-dvor.jpg",
-  gazebo: "/images/pallov-dvor/altanok-pallov-dvor.jpg",
-  gazeboEvening: "/images/pallov-dvor/altanok-vecer-pallov-dvor.jpg",
-  grill: "/images/pallov-dvor/gril-pallov-dvor.jpg",
-  sauna: "/images/pallov-dvor/sauna-pallov-dvor.jpg",
-  tub: "/images/pallov-dvor/vonkajsia-kada-pallov-dvor.jpg",
-  saunaTub: "/images/pallov-dvor/sauna-kada-pallov-dvor.jpg",
-  wellnessHero: "/images/pallov-dvor/wellness-hero-pallov-dvor.jpg",
-  wellnessPackage: "/images/pallov-dvor/wellness-sauna-kada.jpg",
-  pricingHero: "/images/pallov-dvor/cennik-pallov-dvor-hero.jpg",
-  contactHero: "/images/pallov-dvor/kontakt-hero-pallov-dvor.jpg",
-  contactExterior: "/images/pallov-dvor/kontakt-exterier-pallov-dvor.jpg",
+  ...propertyImages,
   attractionsHero: "/images/attractions/vratna-dolina.jpg",
 };
 
-export const galleryImages = [
-  {
-    src: images.livingKitchen,
-    alt: "Obývacia miestnosť s kuchyňou v Pallovom Dvore",
-    title: "Obývačka s kuchyňou",
-    group: "Interiér",
-  },
-  {
-    src: images.dining,
-    alt: "Jedálenský priestor v Pallovom Dvore",
-    title: "Jedálenský priestor",
-    group: "Interiér",
-  },
-  {
-    src: images.social,
-    alt: "Spoločenský priestor v Pallovom Dvore",
-    title: "Spoločenský priestor",
-    group: "Spoločné priestory",
-  },
-  {
-    src: images.projector,
-    alt: "Spoločenský priestor s projektorom",
-    title: "Priestor s projektorom",
-    group: "Spoločné priestory",
-  },
-  {
-    src: "/images/pallov-dvor/izba-1-pallov-dvor-1.jpg",
-    alt: "Spálňa s dvojlôžkom a jednolôžkom",
-    title: "Spálňa s dvojlôžkom",
-    group: "Izby",
-  },
-  {
-    src: "/images/pallov-dvor/izba-1-pallov-dvor-2.jpg",
-    alt: "Detail spálne s dvojlôžkom a jednolôžkom",
-    title: "Detail prvej spálne",
-    group: "Izby",
-  },
-  {
-    src: "/images/pallov-dvor/izba-2-pallov-dvor-1.jpg",
-    alt: "Spálňa s dvoma jednolôžkami",
-    title: "Spálňa s jednolôžkami",
-    group: "Izby",
-  },
-  {
-    src: "/images/pallov-dvor/izba-3-pallov-dvor-1.jpg",
-    alt: "Druhá spálňa s dvojlôžkom a jednolôžkom",
-    title: "Druhá spálňa",
-    group: "Izby",
-  },
-  {
-    src: images.bathroomGround,
-    alt: "Kúpeľňa na prízemí v Pallovom Dvore",
-    title: "Kúpeľňa prízemie",
-    group: "Kúpeľne",
-  },
-  {
-    src: images.bathroomUpper,
-    alt: "Kúpeľňa na poschodí v Pallovom Dvore",
-    title: "Kúpeľňa poschodie",
-    group: "Kúpeľne",
-  },
-  {
-    src: images.gazebo,
-    alt: "Altánok pri chate Pallov Dvor",
-    title: "Altánok",
-    group: "Exteriér",
-  },
-  {
-    src: images.gazeboEvening,
-    alt: "Večerný altánok pri chate Pallov Dvor",
-    title: "Altánok večer",
-    group: "Exteriér",
-  },
-  {
-    src: images.grill,
-    alt: "Gril v exteriéri Pallovho Dvora",
-    title: "Gril",
-    group: "Exteriér",
-  },
-  {
-    src: images.saunaTub,
-    alt: "Sauna a vonkajšia kaďa pri chate Pallov Dvor",
-    title: "Sauna a kaďa",
-    group: "Wellness",
-  },
-  {
-    src: images.tub,
-    alt: "Vonkajšia kaďa pri chate Pallov Dvor",
-    title: "Vonkajšia kaďa",
-    group: "Wellness",
-  },
-  {
-    src: images.exterior,
-    alt: "Exteriér chaty Pallov Dvor",
-    title: "Exteriér chaty",
-    group: "Objekt",
-  },
-];
+export const galleryImages = propertyPhotos;
 
 type SitemapPage = {
   path: string;
@@ -223,7 +104,7 @@ export const sitemapPages = [
     path: "/ubytovanie",
     changeFrequency: "weekly",
     priority: 0.95,
-    images: [images.interior, images.livingKitchen, images.wholeObject],
+    images: propertyPhotos.filter((image) => image.group === "Pri vstupnej bráne" || image.group === "Pri saune").map((image) => image.src),
   },
   {
     path: "/fotogaleria",
@@ -247,7 +128,7 @@ export const sitemapPages = [
       "/images/attractions/velka-raca.jpg",
       "/images/attractions/slovensky-orloj-stara-bystrica.jpg",
       "/images/attractions/vychylovka-lesna-zeleznica.jpg",
-      "/images/attractions/hrad-strecno.jpg",
+      "/images/attractions/hrad-strecno.webp",
       "/images/attractions/vratna-zima.jpg",
       "/images/attractions/snowparadise-velka-raca-zima.jpg",
       "/images/attractions/oscadnica-zima.jpg",
@@ -388,42 +269,6 @@ export const unitLayout = [
   "Wi-Fi",
 ];
 
-export const rooms = [
-  {
-    title: "Spálňa s dvojlôžkom a jednolôžkom",
-    description:
-      "Priestranná spálňa vhodná pre pár, rodičov s dieťaťom alebo hostí, ktorí ocenia kombináciu dvojlôžka a samostatného lôžka.",
-    beds: "1 dvojlôžko, 1 jednolôžko",
-    images: [
-      "/images/pallov-dvor/izba-1-pallov-dvor-1.jpg",
-      "/images/pallov-dvor/izba-1-pallov-dvor-2.jpg",
-      "/images/pallov-dvor/izba-1-pallov-dvor-3.jpg",
-    ],
-  },
-  {
-    title: "Spálňa s dvoma jednolôžkami",
-    description:
-      "Praktická izba s dvoma samostatnými lôžkami, vhodná pre deti, dospelých hostí alebo kolegov počas firemného pobytu.",
-    beds: "2 jednolôžka",
-    images: [
-      "/images/pallov-dvor/izba-2-pallov-dvor-1.jpg",
-      "/images/pallov-dvor/izba-2-pallov-dvor-2.jpg",
-      "/images/pallov-dvor/izba-2-pallov-dvor-3.jpg",
-    ],
-  },
-  {
-    title: "Druhá spálňa s dvojlôžkom a jednolôžkom",
-    description:
-      "Útulná spálňa vhodná pre pár, menšiu rodinu alebo hostí, ktorí chcú mať pohodlný priestor na oddych.",
-    beds: "1 dvojlôžko, 1 jednolôžko",
-    images: [
-      "/images/pallov-dvor/izba-3-pallov-dvor-1.jpg",
-      "/images/pallov-dvor/izba-3-pallov-dvor-2.jpg",
-      "/images/pallov-dvor/izba-3-pallov-dvor-3.jpg",
-    ],
-  },
-];
-
 export const priceCards = [
   {
     title: "1 samostatná jednotka",
@@ -439,12 +284,12 @@ export const priceCards = [
 
 export const unitPriceRows = [
   ["Mimo sezóny (1. 10. – 30. 6.)", "159 € / noc", "189 € / noc"],
-  ["Sezóna (1. 7. – 31. 8.)", "189 € / noc", "219 € / noc"],
+  ["Sezóna (1. 7. – 30. 9.)", "189 € / noc", "219 € / noc"],
 ];
 
 export const wholeObjectPriceRows = [
   ["Mimo sezóny (1. 10. – 30. 6.)", "319 € / noc", "379 € / noc"],
-  ["Sezóna (1. 7. – 31. 8.)", "379 € / noc", "439 € / noc"],
+  ["Sezóna (1. 7. – 30. 9.)", "379 € / noc", "439 € / noc"],
 ];
 
 export const wellnessRows = [
@@ -491,8 +336,8 @@ export const wellnessCards = [
   {
     title: "Sauna pre 6 osôb",
     text: "Sauna je ideálnym miestom na uvoľnenie tela a mysle. Počas pobytu ju môžu hostia využiť na večerný oddych, regeneráciu po aktívnom dni alebo ako príjemnú súčasť spoločného programu.",
-    image: images.sauna,
-    alt: "Sauna v Pallovom Dvore",
+    image: images.saunaExterior,
+    alt: "Drevená sauna v exteriéri Pallovho Dvora",
   },
   {
     title: "Vonkajšia kaďa pod holým nebom",
@@ -599,9 +444,11 @@ export const summerAttractions = [
     distance: "cca 40-50 min autom",
     category: "História, výhľad, kultúra",
     suitableFor: "Rodiny, páry, dospelí hostia",
-    image: "/images/attractions/hrad-strecno.jpg",
+    image: "/images/attractions/hrad-strecno.webp",
     url: "https://slovakia.travel/hrad-strecno",
-    credit: "Foto: Pudelek, Marcin Szala, CC BY-SA 3.0",
+    credit: "Foto: 10ricardo, CC BY-SA 3.0",
+    creditSource: "https://commons.wikimedia.org/wiki/File:Strecno_Castle_01.jpg",
+    creditLicense: "https://creativecommons.org/licenses/by-sa/3.0/",
   },
 ];
 
@@ -742,8 +589,8 @@ export function pageMetadata({
       images: [
         {
           url: image,
-          width: 1200,
-          height: 630,
+          width: propertyPhotos.find((photo) => photo.src === image)?.width ?? 1200,
+          height: propertyPhotos.find((photo) => photo.src === image)?.height ?? 630,
           alt: `${site.name} - ${title}`,
         },
       ],

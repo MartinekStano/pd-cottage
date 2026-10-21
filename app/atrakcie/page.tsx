@@ -40,8 +40,8 @@ export default function AttractionsPage() {
       />
 
       <PhotoSection
-        image={images.gazeboEvening}
-        alt="Večerný altánok pri chate Pallov Dvor"
+        image={images.gazeboCovered}
+        alt="Kryté posedenie pri chate Pallov Dvor"
         eyebrow="Pobyt a výlety"
         title="Oddych na chate aj aktívne dni v okolí"
         text={[

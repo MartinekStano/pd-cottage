@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { propertyPhotos } from "@/lib/photography";
 
 type ImageCardProps = {
   title: string;
@@ -27,15 +28,18 @@ export function ImageCard({
   image,
   alt,
   meta,
-  aspect = "wide",
+  aspect,
   credit,
 }: ImageCardProps) {
+  const photo = propertyPhotos.find((item) => item.src === image);
+  const resolvedAspect = aspect ?? (photo && photo.height > photo.width ? "tall" : "wide");
+  const caption = meta ?? (photo ? `${photo.group}${photo.floor ? ` · ${photo.floor}` : ""}` : undefined);
   return (
     <article
       className="motion-card overflow-hidden rounded-lg border border-[var(--border)] bg-[var(--surface)] shadow-sm transition duration-300 hover:border-[var(--accent)] hover:shadow-lg"
       data-animate
     >
-      <div className={`relative ${aspectClass[aspect]}`}>
+      <div className={`relative ${aspectClass[resolvedAspect]}`}>
         <Image
           alt={alt}
           className="object-cover transition duration-500 hover:scale-[1.03]"
@@ -45,9 +49,9 @@ export function ImageCard({
         />
       </div>
       <div className="p-6">
-        {meta ? (
+        {caption ? (
           <p className="mb-3 text-sm font-semibold uppercase text-[var(--accent)]">
-            {meta}
+            {caption}
           </p>
         ) : null}
         <h3 className="font-serif text-2xl leading-tight text-[var(--text)]">

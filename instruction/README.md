@@ -29,7 +29,7 @@ Do commitu patria iba optimalizované a pomenované fotky:
 - `public/images/pallov-dvor/`
 - `public/images/attractions/`
 
-Surové importy z WhatsAppu a pracovné review náhľady sú zámerne mimo gitu. Ich pôvodné názvy ostávajú zachované v `public/images/pallov-dvor/manifest.json`, takže sa dá spätne dohľadať, z ktorého importu vznikol konkrétny webový asset.
+Originály novej upravenej sady a pracovné náhľady sú mimo gitu. Manifest uchováva presnú relatívnu cestu každého originálu, rozmery a kontrolný súčet. Pôvodná WhatsApp sada sa už nepoužíva.
 
 ## Aktuálny smer
 
@@ -39,12 +39,19 @@ SEO komunikácia má prirodzene cieliť hlavne na lokálne dopyty ako `chata Lut
 
 Primárny cieľ webu je dostať návštevníka k akcii `Overiť dostupnosť termínu`.
 
-Stránka Atrakcie je rozdelená na letnú a zimnú časť. V jej navigačnom podmenu je aj stránka `Aktuálne udalosti`, ktorá momentálne pokrýva september 2026. Keďže ide o časovo citlivý obsah, údaje sa musia pred každým novým obdobím znovu overiť na oficiálnych stránkach organizátorov.
+Stránka Atrakcie je rozdelená na letnú a zimnú časť. V jej navigačnom podmenu je aj stránka `Aktuálne udalosti`, ktorá momentálne pokrýva október 2026 (zostávajúci program a prebiehajúce výstavy, overené 21. októbra). Keďže ide o časovo citlivý obsah, údaje sa musia pred každým novým obdobím znovu overiť na oficiálnych stránkach organizátorov.
 
 
 ## Pred implementáciou ešte potvrdiť
 
 - Presný cieľ CTA: či má ísť na kontaktný formulár, e-mail, telefón alebo externý rezervačný systém.
 - Či sa kontaktný formulár bude iba vizuálne zobrazovať, alebo sa neskôr napojí na odosielanie.
-- Ktoré ďalšie optimalizované fotografie v `public/images/pallov-dvor/` sú finálne pre hero sekcie.
+- Fotografická sada a výber hero záberov sú od 21. 10. 2026 určené v `shared/photo-map.md`.
 - Či sú ceny v `pages/pricing.md` definitívne.
+
+
+## Aktívna fotografická sada a redizajn (21. 10. 2026)
+
+Majiteľ schválil kompletnú výmenu starých fotografií chaty, úpravu sekcií a prepis dokumentácie. Aktívna sada má 41 záberov; používa sa výhradne cez `lib/photography.ts`. ML znamená jednotku bližšie k ceste/bráne, PL jednotku pri saune. Na webe ich označujeme podľa polohy a fotografie nemiešame.
+
+Aktuálny zdroj pravdy pre fotografie je `shared/photo-map.md`, pre sekcie `pages/home.md`, `pages/accommodation.md` a `pages/gallery.md`. Tieto dokumenty nahrádzajú staré fotografie a starší všeobecný návrh sekcií. Zachované ceny, kapacity, kontakty, navigácia aj októbrový kalendár sa touto úpravou nemenia. Historické archívne súbory a odvodené PDF/HTML nie sú aktuálne zadanie.

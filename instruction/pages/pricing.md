@@ -41,7 +41,7 @@ Jedna samostatná jednotka je vhodná pre menší pobyt v súkromí s kapacitou 
 | Obdobie | Nedeľa - štvrtok | Piatok - sobota |
 | --- | ---: | ---: |
 | Mimo sezóny (1. 10. - 30. 6.) | 159 € / noc | 189 € / noc |
-| Sezóna (1. 7. - 31. 8.) | 189 € / noc | 219 € / noc |
+| Sezóna (1. 7. - 30. 9.) | 189 € / noc | 219 € / noc |
 
 ## Cenník - celý objekt
 
@@ -50,7 +50,7 @@ Prenájom celého objektu je vhodný pre väčšie skupiny hostí, rodiny alebo 
 | Obdobie | Nedeľa - štvrtok | Piatok - sobota |
 | --- | ---: | ---: |
 | Mimo sezóny (1. 10. - 30. 6.) | 319 € / noc | 379 € / noc |
-| Sezóna (1. 7. - 31. 8.) | 379 € / noc | 439 € / noc |
+| Sezóna (1. 7. - 30. 9.) | 379 € / noc | 439 € / noc |
 
 ## Minimálna dĺžka pobytu
 
@@ -123,8 +123,12 @@ CTA:
 
 ## Fotografie
 
-Placeholdery:
+Aktívne fotografie (mapovanie v `shared/photo-map.md`):
 
-- cennik-pallov-dvor-hero.jpg
-- cely-objekt-pallov-dvor.jpg
-- wellness-sauna-kada.jpg
+- /images/pallov-dvor/exterier/pallov-dvor-06-altanok-kryte-posedenie.webp
+- /images/pallov-dvor/exterier/pallov-dvor-01-chata-hlavny-pohlad.webp
+- /images/pallov-dvor/exterier/pallov-dvor-09-kupacia-kada.webp
+
+Fotografie boli 21. 10. 2026 nahradené novou sadou. Pri každej ďalšej úprave používaj `lib/photography.ts` a `shared/photo-map.md`; obrázkové karty a fotosekcie rešpektujú orientáciu skutočných záberov.
+
+Majiteľ pri kontrole konzistencie potvrdil sezónnu cenu do 30. septembra. Rovnaký rozsah 1. 7. – 30. 9. platí v oboch tabuľkách, poznámkach aj úvodnom texte; sumy sa nemenia. Cenník jednej jednotky platí pre obe jednotky. Sekundárne CTA smeruje na ubytovanie, aby neduplikovalo primárne overenie termínu.

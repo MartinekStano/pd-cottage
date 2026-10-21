@@ -104,7 +104,7 @@ export default function ContactPage() {
         subtitle="Plánujete rodinný pobyt, pokojný víkend, chatu na prenájom v Lutišiach alebo menšie firemné stretnutie? Napíšte nám a overte si dostupnosť termínu."
         actions={[
           { label: site.primaryCta, href: "#formular" },
-          { label: "Poslať nezáväzný dopyt", href: "#formular" },
+          { label: "Zavolať", href: contact.phoneHref },
         ]}
       />
 
@@ -127,7 +127,7 @@ export default function ContactPage() {
                   href={contact.emailHref}
                 >
                   <ContactIcon name="mail" />
-                  <span>{contact.email}</span>
+                  <span className="min-w-0 break-all">{contact.email}</span>
                 </a>
                 <span className={contactItemClass}>
                   <ContactIcon name="map" />

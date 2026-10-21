@@ -1,3 +1,7 @@
+# Aktualizácia 21. 10. 2026
+
+Fotografie a nové rozloženie majú zdroj pravdy v `shared/photo-map.md`, `pages/home.md`, `pages/accommodation.md` a `pages/gallery.md`. Používaj výhradne novú sadu 41 fotografií a `lib/photography.ts`; staršia predstava všeobecných izieb a sekcií nižšie sa v prípade rozporu nepoužíva. Jednotky sú verejne `Pri vstupnej bráne` a `Pri saune`.
+
 # Prompt pre Codex - implementácia webu Pallov Dvor
 
 Si senior frontend developer v existujúcom projekte `pd-cottage`. Tvojou úlohou je naprogramovať kompletný responzívny prezentačný web pre súkromnú chatu Pallov Dvor podľa pripravených inštrukcií v priečinku `instruction/`.

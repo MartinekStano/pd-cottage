@@ -52,52 +52,31 @@ Karta 1:
 
 - Názov: Sauna pre 6 osôb
 - Text: Sauna je ideálnym miestom na uvoľnenie tela a mysle. Počas pobytu ju môžu hostia využiť na večerný oddych, regeneráciu po aktívnom dni alebo ako príjemnú súčasť spoločného programu.
-- Fotografia: sauna-pallov-dvor.jpg
+- Fotografia karty: /images/pallov-dvor/exterier/pallov-dvor-08-sauna-exterier.webp. Interiér sauny je v úvodnej fotosekcii.
 
 Karta 2:
 
 - Názov: Vonkajšia kaďa pod holým nebom
 - Text: Vonkajšia kaďa vytvára príjemný priestor na oddych v exteriéri. Je vhodná na pokojné večery, relax po turistike alebo chvíle, keď si chcete vychutnať teplo vody a atmosféru súkromného pobytu.
-- Fotografia: vonkajsia-kada-pallov-dvor.jpg
+- Fotografia: /images/pallov-dvor/exterier/pallov-dvor-09-kupacia-kada.webp
 
-## Oddychový rituál
+## Oddychová miestnosť
 
-Nadpis:
+Nadpis: `Oddych má aj svoj vlastný priestor.`
 
-Rituál pokojného večera
-
-Text:
-
-Po dni strávenom v prírode, na výlete alebo spoločným programom si môžete dopriať pokojný večer v Pallovom Dvore. Začnite oddychom v saune, pokračujte posedením vo vonkajšej kadi a večer zakončite v altánku alebo spoločenskom priestore.
+Fotografia oddychovej miestnosti dopĺňa portrétny záber interiéru sauny a samostatné karty sauny a kade v exteriéri. Text opisuje prestávku medzi saunovaním a možnosť nadviazať posedením alebo filmom. Používať skutočnú fotografiu miestnosti; denný záber neoznačovať za večerný.
 
 ## Wellness príplatky
 
 | Služba | Cena |
 | --- | ---: |
-| Kaďa | 30 € |
-| Sauna | 25 € |
-| Kaďa + sauna spolu | 45 € |
+| Kaďa | 30 € / deň |
+| Sauna | 25 € / deň |
+| Kaďa + sauna spolu | 45 € / deň |
 
 CTA:
 
 - Pozrieť celý cenník
-
-## Pre koho je wellness vhodný
-
-Karty:
-
-- Rodiny: Po dni plnom výletov a spoločných aktivít si môžu dopriať pokojný večer v súkromí chaty.
-- Páry a dospelí hostia: Sauna a vonkajšia kaďa vytvárajú príjemné prostredie na spomalenie a oddych.
-- Firemné kolektívy: Po pracovnom programe alebo teambuildingu ponúka oddychová zóna možnosť neformálneho uvoľnenia a spoločného času.
-
-## Inšpirácie na relaxačný pobyt
-
-Karty:
-
-- Oddych v súkromí
-- Večer v teple sauny
-- Relax po výlete
-- Firemný reset
 
 ## Záverečná CTA
 
@@ -116,10 +95,12 @@ CTA:
 
 ## Fotografie
 
-Placeholdery:
+Aktívna sada (presné mapovanie v `shared/photo-map.md`):
 
-- wellness-hero-pallov-dvor.jpg
-- sauna-pallov-dvor.jpg
-- vonkajsia-kada-pallov-dvor.jpg
-- vecerny-relax-pallov-dvor.jpg
-- altanok-vecer-pallov-dvor.jpg
+- /images/pallov-dvor/exterier/pallov-dvor-07-wellness-sauna-a-kada.webp
+- /images/pallov-dvor/exterier/pallov-dvor-10-sauna-interier.webp
+- /images/pallov-dvor/exterier/pallov-dvor-09-kupacia-kada.webp
+- /images/pallov-dvor/exterier/pallov-dvor-11-oddychova-miestnost.webp
+- /images/pallov-dvor/exterier/pallov-dvor-06-altanok-kryte-posedenie.webp
+
+Stránka nezdvojuje všeobecné karty cieľových skupín a inšpirácií. Zachováva konkrétne vybavenie, fotografie, ceny, oddychovú miestnosť a záverečné CTA. Wellness je spoločné doplnkové zázemie oboch jednotiek. Sekundárny záverečný odkaz je `Fotografie wellness` na `/fotogaleria#exterier`.

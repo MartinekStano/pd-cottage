@@ -9,6 +9,8 @@ type AttractionCardProps = {
   image: string;
   url?: string;
   credit: string;
+  creditSource?: string;
+  creditLicense?: string;
 };
 
 export function AttractionCard({
@@ -20,6 +22,8 @@ export function AttractionCard({
   image,
   url,
   credit,
+  creditSource,
+  creditLicense,
 }: AttractionCardProps) {
   return (
     <article
@@ -55,7 +59,11 @@ export function AttractionCard({
             <dd>{suitableFor}</dd>
           </div>
         </dl>
-        <p className="text-xs leading-5 text-[var(--muted)]">{credit}</p>
+        <p className="text-xs leading-5 text-[var(--muted)]">
+          {credit}
+          {creditSource ? <a className="ml-1 underline underline-offset-2" href={creditSource} target="_blank" rel="noreferrer">Zdroj fotografie</a> : null}
+          {creditLicense ? <a className="ml-2 underline underline-offset-2" href={creditLicense} target="_blank" rel="noreferrer">Licencia · zmenšené pre web</a> : null}
+        </p>
         {url ? (
           <a
             className="text-sm font-semibold text-[var(--accent)] transition hover:text-[var(--text)]"

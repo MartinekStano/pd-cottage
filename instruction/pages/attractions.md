@@ -84,7 +84,7 @@ Nadpisy:
 - Letné centrum Snowparadise Veľká Rača: `/images/attractions/velka-raca.jpg`
 - Slovenský orloj v Starej Bystrici: `/images/attractions/slovensky-orloj-stara-bystrica.jpg`
 - Vychylovka / Múzeum kysuckej dediny: `/images/attractions/vychylovka-lesna-zeleznica.jpg`
-- Hrad Strečno: `/images/attractions/hrad-strecno.jpg`
+- Hrad Strečno: `/images/attractions/hrad-strecno.webp`
 
 ### Zimné atrakcie
 

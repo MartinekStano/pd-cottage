@@ -35,6 +35,31 @@ export function Hero({
   actions = [],
   home = false,
 }: HeroProps) {
+  if (home) {
+    return (
+      <section className="bg-[var(--surface)]">
+        <div className="mx-auto grid max-w-[1600px] lg:grid-cols-[0.85fr_1.15fr]">
+          <div className="flex flex-col justify-center px-5 py-12 sm:px-8 sm:py-16 lg:py-20 lg:pl-12 lg:pr-10 xl:pl-20">
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] leading-6 text-[var(--accent)]">{eyebrow}</p>
+            <h1 className="mt-6 font-serif text-6xl leading-[0.98] tracking-tight text-[var(--text)] sm:text-7xl xl:text-8xl">{title}</h1>
+            <p className="mt-4 font-serif text-3xl leading-tight text-[var(--accent)] sm:text-4xl">Priestor byť spolu.</p>
+            <p className="mt-7 max-w-lg text-base leading-8 text-[var(--muted)] sm:text-lg">{subtitle}</p>
+            <div className="mt-8 flex flex-col items-start gap-5 xl:flex-row xl:items-center">
+              {actions.map((action, index) => (
+                <CTAButton href={action.href} key={action.href} variant={index === 0 ? "primary" : "secondary"}>{action.label}</CTAButton>
+              ))}
+            </div>
+            <p className="mt-9 text-xs font-semibold uppercase tracking-[0.14em] text-[var(--muted)]">Súkromná chata v Lutišiach</p>
+          </div>
+          <div className="relative aspect-[4/3] overflow-hidden lg:aspect-auto lg:min-h-[620px]">
+            <Image src={image} alt={imageAlt} fill fetchPriority="high" sizes="(max-width: 1023px) 100vw, 60vw" className="object-cover object-center" />
+            <div className="absolute bottom-5 left-5 rounded-full bg-[var(--surface)]/95 px-4 py-2 text-xs font-semibold text-[var(--text)] shadow-sm sm:bottom-8 sm:left-8">Dve jednotky. Jeden Pallov Dvor.</div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section
       className={`relative isolate flex overflow-hidden bg-[var(--dark)] ${

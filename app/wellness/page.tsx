@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { CTASection } from "@/components/cta-section";
-import { FeatureCard } from "@/components/feature-card";
 import { Hero } from "@/components/hero";
 import { ImageCard } from "@/components/image-card";
 import { PhotoSection } from "@/components/photo-section";
@@ -10,29 +9,9 @@ import {
   images,
   pageMetadata,
   site,
-  wellnessAudience,
   wellnessCards,
   wellnessRows,
 } from "@/lib/site-data";
-
-const relaxIdeas = [
-  {
-    title: "Oddych v súkromí",
-    text: "Pokojné tempo pobytu v oplotenom objekte s vlastným zázemím.",
-  },
-  {
-    title: "Večer v teple sauny",
-    text: "Príjemné uvoľnenie po výlete, pracovnom programe alebo spoločnom dni.",
-  },
-  {
-    title: "Relax po výlete",
-    text: "Návrat z prírody môžete doplniť vonkajšou kaďou a posedením v altánku.",
-  },
-  {
-    title: "Firemný reset",
-    text: "Menší kolektív môže spojiť pracovné stretnutie s oddychom v súkromí.",
-  },
-];
 
 export const metadata: Metadata = pageMetadata({
   title: "Chata so saunou a kaďou Lutiše",
@@ -50,7 +29,7 @@ export default function WellnessPage() {
         image={images.wellnessHero}
         imageAlt="Sauna a vonkajšia kaďa pri chate Pallov Dvor"
         title="Wellness & Oddych v Pallovom Dvore"
-        subtitle="Súkromný relax priamo pri chate v Lutišiach. Doprajte si pokojný oddych v saune, vonkajšej kadi a príjemnom prostredí, ktoré je vytvorené pre spomalenie, regeneráciu a spoločné chvíle."
+        subtitle="Teplo sauny, vonkajšia kaďa a chvíľa pre seba. Oddychová zóna je spoločným zázemím oboch jednotiek a využíva sa ako doplnková služba k pobytu."
         actions={[
           { label: site.primaryCta, href: site.ctaHref },
           { label: "Pozrieť cenník", href: "/cennik" },
@@ -58,8 +37,8 @@ export default function WellnessPage() {
       />
 
       <PhotoSection
-        image={images.saunaTub}
-        alt="Oddychová zóna so saunou a vonkajšou kaďou"
+        image={images.sauna}
+        alt="Drevený interiér sauny s lavicami v Pallovom Dvore"
         eyebrow="Relax v súkromí"
         title="Oddych bez zhonu a rušivého prostredia"
         text="Pallov Dvor ponúka hosťom možnosť oddýchnuť si priamo v areáli chaty. Nájdete tu súkromný priestor, kde si môžete vychutnať pokoj, teplo sauny, vonkajšiu kaďu a príjemnú atmosféru po dni strávenom výletmi, aktivitami alebo spoločným programom."
@@ -84,11 +63,11 @@ export default function WellnessPage() {
 
       <PhotoSection
         reverse
-        image={images.gazeboEvening}
-        alt="Večerný altánok pri Pallovom Dvore"
-        eyebrow="Rituál pokojného večera"
-        title="Rituál pokojného večera"
-        text="Po dni strávenom v prírode, na výlete alebo spoločným programom si môžete dopriať pokojný večer v Pallovom Dvore. Začnite oddychom v saune, pokračujte posedením vo vonkajšej kadi a večer zakončite v altánku alebo spoločenskom priestore."
+        image={images.relaxRoom}
+        alt="Oddychová miestnosť pri saune s posedením a dreveným stropom"
+        eyebrow="Ešte chvíľu nikam"
+        title="Oddych má aj svoj vlastný priestor."
+        text="Medzi saunovaním si doprajte prestávku v oddychovej miestnosti. Posaďte sa, spomaľte a nechajte večer plynúť. Na spoločné chvíle potom môžete nadviazať pri stole v altánku alebo pri filme."
       />
 
       <section className="section-pad bg-[var(--surface)]">
@@ -107,32 +86,10 @@ export default function WellnessPage() {
         </div>
       </section>
 
-      <section className="section-pad">
-        <div className="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10">
-          <SectionHeader align="center" title="Pre koho je oddychová zóna vhodná" />
-          <div className="mt-10 grid gap-5 md:grid-cols-3">
-            {wellnessAudience.map((audience) => (
-              <FeatureCard key={audience.title} {...audience} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section-pad bg-[var(--surface)]">
-        <div className="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10">
-          <SectionHeader align="center" title="Inšpirácie na relaxačný pobyt" />
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {relaxIdeas.map((idea) => (
-              <FeatureCard key={idea.title} {...idea} />
-            ))}
-          </div>
-        </div>
-      </section>
-
       <CTASection
         title="Doprajte si pokojný relax v Pallovom Dvore"
         text="Overte si dostupnosť termínu a naplánujte si pobyt, kde môžete spojiť súkromné ubytovanie, spoločné chvíle a oddych v saune či vonkajšej kadi."
-        secondary={{ label: "Pozrieť cenník", href: "/cennik" }}
+        secondary={{ label: "Fotografie wellness", href: "/fotogaleria#exterier" }}
       />
     </>
   );

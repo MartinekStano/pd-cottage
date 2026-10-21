@@ -85,9 +85,13 @@ CTA:
 
 ## Fotografie
 
-Placeholdery:
+Aktívne fotografie (mapovanie v `shared/photo-map.md`):
 
-- o-nas-pallov-dvor-exterier.jpg
-- o-nas-interier.jpg
-- spolocensky-priestor.jpg
-- detail-chaty.jpg
+- /images/pallov-dvor/exterier/pallov-dvor-03-chata-pohlad-z-ulice.webp
+- /images/pallov-dvor/pri-saune-prizemie/pallov-dvor-pl-np-obyvacka-jedalen-01.webp
+- /images/pallov-dvor/spolocny-priestor/pallov-dvor-spolocny-priestor-posedenie-01.webp
+- /images/pallov-dvor/pri-brane-poschodie/pallov-dvor-ml-1np-spalna-s-postielkou-02-zaber-01.webp
+
+Fotografie boli 21. 10. 2026 nahradené novou sadou. Pri každej ďalšej úprave používaj `lib/photography.ts` a `shared/photo-map.md`; obrázkové karty a fotosekcie rešpektujú orientáciu skutočných záberov.
+
+Pobyt je vysvetlený cez dve skutočné jednotky a ich spoločné zázemie. Fotografia interiéru je označená ako jednotka pri saune. Karty spoločných priestorov ukazujú spoločenskú miestnosť a oddychovú miestnosť; nepoužívajú ilustračnú spálňu druhej jednotky. Úvodná fotosekcia odkazuje na porovnanie ubytovania.

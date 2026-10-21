@@ -22,7 +22,7 @@ export function EventCard({
           className="grid min-h-20 w-20 shrink-0 place-content-center rounded-lg bg-[var(--pine)] px-2 text-center text-white"
           dateTime={dateTime}
         >
-          <span className="font-serif text-2xl leading-none">{date}</span>
+          <span className={`font-serif leading-none ${date.length > 5 ? "text-lg" : "text-2xl"}`}>{date}</span>
           {month ? (
             <span className="mt-1 text-xs font-semibold tracking-[0.18em] text-white/72">
               {month}

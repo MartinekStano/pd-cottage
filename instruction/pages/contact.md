@@ -27,7 +27,7 @@ CTA:
 - Overiť dostupnosť termínu
 - Poslať nezáväzný dopyt
 
-## Kontaktný formulár
+## Kontaktný formulár (budúca aktívna verzia)
 
 Nadpis:
 
@@ -137,8 +137,16 @@ CTA:
 
 ## Fotografie a prvky
 
-Placeholdery:
+Aktívne fotografie (mapovanie v `shared/photo-map.md`):
 
-- kontakt-hero-pallov-dvor.jpg
-- kontakt-exterier-pallov-dvor.jpg
+- /images/pallov-dvor/exterier/pallov-dvor-02-vstup-pallov-dvor.webp
+- /images/pallov-dvor/exterier/pallov-dvor-03-chata-pohlad-z-ulice.webp
 - mapa-lutise-ulica-373.jpg
+
+Fotografie boli 21. 10. 2026 nahradené novou sadou. Pri každej ďalšej úprave používaj `lib/photography.ts` a `shared/photo-map.md`; obrázkové karty a fotosekcie rešpektujú orientáciu skutočných záberov.
+
+## Aktuálne overenie termínu
+
+`contactForm.enabled` zostáva `false`; SMTP ani aktivácia odosielania sa touto úpravou nemení. Namiesto vypnutých vstupných polí a vývojového označenia WIP sa na kotve `#formular` zobrazí panel `Nájdime termín pre váš pobyt.` s funkčnými odkazmi na telefón a e-mail. Hostia majú uviesť termín, počet dospelých a detí, jednotku pri vstupnej bráne / pri saune / celý objekt a záujem o wellness. Pri budúcej aktivácii sa zobrazí existujúci serverový formulár. Hlavné CTA celého webu ostáva jednotné a vedie na túto kotvu.
+
+Hero kontaktu má odlišné akcie: overiť dostupnosť a zavolať; dve tlačidlá nesmú viesť na to isté miesto. E-mail v kontaktných údajoch sa môže zalomiť, aby nerozbíjal mobilné rozloženie.

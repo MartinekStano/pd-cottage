@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { propertyPhotos } from "@/lib/photography";
 import { CTAButton } from "./cta-button";
 import { SectionHeader } from "./section-header";
 
@@ -25,6 +26,8 @@ export function PhotoSection({
   cta,
 }: PhotoSectionProps) {
   const paragraphs = Array.isArray(text) ? text : [text];
+  const photo = propertyPhotos.find((item) => item.src === image);
+  const portrait = photo ? photo.height > photo.width : false;
 
   return (
     <section className="section-pad">
@@ -44,12 +47,8 @@ export function PhotoSection({
             </div>
           ) : null}
         </div>
-        <div
-          className={`relative aspect-[4/3] overflow-hidden rounded-lg border border-[var(--border)] shadow-sm ${
-            reverse ? "lg:order-1" : ""
-          }`}
-          data-animate="image"
-        >
+        <figure className={reverse ? "lg:order-1" : ""} data-animate="image">
+          <div className={`relative ${portrait ? "aspect-[3/4] max-h-[680px]" : "aspect-[4/3]"} overflow-hidden rounded-lg border border-[var(--border)] shadow-sm`}>
           <Image
             alt={alt}
             className="object-cover transition duration-700 hover:scale-[1.025]"
@@ -57,7 +56,9 @@ export function PhotoSection({
             sizes="(max-width: 1024px) 100vw, 50vw"
             src={image}
           />
-        </div>
+          </div>
+          {photo ? <figcaption className="mt-3 text-sm leading-6 text-[var(--muted)]">{photo.group}{photo.floor ? ` · ${photo.floor}` : ""}</figcaption> : null}
+        </figure>
       </div>
     </section>
   );

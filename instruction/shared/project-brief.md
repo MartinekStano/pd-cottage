@@ -108,7 +108,7 @@ Nepoužívať:
 ## Fotografie
 
 Commitované fotografie sú optimalizované webové assety v `public/images/pallov-dvor/`.
-Mapovanie na pôvodné importované názvy je v `public/images/pallov-dvor/manifest.json`.
+Od 21. 10. 2026 sa používa nová sada 41 fotografií, mapovanie v `public/images/pallov-dvor/manifest.json` a katalóg v `lib/photography.ts`. Jednotka ML sa verejne označuje `Pri vstupnej bráne`, PL ako `Pri saune`; ide o polohu, nie oddelené výhradné wellness.
 
 Použiteľné kategórie:
 

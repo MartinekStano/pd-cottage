@@ -3,6 +3,7 @@ import Link from "next/link";
 import { navItems, site } from "@/lib/site-data";
 import { CTAButton } from "./cta-button";
 import { MobileMenu } from "./mobile-menu";
+import { NavLink } from "./nav-link";
 
 const desktopLinkBase =
   "whitespace-nowrap rounded-full py-2 text-sm font-semibold transition";
@@ -34,7 +35,8 @@ export function SiteHeader() {
           {navItems.map((item) =>
             item.children?.length ? (
               <div className="group relative" key={item.href}>
-                <Link
+                <NavLink
+                  activePaths={item.children.map((child) => child.href)}
                   className={`${desktopLinkBase} ${desktopLinkPlain} flex items-center gap-1.5`}
                   href={item.href}
                 >
@@ -43,23 +45,23 @@ export function SiteHeader() {
                     aria-hidden="true"
                     className="mt-[-3px] h-1.5 w-1.5 rotate-45 border-b border-r border-current transition group-hover:rotate-[225deg] group-focus-within:rotate-[225deg]"
                   />
-                </Link>
+                </NavLink>
                 <div className="invisible absolute left-0 top-full min-w-48 pt-2 opacity-0 transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
                   <div className="grid gap-1 rounded-lg border border-[var(--border)] bg-[var(--surface)] p-2 shadow-xl">
                     {item.children.map((child) => (
-                      <Link
+                      <NavLink
                         className="rounded-md px-3 py-2.5 text-sm font-semibold text-[var(--text)] transition hover:bg-[var(--bg)]"
                         href={child.href}
                         key={child.href}
                       >
                         {child.label}
-                      </Link>
+                      </NavLink>
                     ))}
                   </div>
                 </div>
               </div>
             ) : (
-              <Link
+              <NavLink
                 className={`${desktopLinkBase} ${
                   item.featured ? desktopLinkFeatured : desktopLinkPlain
                 }`}
@@ -67,7 +69,7 @@ export function SiteHeader() {
                 key={item.href}
               >
                 {item.label}
-              </Link>
+              </NavLink>
             ),
           )}
         </nav>

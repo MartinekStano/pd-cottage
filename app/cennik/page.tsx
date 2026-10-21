@@ -38,7 +38,7 @@ export default function PricingPage() {
         subtitle="Vyberte si prenájom jednej samostatnej ubytovacej jednotky alebo celej chaty podľa veľkosti skupiny, termínu a typu pobytu."
         actions={[
           { label: site.primaryCta, href: site.ctaHref },
-          { label: "Poslať nezáväzný dopyt", href: "/kontakt#formular" },
+          { label: "Porovnať ubytovanie", href: "/ubytovanie#pri-brane" },
         ]}
       />
 
@@ -68,7 +68,7 @@ export default function PricingPage() {
             <SectionHeader
               eyebrow="1 samostatná jednotka"
               title="Cenník jednej ubytovacej jednotky"
-              text="Jedna samostatná jednotka je vhodná pre menší pobyt v súkromí s kapacitou maximálne 8 osôb."
+              text="Pre jednotku pri vstupnej bráne aj jednotku pri saune platí rovnaký cenník. Každá poskytuje ubytovanie najviac 8 hosťom."
             />
           </div>
           <ResponsiveTable
@@ -213,7 +213,7 @@ export default function PricingPage() {
       <CTASection
         title="Overte si cenu pre váš termín"
         text="Napíšte nám plánovaný termín, počet osôb a typ pobytu. Radi vám potvrdíme dostupnosť a pripravíme konkrétnu cenovú ponuku."
-        secondary={{ label: "Poslať nezáväzný dopyt", href: "/kontakt#formular" }}
+        secondary={{ label: "Pozrieť jednotky", href: "/ubytovanie#pri-brane" }}
       />
     </>
   );

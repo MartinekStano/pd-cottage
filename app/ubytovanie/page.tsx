@@ -1,213 +1,71 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { CTASection } from "@/components/cta-section";
-import { FeatureCard } from "@/components/feature-card";
+import { CTAButton } from "@/components/cta-button";
 import { Hero } from "@/components/hero";
-import { ImageCard } from "@/components/image-card";
 import { PhotoSection } from "@/components/photo-section";
 import { PriceCard } from "@/components/price-card";
 import { SectionHeader } from "@/components/section-header";
-import {
-  capacityCards,
-  images,
-  pageMetadata,
-  priceCards,
-  rooms,
-  site,
-  unitLayout,
-} from "@/lib/site-data";
+import { accommodationUnits } from "@/lib/photography";
+import { images, pageMetadata, priceCards, site } from "@/lib/site-data";
 
-export const metadata: Metadata = pageMetadata({
-  title: "Ubytovanie Lutiše",
-  description:
-    "Ubytovanie Lutiše v chate Pallov Dvor: dve samostatné jednotky, kapacita až 16 osôb, spálne, kúpeľne, kuchyňa, altánok a wellness zóna.",
-  path: "/ubytovanie",
-  image: images.wholeObject,
-});
+export const metadata: Metadata = pageMetadata({ title: "Ubytovanie Lutiše", description: "Dve samostatné jednotky v Pallovom Dvore: pri vstupnej bráne a pri saune. Každá pre 8 hostí s tromi spálňami, kuchyňou a dvoma kúpeľňami.", path: "/ubytovanie", image: images.wholeObject });
 
 export default function AccommodationPage() {
   return (
     <>
-      <Hero
-        eyebrow="Ubytovanie Lutiše"
-        image={images.wholeObject}
-        imageAlt="Celý objekt chaty Pallov Dvor v Lutišiach"
-        title="Ubytovanie v Pallovom Dvore"
-        subtitle="Pohodlné krátkodobé ubytovanie v Lutišiach v dvoch samostatných jednotkách s celkovou kapacitou až 16 osôb. Vhodné pre rodiny, dospelých hostí aj menšie firemné kolektívy, ktoré hľadajú chatu na prenájom s komfortným zázemím."
-        actions={[
-          { label: site.primaryCta, href: site.ctaHref },
-          { label: "Pozrieť cenník", href: "/cennik" },
-        ]}
-      />
-
-      <section className="section-pad bg-[var(--surface)]">
-        <div className="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10">
-          <SectionHeader
-            title="Dve samostatné jednotky, viac súkromia a flexibility"
-            text="Pallov Dvor je chata v Lutišiach rozdelená na dve samostatné ubytovacie jednotky. Každá jednotka má kapacitu maximálne 8 osôb, pričom celý objekt poskytuje ubytovanie až pre 16 hostí."
-          />
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {capacityCards.map((card) => (
-              <FeatureCard key={card.title} {...card} />
-            ))}
-          </div>
+      <Hero eyebrow="Ubytovanie v Lutišiach" image={images.wholeObject} imageAlt="Chata Pallov Dvor s dvoma samostatnými jednotkami"
+        title="Spolu, s priestorom pre seba."
+        subtitle="Dve samostatné jednotky v jednej chate. Každá pre najviac 8 hostí, s vlastnou kuchyňou, obývačkou, tromi spálňami a dvoma kúpeľňami. Alebo celý objekt len pre vás."
+        actions={[{ label: site.primaryCta, href: site.ctaHref }, { label: "Pozrieť cenník", href: "/cennik" }]} />
+      <nav className="border-b border-[var(--border)] bg-[var(--surface)]" aria-label="Ubytovacie jednotky">
+        <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-4 px-5 py-6 sm:gap-8 sm:px-8 lg:px-10">
+          <span className="text-xs font-semibold uppercase tracking-[0.12em] text-[var(--muted)]">Vyberte si priestor</span>
+          {accommodationUnits.map((unit) => <a href={`#${unit.id}`} key={unit.id} className="py-2 text-sm font-semibold text-[var(--accent)] underline underline-offset-8">{unit.title} ↓</a>)}
+          <span className="text-sm text-[var(--muted)] lg:ml-auto">Celý objekt · až 16 hostí</span>
         </div>
-      </section>
+      </nav>
 
-      <PhotoSection
-        reverse
-        image={images.livingKitchen}
-        alt="Kuchyňa spojená s obývacou miestnosťou"
-        eyebrow="Rozloženie jednej jednotky"
-        title="Praktické rozloženie pre pohodlný pobyt"
-        text="Každá ubytovacia jednotka ponúka dostatok priestoru na oddych, spánok aj spoločné chvíle. Hostia majú k dispozícii tri spálne, dve kúpeľne so sprchami, kuchyňu spojenú s obývacou miestnosťou a jedálenský priestor."
-      />
-
-      <section className="bg-[var(--surface)] py-10">
-        <div className="mx-auto flex w-full max-w-7xl flex-wrap gap-3 px-5 sm:px-8 lg:px-10">
-          {unitLayout.map((item) => (
-            <span
-              className="rounded-full border border-[var(--border)] bg-[var(--bg)] px-4 py-2 text-sm font-semibold text-[var(--text)]"
-              key={item}
-            >
-              {item}
-            </span>
-          ))}
-        </div>
-      </section>
-
-      <section className="section-pad bg-[var(--surface)]">
-        <div className="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10">
-          <SectionHeader
-            align="center"
-            title="Izby a spálne"
-            text="Každá jednotka má tri spálne a praktické rozloženie lôžok pre pohodlný pobyt."
-          />
-          <div className="mt-10 grid gap-6 lg:grid-cols-3">
-            {rooms.map((room) => (
-              <article
-                className="overflow-hidden rounded-lg border border-[var(--border)] bg-[var(--surface)] shadow-sm"
-                key={room.title}
-              >
-                <div className="grid grid-cols-2 gap-1">
-                  <div className="relative col-span-2 aspect-[4/3]">
-                    <Image
-                      alt={room.title}
-                      className="object-cover"
-                      fill
-                      sizes="(max-width: 1024px) 100vw, 33vw"
-                      src={room.images[0]}
-                    />
-                  </div>
-                  {room.images.slice(1).map((image) => (
-                    <div className="relative aspect-[4/3]" key={image}>
-                      <Image
-                        alt={room.title}
-                        className="object-cover"
-                        fill
-                        sizes="(max-width: 1024px) 50vw, 16vw"
-                        src={image}
-                      />
-                    </div>
-                  ))}
-                </div>
-                <div className="p-6">
-                  <h3 className="font-serif text-2xl leading-tight text-[var(--text)]">
-                    {room.title}
-                  </h3>
-                  <p className="mt-3 text-sm font-semibold text-[var(--accent)]">
-                    {room.beds}
-                  </p>
-                  <p className="mt-3 text-base leading-7 text-[var(--muted)]">
-                    {room.description}
-                  </p>
-                </div>
-              </article>
-            ))}
+      {accommodationUnits.map((unit, index) => (
+        <section id={unit.id} key={unit.id} className={`section-pad ${index === 1 ? "bg-[var(--surface)]" : ""}`}>
+          <div className="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10">
+            <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
+              <div>
+                <SectionHeader eyebrow={`Samostatné ubytovanie · ${index + 1} / 2`} title={unit.title} text={unit.description} />
+                <p className="mt-4 text-sm font-semibold text-[var(--accent)]">{unit.label}</p>
+                <dl className="mt-7 grid grid-cols-3 gap-4 border-y border-[var(--border)] py-5">
+                  {[["8", "hostí"], ["3", "spálne"], ["2", "kúpeľne"]].map(([value,label]) => <div key={label}><dt className="text-sm text-[var(--muted)]">{label}</dt><dd className="mt-1 font-serif text-3xl">{value}</dd></div>)}
+                </dl>
+                <p className="mt-6 text-base leading-7 text-[var(--muted)]">Na prízemí sa býva a stoluje, na poschodí odpočíva. Kúpeľňa so sprchou je na každom podlaží. Samozrejmosťou je Wi-Fi a TV.</p>
+                <div className="mt-7"><CTAButton href={site.ctaHref} variant="secondary">Overiť termín</CTAButton></div>
+              </div>
+              <div className="grid grid-cols-2 gap-3">
+                {[unit.living, unit.bedroom].map((photo) => <figure key={photo.src}><div className="relative aspect-[3/4] overflow-hidden rounded-lg"><Image src={photo.src} alt={photo.alt} fill sizes="(max-width: 1023px) 50vw, 30vw" className="object-cover" /></div><figcaption className="mt-3 text-xs leading-5 text-[var(--muted)]">{photo.title} · {photo.floor}</figcaption></figure>)}
+              </div>
+            </div>
+            <div className="mt-12 border-t border-[var(--border)] pt-8">
+              <div className="flex flex-col justify-between gap-3 sm:flex-row sm:items-end">
+                <h2 className="font-serif text-2xl sm:text-3xl">Tri spálne na pokojné noci</h2>
+                <p className="text-sm text-[var(--muted)]">{unit.title} · Poschodie</p>
+              </div>
+              <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3">
+                {unit.rooms.map((photo) => <figure key={photo.src}><div className="relative aspect-[3/4] overflow-hidden rounded-lg"><Image src={photo.src} alt={photo.alt} fill sizes="(max-width: 639px) 50vw, 33vw" className="object-cover" /></div><figcaption className="mt-3 text-sm leading-6 text-[var(--muted)]">{photo.title}</figcaption></figure>)}
+              </div>
+              <Link href={`/fotogaleria#${unit.id}`} className="mt-7 inline-block text-sm font-semibold text-[var(--accent)] underline underline-offset-8">Pozrieť aj kuchyňu, kúpeľne a ďalšie zábery ↗</Link>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      ))}
 
-      <section className="section-pad">
-        <div className="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10">
-          <SectionHeader
-            title="Priestor na spoločné chvíle"
-            text="Súčasťou chaty je kuchyňa spojená s obývacou miestnosťou a jedálenským stolom. Hostia majú k dispozícii aj spoločenský priestor s plátnom, projektorom a herným vybavením."
-          />
-          <div className="mt-10 grid gap-5 md:grid-cols-3">
-            <ImageCard
-              alt="Obývacia miestnosť s kuchyňou"
-              image={images.livingKitchen}
-              title="Obývačka s kuchyňou"
-            />
-            <ImageCard
-              alt="Jedálenský priestor Pallov Dvor"
-              image={images.dining}
-              title="Jedálenský priestor"
-            />
-            <ImageCard
-              alt="Spoločenský priestor s projektorom"
-              image={images.projector}
-              title="Priestor s projektorom"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section className="section-pad">
-        <div className="mx-auto grid w-full max-w-7xl gap-10 px-5 sm:px-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-start lg:px-10">
-          <div>
-            <SectionHeader
-              eyebrow="Kúpeľne a exteriér"
-              title="Dve kúpeľne so sprchami a vybavený vonkajší priestor"
-              text="Každá ubytovacia jednotka má dve kúpeľne so sprchami, jednu na prízemí a druhú na poschodí. Pobyt pokračuje aj v exteriéri s altánkom, letnou kuchynkou bez varnej dosky, grilom, vonkajšou kaďou a saunou pre 6 osôb."
-            />
-          </div>
-          <div className="grid gap-5 sm:grid-cols-2">
-            <ImageCard
-              alt="Kúpeľňa na prízemí"
-              image={images.bathroomGround}
-              title="Kúpeľňa prízemie"
-            />
-            <ImageCard
-              alt="Kúpeľňa na poschodí"
-              image={images.bathroomUpper}
-              title="Kúpeľňa poschodie"
-            />
-            <ImageCard
-              alt="Altánok pri chate"
-              image={images.gazebo}
-              title="Altánok"
-            />
-            <ImageCard
-              alt="Gril v exteriéri Pallovho Dvora"
-              image={images.grill}
-              title="Gril"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section className="section-pad">
-        <div className="mx-auto grid w-full max-w-7xl gap-8 px-5 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:px-10">
-          <SectionHeader
-            eyebrow="Možnosti prenájmu"
-            title="Vyberte si jednotku alebo celý objekt"
-            text="Cena závisí od sezóny, termínu a rozsahu prenájmu. Sauna a vonkajšia kaďa sú dostupné ako doplnok k pobytu."
-          />
-          <div className="grid gap-5 sm:grid-cols-2">
-            {priceCards.map((card, index) => (
-              <PriceCard key={card.title} highlighted={index === 1} {...card} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <CTASection
-        title="Overte si dostupnosť ubytovania v Lutišiach"
-        text="Plánujete rodinný pobyt, pokojný víkend alebo menšie firemné stretnutie? Pallov Dvor ponúka komfortnú chatu na prenájom s kapacitou až 16 osôb."
-        secondary={{ label: "Pozrieť cenník", href: "/cennik" }}
-      />
+      <PhotoSection image={images.projector} alt="Spoločenská miestnosť s projektorom a premietacím plátnom" eyebrow="Spoločné zázemie" title="Keď chcete byť všetci spolu."
+        text="Obe jednotky dopĺňa spoločenská miestnosť s projektorom. Vonku vás čaká krytý altánok s grilom a oplotený dvor. Priamo pri chate sú štyri parkovacie miesta."
+        cta={{ label: "Prezrieť spoločné priestory", href: "/fotogaleria#spolocny-priestor" }} />
+      <PhotoSection reverse image={images.saunaTub} alt="Sauna a kúpacia kaďa v spoločnom dvore" eyebrow="Váš čas na oddych" title="Zo spálne len na skok do sauny."
+        text="Po výlete si doprajte teplo sauny alebo vonkajšej kade. Oddychová zóna je spoločným zázemím objektu a využíva sa ako doplnková služba k pobytu."
+        cta={{ label: "Všetko o wellness", href: "/wellness" }} />
+      <section className="section-pad bg-[var(--surface)]"><div className="mx-auto grid max-w-7xl gap-8 px-5 sm:px-8 lg:grid-cols-[0.8fr_1.2fr] lg:px-10"><SectionHeader eyebrow="Možnosti prenájmu" title="Jednotka alebo celý Pallov Dvor?" text="Vyberte si podľa počtu hostí. Presnú cenu a dostupnosť potvrdíme pre váš termín." /><div className="grid gap-5 sm:grid-cols-2">{priceCards.map((card,index)=><PriceCard key={card.title} highlighted={index === 1} {...card} />)}</div></div></section>
+      <CTASection title="Nájdime termín pre váš pobyt." text="Napíšte nám počet hostí a plánovaný termín. Radi vám potvrdíme dostupnosť jednej jednotky alebo celého objektu." secondary={{ label: "Pozrieť cenník", href: "/cennik" }} />
     </>
   );
 }

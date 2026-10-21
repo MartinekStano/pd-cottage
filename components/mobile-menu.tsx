@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { NavLink } from "./nav-link";
 import { navItems, site } from "@/lib/site-data";
 import { CTAButton } from "./cta-button";
 
@@ -19,33 +19,34 @@ export function MobileMenu() {
       <summary className="flex min-h-11 cursor-pointer list-none items-center rounded-full border border-[var(--border-strong)] bg-[var(--surface)] px-4 text-sm font-semibold text-[var(--text)] marker:hidden">
         Menu
       </summary>
-      <div className="absolute right-0 top-14 w-[min(88vw,22rem)] rounded-lg border border-[var(--border)] bg-[var(--surface)] p-3 shadow-xl">
+      <div className="absolute right-0 top-14 max-h-[calc(100svh-12rem)] w-[min(88vw,22rem)] overflow-y-auto rounded-lg border border-[var(--border)] bg-[var(--surface)] p-3 shadow-xl">
         <nav className="grid gap-1" aria-label="Mobilná navigácia">
           {navItems.map((item) =>
             item.children?.length ? (
               <div className="grid gap-1" key={item.href}>
-                <Link
+                <NavLink
+                  activePaths={item.children.map((child) => child.href)}
                   className={`${mobileLinkBase} ${mobileLinkPlain}`}
                   href={item.href}
                   onClick={closeMenu}
                 >
                   {item.label}
-                </Link>
+                </NavLink>
                 <div className="ml-3 grid gap-1 border-l border-[var(--border)] pl-3">
                   {item.children.map((child) => (
-                    <Link
+                    <NavLink
                       className="rounded-md px-3 py-2.5 text-sm font-medium text-[var(--muted)] transition hover:bg-[var(--bg)] hover:text-[var(--text)]"
                       href={child.href}
                       key={child.href}
                       onClick={closeMenu}
                     >
                       {child.label}
-                    </Link>
+                    </NavLink>
                   ))}
                 </div>
               </div>
             ) : (
-              <Link
+              <NavLink
                 className={`${mobileLinkBase} ${
                   item.featured ? mobileLinkFeatured : mobileLinkPlain
                 }`}
@@ -54,7 +55,7 @@ export function MobileMenu() {
                 onClick={closeMenu}
               >
                 {item.label}
-              </Link>
+              </NavLink>
             ),
           )}
         </nav>

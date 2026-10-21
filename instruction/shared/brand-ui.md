@@ -55,12 +55,12 @@ Použiť vzdušné sekcie s jasnou hierarchiou. Sekcie majú byť plnohodnotné 
 
 Odporúčaný domovský layout:
 
-1. Horná hlavička s logom, navigáciou a CTA.
-2. Hero sekcia s veľkou fotografiou chaty alebo exteriéru.
-3. Rýchly prehľad základných benefitov.
-4. Benefit karty.
-5. Predstavenie chaty.
-6. Cenový teaser.
+1. Hlavička s logom, navigáciou a CTA.
+2. Svetlé delené hero: typografia a CTA vedľa reálnej fotografie chaty.
+3. Stručný pás kapacity, jednotiek, wellness a ceny.
+4. Fotografické predstavenie oboch jednotiek.
+5. Sauna a kaďa, spoločné posedenie a projektor.
+6. Cenový rozcestník, FAQ a hodnotenia.
 7. Záverečná CTA.
 
 Hero musí v prvom zobrazení jasne ukázať značku `Pallov Dvor` a reálnu fotografiu objektu alebo prostredia.
@@ -112,3 +112,11 @@ Dizajn webu vytvor podľa referenčného štýlu: moderná prémiová homepage p
 Hero sekcia má používať reálnu fotografiu chaty alebo exteriéru s čitateľným textom. Vedľa alebo pod hero blokom zobraz `Rýchly prehľad` so základnými údajmi a cenou od 159 € / noc.
 
 Celý web má pôsobiť pokojne, útulne, dôveryhodne a kultivovane. Nepoužívaj krikľavé farby, ostré hrany ani preplnené sekcie.
+
+## Aktualizácia fotografie a layoutu (21. 10. 2026)
+
+Domov používa svetlé textové hero vedľa fotografie bez tmavého prekrytia. Na mobile sa časti radia pod seba. Podstránky môžu ponechať fotografické hero s kontrastným prekrytím. Pri portrétnych interiéroch používať pomer 3:4; kompletná galéria zachováva pôvodný pomer, bez orezania. Fotografie a stručné texty majú prednosť pred opakovanými benefitovými kartami. Aktuálne poradie sekcií má prednosť pred staršími všeobecnými odporúčaniami vyššie; podrobnosti sú v pages/home.md a shared/photo-map.md.
+
+## Konzistencia naprieč stránkami
+
+Verejné názvy jednotiek sú vždy `Pri vstupnej bráne` a `Pri saune`; polohy a podlažia sa preberajú z `lib/photography.ts`. Fotosekcie a obrázkové karty uvádzajú skutočné zaradenie. Z jednotky odkazovať priamo na jej album. Aktuálna stránka je označená v desktopovej aj mobilnej navigácii (`aria-current`); rodičovská položka zvýrazňuje aj svoje podstránky. Dlhé mobilné menu sa posúva vo vlastnom priestore. Primárne CTA zostáva `Overiť dostupnosť termínu`, sekundárne musí mať iný cieľ. Opakované všeobecné karty nahrádzať konkrétnymi informáciami a fotografiami, nie ďalším vizuálnym štýlom.

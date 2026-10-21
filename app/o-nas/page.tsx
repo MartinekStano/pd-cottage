@@ -29,13 +29,14 @@ export default function AboutPage() {
 
       <PhotoSection
         image={images.aboutInterior}
-        alt="Útulný interiér Pallovho Dvora"
+        alt="Obývačka s jedálňou v jednotke pri saune"
         eyebrow="Charakter chaty"
         title="Miesto, kde má pobyt pokojnejšie tempo"
         text={[
-          "Pallov Dvor je chata v Lutišiach určená pre hostí, ktorí si chcú oddýchnuť od bežného tempa a stráviť čas v súkromí. Atmosféra je postavená na kultivovanom pobyte, spoločných rozhovoroch, rodinnom oddychu a pokojnom stretnutí.",
-          "Chata spája praktické vybavenie s útulnou atmosférou. Vďaka dvom samostatným ubytovacím jednotkám ponúka dostatok priestoru aj súkromia pre rodiny, dospelých hostí aj menšie firemné kolektívy.",
+          "Pallov Dvor je súkromná chata v Lutišiach na spoločné raňajky, výlety aj pokojné večery. Nájdete tu dve samostatné jednotky: jednu pri vstupnej bráne, druhú pri saune.",
+          "Každá má vlastnú kuchyňu, obývačku, tri spálne a dve kúpeľne pre najviac 8 hostí. Pre väčšiu rodinu či skupinu môžete prenajať celý objekt až pre 16 osôb. Dvor, spoločenská miestnosť a oddychová zóna dopĺňajú pobyt v oboch jednotkách.",
         ]}
+        cta={{ label: "Porovnať obe jednotky", href: "/ubytovanie#pri-brane" }}
       />
 
       <section className="section-pad bg-[var(--surface)]">
@@ -59,10 +60,10 @@ export default function AboutPage() {
               text="Miestnosť s plátnom, projektorom a herným vybavením."
             />
             <ImageCard
-              alt="Detail interiéru chaty Pallov Dvor"
-              image={images.detail}
-              title="Útulné detaily"
-              text="Príjemné zázemie pre pobyt s rodinou, dospelými hosťami alebo kolegami."
+              alt="Oddychová miestnosť pri saune"
+              image={images.relaxRoom}
+              title="Miesto na oddych"
+              text="Spoločná oddychová miestnosť dopĺňa saunu a vonkajšiu kaďu."
             />
           </div>
         </div>

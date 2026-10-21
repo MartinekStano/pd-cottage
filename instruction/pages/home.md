@@ -1,105 +1,20 @@
 # Domov
 
-## Účel
+## Účel a aktuálny smer
 
-Domov má rýchlo predstaviť Pallov Dvor, ukázať hlavné výhody a priviesť návštevníka k akcii `Overiť dostupnosť termínu`.
+Domov stručne predstavuje súkromnú chatu Pallov Dvor v Lutišiach, dve možnosti samostatného bývania a spoločné zázemie. Má viesť k overeniu termínu. Zmena vzhľadu a obsahových sekcií bola schválená majiteľom 21. októbra 2026 spolu s výmenou celej sady fotografií.
 
-Domov nemá obsahovať všetky detaily. Má fungovať ako prehľadný rozcestník na ďalšie podstránky.
+## Poradie sekcií
 
-## Hero
+1. Svetlé delené hero: značka `Pallov Dvor`, veta `Priestor byť spolu.`, krátky úvod a nová reálna fotografia celej chaty. CTA `Overiť dostupnosť termínu` a `Spoznajte chatu` (kotva `#jednotky`). Na mobile text a fotografia pod sebou.
+2. Jednoduchý prehľad: až 16 hostí, 2 jednotky, sauna a kaďa, od 159 € / noc za jednu jednotku.
+3. `Jedna chata. Dva vlastné priestory.` — dve fotografické karty `Pri vstupnej bráne` a `Pri saune`, každá do 8 hostí, 3 spálne a 2 kúpeľne. Prekliky na príslušné kotvy v ubytovaní. Dvojica portrétnych fotografií ukazuje príslušnú obývačku a spálňu.
+4. `Deň vonku. Večer v teple.` — sauna a kaďa, odkaz na wellness.
+5. `Vonku pri stole. Vnútri pri filme.` — kryté posedenie a spoločenská miestnosť s projektorom. Odkaz na kompletnú fotogalériu.
+6. `Koľko vás príde?` — prenájom jednotky od 159 € / noc alebo celého objektu od 319 € / noc. Preklik na cenník a atrakcie; presná cena podľa termínu.
+7. FAQ a existujúca sekcia hodnotení s odkazom na Booking.com.
+8. Záverečné CTA na nezáväzné overenie termínu.
 
-Nadpis:
+## Pravidlá
 
-Pallov Dvor
-
-Podnadpis:
-
-Hľadáte chatu v Lutišiach alebo ubytovanie na Kysuciach pre rodinu či skupinu? Pallov Dvor ponúka krátkodobé ubytovanie až pre 16 osôb so saunou, vonkajšou kaďou, altánkom s grilom a spoločenským priestorom s projektorom.
-
-CTA:
-
-- Overiť dostupnosť termínu
-- Pozrieť ubytovanie
-
-Rýchly prehľad:
-
-- až 16 osôb
-- 2 samostatné jednotky
-- sauna a vonkajšia kaďa
-- altánok, gril a Wi-Fi
-- Lutiše Adamovci 373
-- od 159 € / noc za 1 samostatnú jednotku
-
-## Krátke predstavenie
-
-Nadpis:
-
-Komfortné ubytovanie v Lutišiach
-
-Text:
-
-Pallov Dvor ponúka pohodlné zázemie pre hostí, ktorí hľadajú chatu v Lutišiach, pokoj, súkromie a priestor na spoločné chvíle. Chata je vhodná pre rodiny s deťmi, dospelých hostí aj menšie firemné kolektívy.
-
-V interiéri nájdete spálne, dve kúpeľne, kuchyňu s obývacou miestnosťou, Wi-Fi, TV a spoločenský priestor s projektorom. Vonku je k dispozícii altánok s grilom, sauna a vonkajšia kaďa.
-
-CTA:
-
-- Zistiť viac o chate
-
-## Hlavné výhody
-
-Nadpis:
-
-Prečo si vybrať Pallov Dvor
-
-Karty:
-
-- Súkromie a pohodlie: Oplotený objekt, samostatné jednotky a dostatok priestoru vytvárajú vhodné podmienky na pokojný pobyt v chate v Lutišiach.
-- Relax priamo pri chate: Sauna pre 6 osôb a vonkajšia kaďa ponúkajú príjemný oddych po výletoch na Kysuciach, pracovnom programe alebo spoločnom dni.
-- Priestor na spoločné chvíle: Altánok s grilom a spoločenský priestor s projektorom vytvárajú miesto na rodinné, priateľské aj firemné stretnutia.
-
-## Krátky cenník
-
-Nadpis:
-
-Prenájom chaty od 159 € / noc
-
-Text:
-
-Vyberte si prenájom jednej samostatnej ubytovacej jednotky alebo celej chaty v Lutišiach podľa veľkosti skupiny a typu pobytu.
-
-Ceny:
-
-- 1 samostatná jednotka: od 159 € / noc
-- Celý objekt: od 319 € / noc
-- Wellness: kaďa, sauna alebo zvýhodnený balík
-
-CTA:
-
-- Pozrieť celý cenník
-
-## Záverečná CTA
-
-Nadpis:
-
-Naplánujte si pobyt na chate v Lutišiach
-
-Text:
-
-Overte si dostupnosť termínu a pripravte si pobyt na Kysuciach s komfortným zázemím, saunou, vonkajšou kaďou a priestorom na spoločné chvíle.
-
-CTA:
-
-- Overiť dostupnosť termínu
-
-## Fotografie
-
-Placeholdery:
-
-- hero-chata-pallov-dvor.jpg
-- interier-pallov-dvor.jpg
-- sauna-kada.jpg
-
-## Poznámky k dizajnu
-
-Použiť veľkú reálnu fotografiu chaty alebo exteriéru, ikonové benefity, prehľadné karty a dostatok priestoru medzi sekciami. Stránka musí byť responzívna.
+Používať iba novú sadu a mapovanie v `shared/photo-map.md` / `lib/photography.ts`. Dlhé opakované SEO odseky nahradiť stručným prirodzeným textom; zachovať lokalitu Lutiše/Kysuce v obsahu a metadátach. Kapacity, ceny a vybavenie sa redizajnom nemenia. Wellness je spoločné doplnkové zázemie, nie samostatná služba mimo pobytu. Zachovať prírodnú paletu a čitateľnosť na mobile.

@@ -40,6 +40,30 @@ export function ContactForm() {
     }
   }, [state.status]);
 
+  if (!contactForm.enabled) {
+    return (
+      <section id="formular" className="scroll-mt-36 rounded-lg border border-[var(--border)] bg-[var(--surface)] p-6 sm:p-8" aria-labelledby="dopyt-title">
+        <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[var(--accent)]">Nezáväzný dopyt</p>
+        <h2 id="dopyt-title" className="mt-4 font-serif text-3xl sm:text-4xl">Nájdime termín pre váš pobyt.</h2>
+        <p className="mt-5 text-base leading-8 text-[var(--muted)]">Zavolajte nám alebo napíšte e-mail. Radi overíme dostupnosť a pripravíme cenu pre vašu rodinu či skupinu.</p>
+        <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+          <a className="inline-flex min-h-12 items-center justify-center rounded-full bg-[var(--dark)] px-6 py-3 text-sm font-semibold text-[var(--surface)] transition hover:bg-[var(--accent)]" href={contact.phoneHref}>Zavolať {contact.phone}</a>
+          <a className="inline-flex min-h-12 items-center justify-center rounded-full border border-[var(--border-strong)] px-6 py-3 text-sm font-semibold transition hover:border-[var(--accent)]" href={contact.emailHref}>Napísať e-mail</a>
+        </div>
+        <div className="mt-8 border-t border-[var(--border)] pt-6">
+          <h3 className="font-semibold text-[var(--text)]">Čo nám pomôže pri overení termínu</h3>
+          <ul className="mt-4 grid gap-3 text-sm leading-7 text-[var(--muted)]">
+            <li>Plánovaný dátum príchodu a odchodu.</li>
+            <li>Počet dospelých a detí.</li>
+            <li>Jednotka pri vstupnej bráne, pri saune alebo celý objekt.</li>
+            <li>Či máte záujem aj o saunu alebo vonkajšiu kaďu.</li>
+          </ul>
+          <p className="mt-5 text-sm leading-7 text-[var(--muted)]">Dostupnosť a konečnú cenu vám potvrdíme osobne. Dopyt je nezáväzný.</p>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <form
       action={formAction}
