@@ -52,6 +52,6 @@ Stránka Atrakcie je rozdelená na letnú a zimnú časť. V jej navigačnom pod
 
 ## Aktívna fotografická sada a redizajn (21. 10. 2026)
 
-Majiteľ schválil kompletnú výmenu starých fotografií chaty, úpravu sekcií a prepis dokumentácie. Aktívna sada má 41 záberov; používa sa výhradne cez `lib/photography.ts`. ML znamená jednotku bližšie k ceste/bráne, PL jednotku pri saune. Na webe ich označujeme podľa polohy a fotografie nemiešame.
+Majiteľ schválil kompletnú výmenu starých fotografií chaty, úpravu sekcií a prepis dokumentácie. Aktívna sada má 41 záberov; používa sa výhradne cez `lib/photography.ts`. ML znamená jednotku bližšie k ceste/bráne, PL jednotku pri saune. Na webe ich označujeme ML – Pallov Dvor (bližšie k ceste) a PS – Pallov Dvor (bližšie k saune); fotografie nemiešame.
 
 Aktuálny zdroj pravdy pre fotografie je `shared/photo-map.md`, pre sekcie `pages/home.md`, `pages/accommodation.md` a `pages/gallery.md`. Tieto dokumenty nahrádzajú staré fotografie a starší všeobecný návrh sekcií. Zachované ceny, kapacity, kontakty, navigácia aj októbrový kalendár sa touto úpravou nemenia. Historické archívne súbory a odvodené PDF/HTML nie sú aktuálne zadanie.

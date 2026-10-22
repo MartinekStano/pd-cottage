@@ -104,7 +104,7 @@ export const sitemapPages = [
     path: "/ubytovanie",
     changeFrequency: "weekly",
     priority: 0.95,
-    images: propertyPhotos.filter((image) => image.group === "Pri vstupnej bráne" || image.group === "Pri saune").map((image) => image.src),
+    images: propertyPhotos.filter((image) => image.group === "ML – Pallov Dvor (bližšie k ceste)" || image.group === "PS – Pallov Dvor (bližšie k saune)").map((image) => image.src),
   },
   {
     path: "/fotogaleria",

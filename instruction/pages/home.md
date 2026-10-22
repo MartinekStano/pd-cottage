@@ -8,7 +8,7 @@ Domov stručne predstavuje súkromnú chatu Pallov Dvor v Lutišiach, dve možno
 
 1. Svetlé delené hero: značka `Pallov Dvor`, veta `Priestor byť spolu.`, krátky úvod a nová reálna fotografia celej chaty. CTA `Overiť dostupnosť termínu` a `Spoznajte chatu` (kotva `#jednotky`). Na mobile text a fotografia pod sebou.
 2. Jednoduchý prehľad: až 16 hostí, 2 jednotky, sauna a kaďa, od 159 € / noc za jednu jednotku.
-3. `Jedna chata. Dva vlastné priestory.` — dve fotografické karty `Pri vstupnej bráne` a `Pri saune`, každá do 8 hostí, 3 spálne a 2 kúpeľne. Prekliky na príslušné kotvy v ubytovaní. Dvojica portrétnych fotografií ukazuje príslušnú obývačku a spálňu.
+3. `Jedna chata. Dva vlastné priestory.` — dve fotografické karty `ML – Pallov Dvor (bližšie k ceste)` a `PS – Pallov Dvor (bližšie k saune)`, každá do 8 hostí, 3 spálne a 2 kúpeľne. Prekliky na príslušné kotvy v ubytovaní. Dvojica portrétnych fotografií ukazuje príslušnú obývačku a spálňu.
 4. `Deň vonku. Večer v teple.` — sauna a kaďa, odkaz na wellness.
 5. `Vonku pri stole. Vnútri pri filme.` — kryté posedenie a spoločenská miestnosť s projektorom. Odkaz na kompletnú fotogalériu.
 6. `Koľko vás príde?` — prenájom jednotky od 159 € / noc alebo celého objektu od 319 € / noc. Preklik na cenník a atrakcie; presná cena podľa termínu.

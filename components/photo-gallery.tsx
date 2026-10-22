@@ -53,9 +53,9 @@ export function PhotoGallery({ images, filterBy = "group", label = "Fotogaléria
         </div>
       ) : null}
       <p className="mt-5 text-sm text-[var(--muted)]" aria-live="polite">{visibleImages.length} {visibleImages.length === 1 ? "fotografia" : visibleImages.length < 5 ? "fotografie" : "fotografií"} · Kliknutím zväčšíte záber.</p>
-      <div className="mt-6 columns-2 gap-4 md:columns-3 lg:columns-4">
+      <div className="mt-6 grid grid-cols-2 items-start gap-x-4 gap-y-6 md:grid-cols-3 lg:grid-cols-4">
         {visibleImages.map((image, index) => (
-          <figure className="mb-6 break-inside-avoid" key={image.src}>
+          <figure className="min-w-0" key={image.src}>
             <button
               type="button"
               aria-label={`Otvoriť fotografiu ${index + 1}: ${image.title}, ${image.group}${image.floor ? `, ${image.floor}` : ""}`}

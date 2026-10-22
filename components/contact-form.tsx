@@ -55,7 +55,7 @@ export function ContactForm() {
           <ul className="mt-4 grid gap-3 text-sm leading-7 text-[var(--muted)]">
             <li>Plánovaný dátum príchodu a odchodu.</li>
             <li>Počet dospelých a detí.</li>
-            <li>Jednotka pri vstupnej bráne, pri saune alebo celý objekt.</li>
+            <li>Jednotka ML (bližšie k ceste), PS (bližšie k saune) alebo celý objekt.</li>
             <li>Či máte záujem aj o saunu alebo vonkajšiu kaďu.</li>
           </ul>
           <p className="mt-5 text-sm leading-7 text-[var(--muted)]">Dostupnosť a konečnú cenu vám potvrdíme osobne. Dopyt je nezáväzný.</p>

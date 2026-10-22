@@ -111,8 +111,8 @@ export const propertyPhotos: PropertyPhoto[] = [
   {
     "src": "/images/pallov-dvor/pri-brane-prizemie/pallov-dvor-ml-np-kuchyna-01.webp",
     "title": "Kuchyňa",
-    "alt": "Kuchyňa – pri vstupnej bráne, prízemie, Pallov Dvor",
-    "group": "Pri vstupnej bráne",
+    "alt": "Kuchyňa – ML – Pallov Dvor (bližšie k ceste), prízemie, Pallov Dvor",
+    "group": "ML – Pallov Dvor (bližšie k ceste)",
     "floor": "Prízemie",
     "width": 1500,
     "height": 2000
@@ -120,8 +120,8 @@ export const propertyPhotos: PropertyPhoto[] = [
   {
     "src": "/images/pallov-dvor/pri-brane-prizemie/pallov-dvor-ml-np-kupelna-01.webp",
     "title": "Kúpeľňa",
-    "alt": "Kúpeľňa – pri vstupnej bráne, prízemie, Pallov Dvor",
-    "group": "Pri vstupnej bráne",
+    "alt": "Kúpeľňa – ML – Pallov Dvor (bližšie k ceste), prízemie, Pallov Dvor",
+    "group": "ML – Pallov Dvor (bližšie k ceste)",
     "floor": "Prízemie",
     "width": 1500,
     "height": 2000
@@ -129,8 +129,8 @@ export const propertyPhotos: PropertyPhoto[] = [
   {
     "src": "/images/pallov-dvor/pri-brane-prizemie/pallov-dvor-ml-np-obyvacka-jedalen-01.webp",
     "title": "Obývačka s jedálňou",
-    "alt": "Obývačka s jedálňou – pri vstupnej bráne, prízemie, Pallov Dvor",
-    "group": "Pri vstupnej bráne",
+    "alt": "Obývačka s jedálňou – ML – Pallov Dvor (bližšie k ceste), prízemie, Pallov Dvor",
+    "group": "ML – Pallov Dvor (bližšie k ceste)",
     "floor": "Prízemie",
     "width": 1500,
     "height": 2000
@@ -138,8 +138,8 @@ export const propertyPhotos: PropertyPhoto[] = [
   {
     "src": "/images/pallov-dvor/pri-brane-prizemie/pallov-dvor-ml-np-obyvacka-jedalen-02.webp",
     "title": "Obývačka s jedálňou",
-    "alt": "Obývačka s jedálňou – pri vstupnej bráne, prízemie, Pallov Dvor",
-    "group": "Pri vstupnej bráne",
+    "alt": "Obývačka s jedálňou – ML – Pallov Dvor (bližšie k ceste), prízemie, Pallov Dvor",
+    "group": "ML – Pallov Dvor (bližšie k ceste)",
     "floor": "Prízemie",
     "width": 1500,
     "height": 2000
@@ -147,8 +147,8 @@ export const propertyPhotos: PropertyPhoto[] = [
   {
     "src": "/images/pallov-dvor/pri-brane-prizemie/pallov-dvor-ml-np-vstupna-chodba-01.webp",
     "title": "Vstupná chodba",
-    "alt": "Vstupná chodba – pri vstupnej bráne, prízemie, Pallov Dvor",
-    "group": "Pri vstupnej bráne",
+    "alt": "Vstupná chodba – ML – Pallov Dvor (bližšie k ceste), prízemie, Pallov Dvor",
+    "group": "ML – Pallov Dvor (bližšie k ceste)",
     "floor": "Prízemie",
     "width": 1500,
     "height": 2000
@@ -156,8 +156,8 @@ export const propertyPhotos: PropertyPhoto[] = [
   {
     "src": "/images/pallov-dvor/pri-brane-poschodie/pallov-dvor-ml-1np-dvojlozkova-izba-01.webp",
     "title": "Izba s dvoma jednolôžkami",
-    "alt": "Izba s dvoma jednolôžkami – pri vstupnej bráne, poschodie, Pallov Dvor",
-    "group": "Pri vstupnej bráne",
+    "alt": "Izba s dvoma jednolôžkami – ML – Pallov Dvor (bližšie k ceste), poschodie, Pallov Dvor",
+    "group": "ML – Pallov Dvor (bližšie k ceste)",
     "floor": "Poschodie",
     "width": 1500,
     "height": 2000
@@ -165,8 +165,8 @@ export const propertyPhotos: PropertyPhoto[] = [
   {
     "src": "/images/pallov-dvor/pri-brane-poschodie/pallov-dvor-ml-1np-dvojlozkova-izba-02.webp",
     "title": "Izba s dvoma jednolôžkami",
-    "alt": "Izba s dvoma jednolôžkami – pri vstupnej bráne, poschodie, Pallov Dvor",
-    "group": "Pri vstupnej bráne",
+    "alt": "Izba s dvoma jednolôžkami – ML – Pallov Dvor (bližšie k ceste), poschodie, Pallov Dvor",
+    "group": "ML – Pallov Dvor (bližšie k ceste)",
     "floor": "Poschodie",
     "width": 1500,
     "height": 2000
@@ -174,8 +174,8 @@ export const propertyPhotos: PropertyPhoto[] = [
   {
     "src": "/images/pallov-dvor/pri-brane-poschodie/pallov-dvor-ml-1np-kupelna-01.webp",
     "title": "Kúpeľňa",
-    "alt": "Kúpeľňa – pri vstupnej bráne, poschodie, Pallov Dvor",
-    "group": "Pri vstupnej bráne",
+    "alt": "Kúpeľňa – ML – Pallov Dvor (bližšie k ceste), poschodie, Pallov Dvor",
+    "group": "ML – Pallov Dvor (bližšie k ceste)",
     "floor": "Poschodie",
     "width": 1500,
     "height": 2000
@@ -183,8 +183,8 @@ export const propertyPhotos: PropertyPhoto[] = [
   {
     "src": "/images/pallov-dvor/pri-brane-poschodie/pallov-dvor-ml-1np-kupelna-sprchovy-kut-02.webp",
     "title": "Sprchový kút na poschodí",
-    "alt": "Sprchový kút na poschodí – pri vstupnej bráne, poschodie, Pallov Dvor",
-    "group": "Pri vstupnej bráne",
+    "alt": "Sprchový kút na poschodí – ML – Pallov Dvor (bližšie k ceste), poschodie, Pallov Dvor",
+    "group": "ML – Pallov Dvor (bližšie k ceste)",
     "floor": "Poschodie",
     "width": 1500,
     "height": 2000
@@ -192,8 +192,8 @@ export const propertyPhotos: PropertyPhoto[] = [
   {
     "src": "/images/pallov-dvor/pri-brane-poschodie/pallov-dvor-ml-1np-kupelna-sprchovy-kut-03.webp",
     "title": "Sprchový kút na poschodí",
-    "alt": "Sprchový kút na poschodí – pri vstupnej bráne, poschodie, Pallov Dvor",
-    "group": "Pri vstupnej bráne",
+    "alt": "Sprchový kút na poschodí – ML – Pallov Dvor (bližšie k ceste), poschodie, Pallov Dvor",
+    "group": "ML – Pallov Dvor (bližšie k ceste)",
     "floor": "Poschodie",
     "width": 1500,
     "height": 2000
@@ -201,8 +201,8 @@ export const propertyPhotos: PropertyPhoto[] = [
   {
     "src": "/images/pallov-dvor/pri-brane-poschodie/pallov-dvor-ml-1np-spalna-01-zaber-01.webp",
     "title": "Spálňa",
-    "alt": "Spálňa – pri vstupnej bráne, poschodie, Pallov Dvor",
-    "group": "Pri vstupnej bráne",
+    "alt": "Spálňa – ML – Pallov Dvor (bližšie k ceste), poschodie, Pallov Dvor",
+    "group": "ML – Pallov Dvor (bližšie k ceste)",
     "floor": "Poschodie",
     "width": 1500,
     "height": 2000
@@ -210,8 +210,8 @@ export const propertyPhotos: PropertyPhoto[] = [
   {
     "src": "/images/pallov-dvor/pri-brane-poschodie/pallov-dvor-ml-1np-spalna-01-zaber-02.webp",
     "title": "Spálňa",
-    "alt": "Spálňa – pri vstupnej bráne, poschodie, Pallov Dvor",
-    "group": "Pri vstupnej bráne",
+    "alt": "Spálňa – ML – Pallov Dvor (bližšie k ceste), poschodie, Pallov Dvor",
+    "group": "ML – Pallov Dvor (bližšie k ceste)",
     "floor": "Poschodie",
     "width": 1500,
     "height": 2000
@@ -219,8 +219,8 @@ export const propertyPhotos: PropertyPhoto[] = [
   {
     "src": "/images/pallov-dvor/pri-brane-poschodie/pallov-dvor-ml-1np-spalna-s-postielkou-02-zaber-01.webp",
     "title": "Spálňa s detskou postieľkou",
-    "alt": "Spálňa s detskou postieľkou – pri vstupnej bráne, poschodie, Pallov Dvor",
-    "group": "Pri vstupnej bráne",
+    "alt": "Spálňa s detskou postieľkou – ML – Pallov Dvor (bližšie k ceste), poschodie, Pallov Dvor",
+    "group": "ML – Pallov Dvor (bližšie k ceste)",
     "floor": "Poschodie",
     "width": 1500,
     "height": 2000
@@ -228,8 +228,8 @@ export const propertyPhotos: PropertyPhoto[] = [
   {
     "src": "/images/pallov-dvor/pri-brane-poschodie/pallov-dvor-ml-1np-spalna-s-postielkou-02-zaber-02.webp",
     "title": "Spálňa s detskou postieľkou",
-    "alt": "Spálňa s detskou postieľkou – pri vstupnej bráne, poschodie, Pallov Dvor",
-    "group": "Pri vstupnej bráne",
+    "alt": "Spálňa s detskou postieľkou – ML – Pallov Dvor (bližšie k ceste), poschodie, Pallov Dvor",
+    "group": "ML – Pallov Dvor (bližšie k ceste)",
     "floor": "Poschodie",
     "width": 1500,
     "height": 2000
@@ -237,8 +237,8 @@ export const propertyPhotos: PropertyPhoto[] = [
   {
     "src": "/images/pallov-dvor/pri-saune-prizemie/pallov-dvor-pl-np-kuchyna-01.webp",
     "title": "Kuchyňa",
-    "alt": "Kuchyňa – pri saune, prízemie, Pallov Dvor",
-    "group": "Pri saune",
+    "alt": "Kuchyňa – PS – Pallov Dvor (bližšie k saune), prízemie, Pallov Dvor",
+    "group": "PS – Pallov Dvor (bližšie k saune)",
     "floor": "Prízemie",
     "width": 1500,
     "height": 2000
@@ -246,8 +246,8 @@ export const propertyPhotos: PropertyPhoto[] = [
   {
     "src": "/images/pallov-dvor/pri-saune-prizemie/pallov-dvor-pl-np-kupelna-01.webp",
     "title": "Kúpeľňa",
-    "alt": "Kúpeľňa – pri saune, prízemie, Pallov Dvor",
-    "group": "Pri saune",
+    "alt": "Kúpeľňa – PS – Pallov Dvor (bližšie k saune), prízemie, Pallov Dvor",
+    "group": "PS – Pallov Dvor (bližšie k saune)",
     "floor": "Prízemie",
     "width": 1500,
     "height": 2000
@@ -255,8 +255,8 @@ export const propertyPhotos: PropertyPhoto[] = [
   {
     "src": "/images/pallov-dvor/pri-saune-prizemie/pallov-dvor-pl-np-obyvacka-jedalen-01.webp",
     "title": "Obývačka s jedálňou",
-    "alt": "Obývačka s jedálňou – pri saune, prízemie, Pallov Dvor",
-    "group": "Pri saune",
+    "alt": "Obývačka s jedálňou – PS – Pallov Dvor (bližšie k saune), prízemie, Pallov Dvor",
+    "group": "PS – Pallov Dvor (bližšie k saune)",
     "floor": "Prízemie",
     "width": 1500,
     "height": 2000
@@ -264,8 +264,8 @@ export const propertyPhotos: PropertyPhoto[] = [
   {
     "src": "/images/pallov-dvor/pri-saune-prizemie/pallov-dvor-pl-np-obyvacka-jedalen-02.webp",
     "title": "Obývačka s jedálňou",
-    "alt": "Obývačka s jedálňou – pri saune, prízemie, Pallov Dvor",
-    "group": "Pri saune",
+    "alt": "Obývačka s jedálňou – PS – Pallov Dvor (bližšie k saune), prízemie, Pallov Dvor",
+    "group": "PS – Pallov Dvor (bližšie k saune)",
     "floor": "Prízemie",
     "width": 1500,
     "height": 2000
@@ -273,8 +273,8 @@ export const propertyPhotos: PropertyPhoto[] = [
   {
     "src": "/images/pallov-dvor/pri-saune-prizemie/pallov-dvor-pl-np-vstupna-chodba-01.webp",
     "title": "Vstupná chodba",
-    "alt": "Vstupná chodba – pri saune, prízemie, Pallov Dvor",
-    "group": "Pri saune",
+    "alt": "Vstupná chodba – PS – Pallov Dvor (bližšie k saune), prízemie, Pallov Dvor",
+    "group": "PS – Pallov Dvor (bližšie k saune)",
     "floor": "Prízemie",
     "width": 1500,
     "height": 2000
@@ -282,8 +282,8 @@ export const propertyPhotos: PropertyPhoto[] = [
   {
     "src": "/images/pallov-dvor/pri-saune-poschodie/pallov-dvor-pl-1np-detska-izba-01.webp",
     "title": "Izba s dvoma jednolôžkami",
-    "alt": "Izba s dvoma jednolôžkami – pri saune, poschodie, Pallov Dvor",
-    "group": "Pri saune",
+    "alt": "Izba s dvoma jednolôžkami – PS – Pallov Dvor (bližšie k saune), poschodie, Pallov Dvor",
+    "group": "PS – Pallov Dvor (bližšie k saune)",
     "floor": "Poschodie",
     "width": 1500,
     "height": 2000
@@ -291,8 +291,8 @@ export const propertyPhotos: PropertyPhoto[] = [
   {
     "src": "/images/pallov-dvor/pri-saune-poschodie/pallov-dvor-pl-1np-detska-izba-02.webp",
     "title": "Izba s dvoma jednolôžkami",
-    "alt": "Izba s dvoma jednolôžkami – pri saune, poschodie, Pallov Dvor",
-    "group": "Pri saune",
+    "alt": "Izba s dvoma jednolôžkami – PS – Pallov Dvor (bližšie k saune), poschodie, Pallov Dvor",
+    "group": "PS – Pallov Dvor (bližšie k saune)",
     "floor": "Poschodie",
     "width": 1500,
     "height": 2000
@@ -300,8 +300,8 @@ export const propertyPhotos: PropertyPhoto[] = [
   {
     "src": "/images/pallov-dvor/pri-saune-poschodie/pallov-dvor-pl-1np-kupelna-01.webp",
     "title": "Kúpeľňa",
-    "alt": "Kúpeľňa – pri saune, poschodie, Pallov Dvor",
-    "group": "Pri saune",
+    "alt": "Kúpeľňa – PS – Pallov Dvor (bližšie k saune), poschodie, Pallov Dvor",
+    "group": "PS – Pallov Dvor (bližšie k saune)",
     "floor": "Poschodie",
     "width": 1500,
     "height": 2000
@@ -309,8 +309,8 @@ export const propertyPhotos: PropertyPhoto[] = [
   {
     "src": "/images/pallov-dvor/pri-saune-poschodie/pallov-dvor-pl-1np-kupelna-sprchovy-kut-02.webp",
     "title": "Sprchový kút na poschodí",
-    "alt": "Sprchový kút na poschodí – pri saune, poschodie, Pallov Dvor",
-    "group": "Pri saune",
+    "alt": "Sprchový kút na poschodí – PS – Pallov Dvor (bližšie k saune), poschodie, Pallov Dvor",
+    "group": "PS – Pallov Dvor (bližšie k saune)",
     "floor": "Poschodie",
     "width": 1500,
     "height": 2000
@@ -318,8 +318,8 @@ export const propertyPhotos: PropertyPhoto[] = [
   {
     "src": "/images/pallov-dvor/pri-saune-poschodie/pallov-dvor-pl-1np-kupelna-sprchovy-kut-03.webp",
     "title": "Sprchový kút na poschodí",
-    "alt": "Sprchový kút na poschodí – pri saune, poschodie, Pallov Dvor",
-    "group": "Pri saune",
+    "alt": "Sprchový kút na poschodí – PS – Pallov Dvor (bližšie k saune), poschodie, Pallov Dvor",
+    "group": "PS – Pallov Dvor (bližšie k saune)",
     "floor": "Poschodie",
     "width": 1500,
     "height": 2000
@@ -327,8 +327,8 @@ export const propertyPhotos: PropertyPhoto[] = [
   {
     "src": "/images/pallov-dvor/pri-saune-poschodie/pallov-dvor-pl-1np-spalna-lava-01.webp",
     "title": "Prvá spálňa",
-    "alt": "Prvá spálňa – pri saune, poschodie, Pallov Dvor",
-    "group": "Pri saune",
+    "alt": "Prvá spálňa – PS – Pallov Dvor (bližšie k saune), poschodie, Pallov Dvor",
+    "group": "PS – Pallov Dvor (bližšie k saune)",
     "floor": "Poschodie",
     "width": 1500,
     "height": 2000
@@ -336,8 +336,8 @@ export const propertyPhotos: PropertyPhoto[] = [
   {
     "src": "/images/pallov-dvor/pri-saune-poschodie/pallov-dvor-pl-1np-spalna-lava-02.webp",
     "title": "Prvá spálňa",
-    "alt": "Prvá spálňa – pri saune, poschodie, Pallov Dvor",
-    "group": "Pri saune",
+    "alt": "Prvá spálňa – PS – Pallov Dvor (bližšie k saune), poschodie, Pallov Dvor",
+    "group": "PS – Pallov Dvor (bližšie k saune)",
     "floor": "Poschodie",
     "width": 1500,
     "height": 2000
@@ -345,8 +345,8 @@ export const propertyPhotos: PropertyPhoto[] = [
   {
     "src": "/images/pallov-dvor/pri-saune-poschodie/pallov-dvor-pl-1np-spalna-prava-01.webp",
     "title": "Druhá spálňa",
-    "alt": "Druhá spálňa – pri saune, poschodie, Pallov Dvor",
-    "group": "Pri saune",
+    "alt": "Druhá spálňa – PS – Pallov Dvor (bližšie k saune), poschodie, Pallov Dvor",
+    "group": "PS – Pallov Dvor (bližšie k saune)",
     "floor": "Poschodie",
     "width": 1500,
     "height": 2000
@@ -354,8 +354,8 @@ export const propertyPhotos: PropertyPhoto[] = [
   {
     "src": "/images/pallov-dvor/pri-saune-poschodie/pallov-dvor-pl-1np-spalna-prava-02.webp",
     "title": "Druhá spálňa",
-    "alt": "Druhá spálňa – pri saune, poschodie, Pallov Dvor",
-    "group": "Pri saune",
+    "alt": "Druhá spálňa – PS – Pallov Dvor (bližšie k saune), poschodie, Pallov Dvor",
+    "group": "PS – Pallov Dvor (bližšie k saune)",
     "floor": "Poschodie",
     "width": 1500,
     "height": 2000
@@ -418,10 +418,10 @@ export const propertyImages = {
 export const accommodationUnits = [
   {
     id: "pri-brane",
-    title: "Pri vstupnej bráne",
-    label: "Bližšie k ceste a vstupu do dvora",
+    title: "ML – Pallov Dvor (bližšie k ceste)",
+    label: "Bližšie k ceste",
     description: "Vlastná kuchyňa a obývačka na prízemí, tri spálne na poschodí. Priestor pre rodinné raňajky aj pokojný večer po výlete.",
-    photos: propertyPhotos.filter((image) => image.group === "Pri vstupnej bráne"),
+    photos: propertyPhotos.filter((image) => image.group === "ML – Pallov Dvor (bližšie k ceste)"),
     living: photo("pallov-dvor-ml-np-obyvacka-jedalen-01"),
     bedroom: photo("pallov-dvor-ml-1np-spalna-01-zaber-01"),
     rooms: [
@@ -432,10 +432,10 @@ export const accommodationUnits = [
   },
   {
     id: "pri-saune",
-    title: "Pri saune",
-    label: "Bližšie k oddychovej zóne",
-    description: "Druhá samostatná jednotka pri saune. Na prízemí nájdete kuchyňu s jedálňou a obývačkou, na poschodí tri spálne.",
-    photos: propertyPhotos.filter((image) => image.group === "Pri saune"),
+    title: "PS – Pallov Dvor (bližšie k saune)",
+    label: "Bližšie k saune",
+    description: "Jednotka PS bližšie k saune. Na prízemí nájdete kuchyňu s jedálňou a obývačkou, na poschodí tri spálne.",
+    photos: propertyPhotos.filter((image) => image.group === "PS – Pallov Dvor (bližšie k saune)"),
     living: photo("pallov-dvor-pl-np-obyvacka-jedalen-02"),
     bedroom: photo("pallov-dvor-pl-1np-spalna-lava-01"),
     rooms: [

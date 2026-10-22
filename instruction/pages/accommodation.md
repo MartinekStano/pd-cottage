@@ -6,10 +6,10 @@ Jasne ukázať dve samostatné jednotky so skutočnými fotografiami každej z n
 
 ## Označenie jednotiek potvrdené majiteľom
 
-- `Pri vstupnej bráne` — zdrojové ML, bližšie k ceste a vstupu do dvora; kotva `#pri-brane`.
-- `Pri saune` — zdrojové PL, bližšie k saune; kotva `#pri-saune`.
+- `ML – Pallov Dvor (bližšie k ceste)` — zdrojové ML, bližšie k ceste a vstupu do dvora; kotva `#pri-brane`.
+- `PS – Pallov Dvor (bližšie k saune)` — zdrojové PL, bližšie k saune; kotva `#pri-saune`.
 
-Skratky ML/PL sa návštevníkom nezobrazujú. Poloha pri saune neznamená vlastnú oddelenú saunu pre danú jednotku. Fotografie oboch jednotiek sa nesmú zamieňať.
+Verejné označenia sú ML a PS; PS zodpovedá zdrojovým priečinkom PL. Poloha pri saune neznamená vlastnú oddelenú saunu pre danú jednotku. Fotografie oboch jednotiek sa nesmú zamieňať.
 
 ## Štruktúra stránky
 

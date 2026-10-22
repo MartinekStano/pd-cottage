@@ -38,7 +38,7 @@ Licencie externých fotografií sú evidované v `public/images/attractions/cred
 
 ## Fotografická aktualizácia a rozloženie (21. 10. 2026)
 
-Všetky staré fotografie chaty nahrádza 41 optimalizovaných WebP zo sady `Pallov Dvor - Upravene fotky`. Katalóg a rozdelenie jednotiek sú v `lib/photography.ts`, zdrojové názvy a kontrolné súčty v `public/images/pallov-dvor/manifest.json`. Verejné označenia jednotiek sú `Pri vstupnej bráne` a `Pri saune`.
+Všetky staré fotografie chaty nahrádza 41 optimalizovaných WebP zo sady `Pallov Dvor - Upravene fotky`. Katalóg a rozdelenie jednotiek sú v `lib/photography.ts`, zdrojové názvy a kontrolné súčty v `public/images/pallov-dvor/manifest.json`. Verejné označenia jednotiek sú `ML – Pallov Dvor (bližšie k ceste)` a `PS – Pallov Dvor (bližšie k saune)`.
 
 Domov používa delené hero a fotografické predstavenie oboch jednotiek. Ubytovanie rozlišuje skutočné interiéry oboch jednotiek, galéria obsahuje všetkých 41 záberov s filtrami a prístupným zväčšením. Fotografie sa aktualizujú aj v ostatných podstránkach, metadátach, štruktúrovaných dátach a sitemap. Pri atrakciách sa mení iba fotografia Strečna; zdroj a CC licencia sú pri karte aj v evidencii.
 

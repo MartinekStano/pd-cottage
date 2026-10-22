@@ -14,7 +14,7 @@ const sharedAlbums = [
 
 export const metadata: Metadata = pageMetadata({
   title: "Fotogaléria chaty Lutiše",
-  description: "41 fotografií Pallovho Dvora v samostatných albumoch: jednotka pri vstupnej bráne, jednotka pri saune, spoločenská miestnosť a exteriér s wellness.",
+  description: "41 fotografií Pallovho Dvora v samostatných albumoch: jednotky ML a PS, spoločenská miestnosť a exteriér s wellness.",
   path: "/fotogaleria", image: images.wholeObject,
 });
 
@@ -39,7 +39,7 @@ export default function GalleryPage() {
         <section key={unit.id} id={unit.id} className={`section-pad ${index === 1 ? "bg-[var(--surface)]" : ""}`}>
           <div className="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10">
             <div className="flex flex-col justify-between gap-5 md:flex-row md:items-end">
-              <SectionHeader eyebrow={`Ubytovacia jednotka · ${index + 1} / 2`} title={unit.title} text={`${unit.label}. Vlastná kuchyňa, obývačka, tri spálne a dve kúpeľne pre najviac 8 hostí.`} />
+              <SectionHeader eyebrow={`Ubytovacia jednotka · ${index + 1} / 2`} title={unit.title} text="Vlastná kuchyňa, obývačka, tri spálne a dve kúpeľne pre najviac 8 hostí." />
               <Link className="shrink-0 text-sm font-semibold text-[var(--accent)] underline underline-offset-8" href={`/ubytovanie#${unit.id}`}>Viac o tejto jednotke ↗</Link>
             </div>
             <PhotoGallery images={unit.photos} filterBy="floor" label={unit.title} />

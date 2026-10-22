@@ -29,11 +29,11 @@ export default function AboutPage() {
 
       <PhotoSection
         image={images.aboutInterior}
-        alt="Obývačka s jedálňou v jednotke pri saune"
+        alt="Obývačka s jedálňou v jednotke PS bližšie k saune"
         eyebrow="Charakter chaty"
         title="Miesto, kde má pobyt pokojnejšie tempo"
         text={[
-          "Pallov Dvor je súkromná chata v Lutišiach na spoločné raňajky, výlety aj pokojné večery. Nájdete tu dve samostatné jednotky: jednu pri vstupnej bráne, druhú pri saune.",
+          "Pallov Dvor je súkromná chata v Lutišiach na spoločné raňajky, výlety aj pokojné večery. Nájdete tu dve samostatné jednotky: ML bližšie k ceste a PS bližšie k saune.",
           "Každá má vlastnú kuchyňu, obývačku, tri spálne a dve kúpeľne pre najviac 8 hostí. Pre väčšiu rodinu či skupinu môžete prenajať celý objekt až pre 16 osôb. Dvor, spoločenská miestnosť a oddychová zóna dopĺňajú pobyt v oboch jednotkách.",
         ]}
         cta={{ label: "Porovnať obe jednotky", href: "/ubytovanie#pri-brane" }}

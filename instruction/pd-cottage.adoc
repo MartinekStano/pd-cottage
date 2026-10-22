@@ -185,4 +185,4 @@ Preferuj:
 
 == Aktualizacia fotografii a rozlozenia 21. 10. 2026
 
-Majitel schvalil novu sadu 41 fotografii a upravu sekcii. Aktualne mapovanie je v instruction/shared/photo-map.md a lib/photography.ts. Jednotky sa verejne oznacuju Pri vstupnej brane a Pri saune. Aktualne stranky home.md, accommodation.md a gallery.md maju pri rozpore prednost pred starsimi navrhmi layoutu. Nepouzivat povodnu WhatsApp sadu ani anonymne fotografie izieb z predoslej verzie.
+Majitel schvalil novu sadu 41 fotografii a upravu sekcii. Aktualne mapovanie je v instruction/shared/photo-map.md a lib/photography.ts. Jednotky sa verejne oznacuju ML – Pallov Dvor (bližšie k ceste) a PS – Pallov Dvor (bližšie k saune). Aktualne stranky home.md, accommodation.md a gallery.md maju pri rozpore prednost pred starsimi navrhmi layoutu. Nepouzivat povodnu WhatsApp sadu ani anonymne fotografie izieb z predoslej verzie.

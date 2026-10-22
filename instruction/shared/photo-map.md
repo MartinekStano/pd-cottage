@@ -10,14 +10,14 @@ Webové súbory sú v `public/images/pallov-dvor/`, katalóg s názvami, alterna
 
 | Zdrojový priečinok | Verejné označenie | Podlažie | Fotografie |
 | --- | --- | --- | --- |
-| ML - NP | Pri vstupnej bráne | Prízemie | 5 |
-| ML - 1NP | Pri vstupnej bráne | Poschodie | 9 |
-| PL - NP | Pri saune | Prízemie | 5 |
-| PL - 1NP | Pri saune | Poschodie | 9 |
+| ML - NP | ML – Pallov Dvor (bližšie k ceste) | Prízemie | 5 |
+| ML - 1NP | ML – Pallov Dvor (bližšie k ceste) | Poschodie | 9 |
+| PL - NP | PS – Pallov Dvor (bližšie k saune) | Prízemie | 5 |
+| PL - 1NP | PS – Pallov Dvor (bližšie k saune) | Poschodie | 9 |
 | Spolocny priestor | Spoločný priestor | — | 2 |
 | Exterier | Exteriér a wellness | — | 11 |
 
-Majiteľ potvrdil: ML je bližšie k ceste/vstupnej bráne, PL bližšie k saune. Skratky ML a PL zostávajú len v názvoch zdrojových súborov, nie vo viditeľných nadpisoch. Označenia pri bráne/saune vyjadrujú polohu, nie výhradné právo na spoločné priestory alebo wellness.
+Majiteľ potvrdil: ML je bližšie k ceste/vstupnej bráne, PL bližšie k saune. Od 22. 10. 2026 sa verejne používa ML a PS; PS zodpovedá zdrojovému PL. Názvy zdrojových súborov sa zachovávajú. Označenia pri bráne/saune vyjadrujú polohu, nie výhradné právo na spoločné priestory alebo wellness.
 
 ## Spracovanie a zobrazovanie
 
@@ -33,7 +33,7 @@ Majiteľ potvrdil: ML je bližšie k ceste/vstupnej bráne, PL bližšie k saune
 | Stránka/sekcia | Fotografický smer |
 | --- | --- |
 | Domov | Hlavný pohľad na chatu; obe jednotky vedľa seba; sauna a kaďa; kryté posedenie a projektor |
-| O nás | Pohľad z ulice; interiér jednotky pri saune; spoločenská miestnosť; spálňa a dvor |
+| O nás | Pohľad z ulice; interiér jednotky PS; spoločenská miestnosť; spálňa a dvor |
 | Ubytovanie | Samostatné sekcie oboch jednotiek; príslušná obývačka a spálne sa nesmú zamieňať |
 | Fotogaléria | 41 fotografií v štyroch samostatných albumoch; jednotky majú filtre prízemia a poschodia |
 | Cenník | Kryté posedenie s výhľadom na chatu; celý objekt a kaďa |
@@ -56,34 +56,34 @@ Majiteľ potvrdil: ML je bližšie k ceste/vstupnej bráne, PL bližšie k saune
 | `Exterier/pallov-dvor-09-kupacia-kada.jpg` | Exteriér a wellness | `/images/pallov-dvor/exterier/pallov-dvor-09-kupacia-kada.webp` |
 | `Exterier/pallov-dvor-10-sauna-interier.jpg` | Exteriér a wellness | `/images/pallov-dvor/exterier/pallov-dvor-10-sauna-interier.webp` |
 | `Exterier/pallov-dvor-11-oddychova-miestnost.jpg` | Exteriér a wellness | `/images/pallov-dvor/exterier/pallov-dvor-11-oddychova-miestnost.webp` |
-| `ML - NP/pallov-dvor-ml-np-kuchyna-01.jpg` | Pri vstupnej bráne · Prízemie | `/images/pallov-dvor/pri-brane-prizemie/pallov-dvor-ml-np-kuchyna-01.webp` |
-| `ML - NP/pallov-dvor-ml-np-kupelna-01.jpg` | Pri vstupnej bráne · Prízemie | `/images/pallov-dvor/pri-brane-prizemie/pallov-dvor-ml-np-kupelna-01.webp` |
-| `ML - NP/pallov-dvor-ml-np-obyvacka-jedalen-01.jpg` | Pri vstupnej bráne · Prízemie | `/images/pallov-dvor/pri-brane-prizemie/pallov-dvor-ml-np-obyvacka-jedalen-01.webp` |
-| `ML - NP/pallov-dvor-ml-np-obyvacka-jedalen-02.jpg` | Pri vstupnej bráne · Prízemie | `/images/pallov-dvor/pri-brane-prizemie/pallov-dvor-ml-np-obyvacka-jedalen-02.webp` |
-| `ML - NP/pallov-dvor-ml-np-vstupna-chodba-01.jpg` | Pri vstupnej bráne · Prízemie | `/images/pallov-dvor/pri-brane-prizemie/pallov-dvor-ml-np-vstupna-chodba-01.webp` |
-| `ML - 1NP/pallov-dvor-ml-1np-dvojlozkova-izba-01.jpg` | Pri vstupnej bráne · Poschodie | `/images/pallov-dvor/pri-brane-poschodie/pallov-dvor-ml-1np-dvojlozkova-izba-01.webp` |
-| `ML - 1NP/pallov-dvor-ml-1np-dvojlozkova-izba-02.jpg` | Pri vstupnej bráne · Poschodie | `/images/pallov-dvor/pri-brane-poschodie/pallov-dvor-ml-1np-dvojlozkova-izba-02.webp` |
-| `ML - 1NP/pallov-dvor-ml-1np-kupelna-01.jpg` | Pri vstupnej bráne · Poschodie | `/images/pallov-dvor/pri-brane-poschodie/pallov-dvor-ml-1np-kupelna-01.webp` |
-| `ML - 1NP/pallov-dvor-ml-1np-kupelna-sprchovy-kut-02.jpg` | Pri vstupnej bráne · Poschodie | `/images/pallov-dvor/pri-brane-poschodie/pallov-dvor-ml-1np-kupelna-sprchovy-kut-02.webp` |
-| `ML - 1NP/pallov-dvor-ml-1np-kupelna-sprchovy-kut-03.jpg` | Pri vstupnej bráne · Poschodie | `/images/pallov-dvor/pri-brane-poschodie/pallov-dvor-ml-1np-kupelna-sprchovy-kut-03.webp` |
-| `ML - 1NP/pallov-dvor-ml-1np-spalna-01-zaber-01.jpg` | Pri vstupnej bráne · Poschodie | `/images/pallov-dvor/pri-brane-poschodie/pallov-dvor-ml-1np-spalna-01-zaber-01.webp` |
-| `ML - 1NP/pallov-dvor-ml-1np-spalna-01-zaber-02.jpg` | Pri vstupnej bráne · Poschodie | `/images/pallov-dvor/pri-brane-poschodie/pallov-dvor-ml-1np-spalna-01-zaber-02.webp` |
-| `ML - 1NP/pallov-dvor-ml-1np-spalna-s-postielkou-02-zaber-01.jpg` | Pri vstupnej bráne · Poschodie | `/images/pallov-dvor/pri-brane-poschodie/pallov-dvor-ml-1np-spalna-s-postielkou-02-zaber-01.webp` |
-| `ML - 1NP/pallov-dvor-ml-1np-spalna-s-postielkou-02-zaber-02.jpg` | Pri vstupnej bráne · Poschodie | `/images/pallov-dvor/pri-brane-poschodie/pallov-dvor-ml-1np-spalna-s-postielkou-02-zaber-02.webp` |
-| `PL - NP/pallov-dvor-pl-np-kuchyna-01.jpg` | Pri saune · Prízemie | `/images/pallov-dvor/pri-saune-prizemie/pallov-dvor-pl-np-kuchyna-01.webp` |
-| `PL - NP/pallov-dvor-pl-np-kupelna-01.jpg` | Pri saune · Prízemie | `/images/pallov-dvor/pri-saune-prizemie/pallov-dvor-pl-np-kupelna-01.webp` |
-| `PL - NP/pallov-dvor-pl-np-obyvacka-jedalen-01.jpg` | Pri saune · Prízemie | `/images/pallov-dvor/pri-saune-prizemie/pallov-dvor-pl-np-obyvacka-jedalen-01.webp` |
-| `PL - NP/pallov-dvor-pl-np-obyvacka-jedalen-02.jpg` | Pri saune · Prízemie | `/images/pallov-dvor/pri-saune-prizemie/pallov-dvor-pl-np-obyvacka-jedalen-02.webp` |
-| `PL - NP/pallov-dvor-pl-np-vstupna-chodba-01.jpg` | Pri saune · Prízemie | `/images/pallov-dvor/pri-saune-prizemie/pallov-dvor-pl-np-vstupna-chodba-01.webp` |
-| `PL - 1NP/pallov-dvor-pl-1np-detska-izba-01.jpg` | Pri saune · Poschodie | `/images/pallov-dvor/pri-saune-poschodie/pallov-dvor-pl-1np-detska-izba-01.webp` |
-| `PL - 1NP/pallov-dvor-pl-1np-detska-izba-02.jpg` | Pri saune · Poschodie | `/images/pallov-dvor/pri-saune-poschodie/pallov-dvor-pl-1np-detska-izba-02.webp` |
-| `PL - 1NP/pallov-dvor-pl-1np-kupelna-01.jpg` | Pri saune · Poschodie | `/images/pallov-dvor/pri-saune-poschodie/pallov-dvor-pl-1np-kupelna-01.webp` |
-| `PL - 1NP/pallov-dvor-pl-1np-kupelna-sprchovy-kut-02.jpg` | Pri saune · Poschodie | `/images/pallov-dvor/pri-saune-poschodie/pallov-dvor-pl-1np-kupelna-sprchovy-kut-02.webp` |
-| `PL - 1NP/pallov-dvor-pl-1np-kupelna-sprchovy-kut-03.jpg` | Pri saune · Poschodie | `/images/pallov-dvor/pri-saune-poschodie/pallov-dvor-pl-1np-kupelna-sprchovy-kut-03.webp` |
-| `PL - 1NP/pallov-dvor-pl-1np-spalna-lava-01.jpg` | Pri saune · Poschodie | `/images/pallov-dvor/pri-saune-poschodie/pallov-dvor-pl-1np-spalna-lava-01.webp` |
-| `PL - 1NP/pallov-dvor-pl-1np-spalna-lava-02.jpg` | Pri saune · Poschodie | `/images/pallov-dvor/pri-saune-poschodie/pallov-dvor-pl-1np-spalna-lava-02.webp` |
-| `PL - 1NP/pallov-dvor-pl-1np-spalna-prava-01.jpg` | Pri saune · Poschodie | `/images/pallov-dvor/pri-saune-poschodie/pallov-dvor-pl-1np-spalna-prava-01.webp` |
-| `PL - 1NP/pallov-dvor-pl-1np-spalna-prava-02.jpg` | Pri saune · Poschodie | `/images/pallov-dvor/pri-saune-poschodie/pallov-dvor-pl-1np-spalna-prava-02.webp` |
+| `ML - NP/pallov-dvor-ml-np-kuchyna-01.jpg` | ML – Pallov Dvor (bližšie k ceste) · Prízemie | `/images/pallov-dvor/pri-brane-prizemie/pallov-dvor-ml-np-kuchyna-01.webp` |
+| `ML - NP/pallov-dvor-ml-np-kupelna-01.jpg` | ML – Pallov Dvor (bližšie k ceste) · Prízemie | `/images/pallov-dvor/pri-brane-prizemie/pallov-dvor-ml-np-kupelna-01.webp` |
+| `ML - NP/pallov-dvor-ml-np-obyvacka-jedalen-01.jpg` | ML – Pallov Dvor (bližšie k ceste) · Prízemie | `/images/pallov-dvor/pri-brane-prizemie/pallov-dvor-ml-np-obyvacka-jedalen-01.webp` |
+| `ML - NP/pallov-dvor-ml-np-obyvacka-jedalen-02.jpg` | ML – Pallov Dvor (bližšie k ceste) · Prízemie | `/images/pallov-dvor/pri-brane-prizemie/pallov-dvor-ml-np-obyvacka-jedalen-02.webp` |
+| `ML - NP/pallov-dvor-ml-np-vstupna-chodba-01.jpg` | ML – Pallov Dvor (bližšie k ceste) · Prízemie | `/images/pallov-dvor/pri-brane-prizemie/pallov-dvor-ml-np-vstupna-chodba-01.webp` |
+| `ML - 1NP/pallov-dvor-ml-1np-dvojlozkova-izba-01.jpg` | ML – Pallov Dvor (bližšie k ceste) · Poschodie | `/images/pallov-dvor/pri-brane-poschodie/pallov-dvor-ml-1np-dvojlozkova-izba-01.webp` |
+| `ML - 1NP/pallov-dvor-ml-1np-dvojlozkova-izba-02.jpg` | ML – Pallov Dvor (bližšie k ceste) · Poschodie | `/images/pallov-dvor/pri-brane-poschodie/pallov-dvor-ml-1np-dvojlozkova-izba-02.webp` |
+| `ML - 1NP/pallov-dvor-ml-1np-kupelna-01.jpg` | ML – Pallov Dvor (bližšie k ceste) · Poschodie | `/images/pallov-dvor/pri-brane-poschodie/pallov-dvor-ml-1np-kupelna-01.webp` |
+| `ML - 1NP/pallov-dvor-ml-1np-kupelna-sprchovy-kut-02.jpg` | ML – Pallov Dvor (bližšie k ceste) · Poschodie | `/images/pallov-dvor/pri-brane-poschodie/pallov-dvor-ml-1np-kupelna-sprchovy-kut-02.webp` |
+| `ML - 1NP/pallov-dvor-ml-1np-kupelna-sprchovy-kut-03.jpg` | ML – Pallov Dvor (bližšie k ceste) · Poschodie | `/images/pallov-dvor/pri-brane-poschodie/pallov-dvor-ml-1np-kupelna-sprchovy-kut-03.webp` |
+| `ML - 1NP/pallov-dvor-ml-1np-spalna-01-zaber-01.jpg` | ML – Pallov Dvor (bližšie k ceste) · Poschodie | `/images/pallov-dvor/pri-brane-poschodie/pallov-dvor-ml-1np-spalna-01-zaber-01.webp` |
+| `ML - 1NP/pallov-dvor-ml-1np-spalna-01-zaber-02.jpg` | ML – Pallov Dvor (bližšie k ceste) · Poschodie | `/images/pallov-dvor/pri-brane-poschodie/pallov-dvor-ml-1np-spalna-01-zaber-02.webp` |
+| `ML - 1NP/pallov-dvor-ml-1np-spalna-s-postielkou-02-zaber-01.jpg` | ML – Pallov Dvor (bližšie k ceste) · Poschodie | `/images/pallov-dvor/pri-brane-poschodie/pallov-dvor-ml-1np-spalna-s-postielkou-02-zaber-01.webp` |
+| `ML - 1NP/pallov-dvor-ml-1np-spalna-s-postielkou-02-zaber-02.jpg` | ML – Pallov Dvor (bližšie k ceste) · Poschodie | `/images/pallov-dvor/pri-brane-poschodie/pallov-dvor-ml-1np-spalna-s-postielkou-02-zaber-02.webp` |
+| `PL - NP/pallov-dvor-pl-np-kuchyna-01.jpg` | PS – Pallov Dvor (bližšie k saune) · Prízemie | `/images/pallov-dvor/pri-saune-prizemie/pallov-dvor-pl-np-kuchyna-01.webp` |
+| `PL - NP/pallov-dvor-pl-np-kupelna-01.jpg` | PS – Pallov Dvor (bližšie k saune) · Prízemie | `/images/pallov-dvor/pri-saune-prizemie/pallov-dvor-pl-np-kupelna-01.webp` |
+| `PL - NP/pallov-dvor-pl-np-obyvacka-jedalen-01.jpg` | PS – Pallov Dvor (bližšie k saune) · Prízemie | `/images/pallov-dvor/pri-saune-prizemie/pallov-dvor-pl-np-obyvacka-jedalen-01.webp` |
+| `PL - NP/pallov-dvor-pl-np-obyvacka-jedalen-02.jpg` | PS – Pallov Dvor (bližšie k saune) · Prízemie | `/images/pallov-dvor/pri-saune-prizemie/pallov-dvor-pl-np-obyvacka-jedalen-02.webp` |
+| `PL - NP/pallov-dvor-pl-np-vstupna-chodba-01.jpg` | PS – Pallov Dvor (bližšie k saune) · Prízemie | `/images/pallov-dvor/pri-saune-prizemie/pallov-dvor-pl-np-vstupna-chodba-01.webp` |
+| `PL - 1NP/pallov-dvor-pl-1np-detska-izba-01.jpg` | PS – Pallov Dvor (bližšie k saune) · Poschodie | `/images/pallov-dvor/pri-saune-poschodie/pallov-dvor-pl-1np-detska-izba-01.webp` |
+| `PL - 1NP/pallov-dvor-pl-1np-detska-izba-02.jpg` | PS – Pallov Dvor (bližšie k saune) · Poschodie | `/images/pallov-dvor/pri-saune-poschodie/pallov-dvor-pl-1np-detska-izba-02.webp` |
+| `PL - 1NP/pallov-dvor-pl-1np-kupelna-01.jpg` | PS – Pallov Dvor (bližšie k saune) · Poschodie | `/images/pallov-dvor/pri-saune-poschodie/pallov-dvor-pl-1np-kupelna-01.webp` |
+| `PL - 1NP/pallov-dvor-pl-1np-kupelna-sprchovy-kut-02.jpg` | PS – Pallov Dvor (bližšie k saune) · Poschodie | `/images/pallov-dvor/pri-saune-poschodie/pallov-dvor-pl-1np-kupelna-sprchovy-kut-02.webp` |
+| `PL - 1NP/pallov-dvor-pl-1np-kupelna-sprchovy-kut-03.jpg` | PS – Pallov Dvor (bližšie k saune) · Poschodie | `/images/pallov-dvor/pri-saune-poschodie/pallov-dvor-pl-1np-kupelna-sprchovy-kut-03.webp` |
+| `PL - 1NP/pallov-dvor-pl-1np-spalna-lava-01.jpg` | PS – Pallov Dvor (bližšie k saune) · Poschodie | `/images/pallov-dvor/pri-saune-poschodie/pallov-dvor-pl-1np-spalna-lava-01.webp` |
+| `PL - 1NP/pallov-dvor-pl-1np-spalna-lava-02.jpg` | PS – Pallov Dvor (bližšie k saune) · Poschodie | `/images/pallov-dvor/pri-saune-poschodie/pallov-dvor-pl-1np-spalna-lava-02.webp` |
+| `PL - 1NP/pallov-dvor-pl-1np-spalna-prava-01.jpg` | PS – Pallov Dvor (bližšie k saune) · Poschodie | `/images/pallov-dvor/pri-saune-poschodie/pallov-dvor-pl-1np-spalna-prava-01.webp` |
+| `PL - 1NP/pallov-dvor-pl-1np-spalna-prava-02.jpg` | PS – Pallov Dvor (bližšie k saune) · Poschodie | `/images/pallov-dvor/pri-saune-poschodie/pallov-dvor-pl-1np-spalna-prava-02.webp` |
 | `Spolocny priestor/pallov-dvor-spolocny-priestor-posedenie-01.jpg` | Spoločný priestor | `/images/pallov-dvor/spolocny-priestor/pallov-dvor-spolocny-priestor-posedenie-01.webp` |
 | `Spolocny priestor/pallov-dvor-spolocny-priestor-projektor-02.jpg` | Spoločný priestor | `/images/pallov-dvor/spolocny-priestor/pallov-dvor-spolocny-priestor-projektor-02.webp` |
 

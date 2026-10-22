@@ -10,7 +10,7 @@ import { SectionHeader } from "@/components/section-header";
 import { accommodationUnits } from "@/lib/photography";
 import { images, pageMetadata, priceCards, site } from "@/lib/site-data";
 
-export const metadata: Metadata = pageMetadata({ title: "Ubytovanie Lutiše", description: "Dve samostatné jednotky v Pallovom Dvore: pri vstupnej bráne a pri saune. Každá pre 8 hostí s tromi spálňami, kuchyňou a dvoma kúpeľňami.", path: "/ubytovanie", image: images.wholeObject });
+export const metadata: Metadata = pageMetadata({ title: "Ubytovanie Lutiše", description: "Dve samostatné jednotky v Pallovom Dvore: ML (bližšie k ceste) a PS (bližšie k saune). Každá pre 8 hostí s tromi spálňami, kuchyňou a dvoma kúpeľňami.", path: "/ubytovanie", image: images.wholeObject });
 
 export default function AccommodationPage() {
   return (

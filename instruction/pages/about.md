@@ -94,4 +94,4 @@ Aktívne fotografie (mapovanie v `shared/photo-map.md`):
 
 Fotografie boli 21. 10. 2026 nahradené novou sadou. Pri každej ďalšej úprave používaj `lib/photography.ts` a `shared/photo-map.md`; obrázkové karty a fotosekcie rešpektujú orientáciu skutočných záberov.
 
-Pobyt je vysvetlený cez dve skutočné jednotky a ich spoločné zázemie. Fotografia interiéru je označená ako jednotka pri saune. Karty spoločných priestorov ukazujú spoločenskú miestnosť a oddychovú miestnosť; nepoužívajú ilustračnú spálňu druhej jednotky. Úvodná fotosekcia odkazuje na porovnanie ubytovania.
+Pobyt je vysvetlený cez dve skutočné jednotky a ich spoločné zázemie. Fotografia interiéru je označená ako jednotka PS. Karty spoločných priestorov ukazujú spoločenskú miestnosť a oddychovú miestnosť; nepoužívajú ilustračnú spálňu druhej jednotky. Úvodná fotosekcia odkazuje na porovnanie ubytovania.

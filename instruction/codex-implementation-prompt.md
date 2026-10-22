@@ -1,6 +1,6 @@
 # Aktualizácia 21. 10. 2026
 
-Fotografie a nové rozloženie majú zdroj pravdy v `shared/photo-map.md`, `pages/home.md`, `pages/accommodation.md` a `pages/gallery.md`. Používaj výhradne novú sadu 41 fotografií a `lib/photography.ts`; staršia predstava všeobecných izieb a sekcií nižšie sa v prípade rozporu nepoužíva. Jednotky sú verejne `Pri vstupnej bráne` a `Pri saune`.
+Fotografie a nové rozloženie majú zdroj pravdy v `shared/photo-map.md`, `pages/home.md`, `pages/accommodation.md` a `pages/gallery.md`. Používaj výhradne novú sadu 41 fotografií a `lib/photography.ts`; staršia predstava všeobecných izieb a sekcií nižšie sa v prípade rozporu nepoužíva. Jednotky sú verejne `ML – Pallov Dvor (bližšie k ceste)` a `PS – Pallov Dvor (bližšie k saune)`.
 
 # Prompt pre Codex - implementácia webu Pallov Dvor
 

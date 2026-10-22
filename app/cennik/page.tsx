@@ -68,7 +68,7 @@ export default function PricingPage() {
             <SectionHeader
               eyebrow="1 samostatná jednotka"
               title="Cenník jednej ubytovacej jednotky"
-              text="Pre jednotku pri vstupnej bráne aj jednotku pri saune platí rovnaký cenník. Každá poskytuje ubytovanie najviac 8 hosťom."
+              text="Pre jednotky ML aj PS platí rovnaký cenník. Každá poskytuje ubytovanie najviac 8 hosťom."
             />
           </div>
           <ResponsiveTable
