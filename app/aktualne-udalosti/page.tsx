@@ -13,7 +13,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/aktualne-udalosti",
   image: images.attractionsHero,
   keywords: [
-    "podujatia Kysuce október 2026",
+    "podujatia v okolí Lutiší október 2026",
     "podujatia Žilina október 2026",
     "udalosti Čadca",
     "program v okolí Lutiší",

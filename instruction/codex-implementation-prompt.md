@@ -10,7 +10,7 @@ Si senior frontend developer v existujúcom projekte `pd-cottage`. Tvojou úloho
 
 Pallov Dvor je súkromná chata na adrese Lutiše Adamovci 373. Web má prezentovať pokojné krátkodobé ubytovanie v súkromí pre rodiny, páry, dospelých hostí a menšie firemné kolektívy.
 
-SEO má cieliť najmä na prirodzené lokálne dopyty ako `chata Lutiše`, `chata na prenájom Lutiše`, `ubytovanie Lutiše`, `chata Kysuce` a podobné frázy. Frázy používaj v title, description, nadpisoch a reálnom texte prirodzene, nie ako zoznam kľúčových slov.
+SEO má cieliť najmä na prirodzené lokálne dopyty ako `chata Lutiše`, `chata na prenájom Lutiše`, `ubytovanie Lutiše` a podobné frázy. Frázy používaj v title, description, nadpisoch a reálnom texte prirodzene, nie ako zoznam kľúčových slov.
 
 Web nemá pôsobiť ako hotelový portál, penzión, reštaurácia ani web pre hlučné oslavy. Hlavný cieľ je dostať návštevníka k akcii `Overiť dostupnosť termínu`.
 

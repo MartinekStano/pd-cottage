@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     template: `%s | ${site.name}`,
   },
   description:
-    "Chata Lutiše na prenájom pre rodiny, skupiny a menšie firemné pobyty. Ubytovanie na Kysuciach so saunou, kaďou a kapacitou až 16 osôb.",
+    "Chata Lutiše na prenájom pre rodiny, skupiny a menšie firemné pobyty. Ubytovanie so saunou, kaďou a kapacitou až 16 osôb.",
   applicationName: site.name,
   openGraph: {
     siteName: site.name,

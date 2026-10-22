@@ -35,7 +35,7 @@ Originály novej upravenej sady a pracovné náhľady sú mimo gitu. Manifest uc
 
 Zdroj pravdy je Pallov Dvor ako súkromná chata v Lutišiach. Web nemá komunikovať penzión, reštauráciu, bazén, vírivku, masáže ani párty pobyty.
 
-SEO komunikácia má prirodzene cieliť hlavne na lokálne dopyty ako `chata Lutiše`, `chata na prenájom Lutiše`, `ubytovanie Lutiše` a širšie varianty pre Kysuce.
+SEO komunikácia má prirodzene cieliť hlavne na lokálne dopyty ako `chata Lutiše`, `chata na prenájom Lutiše`, `ubytovanie Lutiše` a okolie Lutiší.
 
 Primárny cieľ webu je dostať návštevníka k akcii `Overiť dostupnosť termínu`.
 

@@ -20,10 +20,10 @@ export default function Home() {
   return (
     <>
       <Hero
-        home eyebrow="Lutiše · Kysuce · Váš spoločný čas"
+        home eyebrow="Lutiše · Váš spoločný čas"
         image={images.hero} imageAlt="Chata Pallov Dvor so súkromným dvorom v Lutišiach"
         title="Pallov Dvor"
-        subtitle="Zostaňte o chvíľu dlhšie. Pri spoločných raňajkách, v teple sauny alebo len tak spolu. Vaše pokojné miesto na Kysuciach."
+        subtitle="Zostaňte o chvíľu dlhšie. Pri spoločných raňajkách, v teple sauny alebo len tak spolu. Vaše pokojné miesto v Lutišiach."
         actions={[{ label: site.primaryCta, href: site.ctaHref }, { label: "Spoznajte chatu", href: "#jednotky" }]}
       />
       <section className="border-y border-[var(--border)] bg-[var(--surface)]" aria-label="Základné informácie o chate">

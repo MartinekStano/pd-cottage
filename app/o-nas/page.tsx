@@ -10,7 +10,7 @@ import { images, pageMetadata, site, values } from "@/lib/site-data";
 export const metadata: Metadata = pageMetadata({
   title: "Chata Pallov Dvor Lutiše",
   description:
-    "Pallov Dvor je chata v obci Lutiše na Kysuciach pre pokojné pobyty, rodinné chvíle, skupiny dospelých hostí a menšie firemné stretnutia.",
+    "Pallov Dvor je chata v obci Lutiše pre pokojné pobyty, rodinné chvíle, skupiny dospelých hostí a menšie firemné stretnutia.",
   path: "/o-nas",
   image: images.aboutExterior,
 });

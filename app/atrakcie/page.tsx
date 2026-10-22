@@ -19,7 +19,7 @@ import {
 export const metadata: Metadata = pageMetadata({
   title: "Chata Lutiše a výlety v okolí",
   description:
-    "Letné a zimné atrakcie pri chate v Lutišiach: Jánošíkove diery, Vrátna, Veľká Rača, Vychylovka, Strečno aj lyžovanie na Kysuciach.",
+    "Letné a zimné atrakcie pri chate v Lutišiach: Jánošíkove diery, Vrátna, Veľká Rača, Vychylovka, Strečno aj lyžovanie v okolí.",
   path: "/atrakcie",
   image: images.attractionsHero,
 });
@@ -45,7 +45,7 @@ export default function AttractionsPage() {
         eyebrow="Pobyt a výlety"
         title="Oddych na chate aj aktívne dni v okolí"
         text={[
-          "Pallov Dvor ponúka príjemné zázemie pre hostí, ktorí chcú počas pobytu spojiť oddych a zážitky na Kysuciach. Ráno môžete vyraziť na prechádzku, výlet alebo nenáročnú aktivitu v okolí a večer sa vrátiť do súkromia chaty.",
+          "Pallov Dvor ponúka príjemné zázemie pre hostí, ktorí chcú počas pobytu spojiť oddych a zážitky v okolí. Ráno môžete vyraziť na prechádzku, výlet alebo nenáročnú aktivitu v okolí a večer sa vrátiť do súkromia chaty.",
           "Po návrate môžete využiť altánok s grilom, spoločenský priestor, saunu alebo vonkajšiu kaďu. Vďaka tomu je pobyt vhodný pre rodiny s deťmi, páry, dospelých hostí aj menšie firemné kolektívy.",
         ]}
       />

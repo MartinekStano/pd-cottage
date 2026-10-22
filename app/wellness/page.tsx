@@ -16,7 +16,7 @@ import {
 export const metadata: Metadata = pageMetadata({
   title: "Chata so saunou a kaďou Lutiše",
   description:
-    "Chata so saunou a vonkajšou kaďou v Lutišiach. Pallov Dvor ponúka ubytovanie na Kysuciach s oddychovou zónou priamo pri chate.",
+    "Chata so saunou a vonkajšou kaďou v Lutišiach. Pallov Dvor ponúka ubytovanie s oddychovou zónou priamo pri chate.",
   path: "/wellness",
   image: images.wellnessHero,
 });

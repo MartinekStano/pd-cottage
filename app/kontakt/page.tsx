@@ -88,7 +88,7 @@ const contactItemClass =
 export const metadata: Metadata = pageMetadata({
   title: "Kontakt - chata Lutiše",
   description:
-    "Kontaktujte Pallov Dvor, chatu v Lutišiach na Kysuciach. Overte dostupnosť termínu a pošlite nezáväzný dopyt na prenájom chaty.",
+    "Kontaktujte Pallov Dvor, chatu v Lutišiach. Overte dostupnosť termínu a pošlite nezáväzný dopyt na prenájom chaty.",
   path: "/kontakt",
   image: images.contactHero,
 });

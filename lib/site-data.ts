@@ -8,7 +8,7 @@ export const site = {
   name: "Pallov Dvor",
   subtitle: "Chata Lutiše na prenájom",
   description:
-    "Chata Lutiše na prenájom pre rodiny, skupiny a menšie firemné pobyty na Kysuciach.",
+    "Chata Lutiše na prenájom pre rodiny, skupiny a menšie firemné pobyty v Lutišiach.",
   brandLogo: "/brand/logo-horizontal.png",
   brandLogoLight: "/brand/logo-stacked-mono-light.png",
   primaryCta: "Overiť dostupnosť termínu",
@@ -214,7 +214,7 @@ export const homeBenefits = [
   },
   {
     title: "Relax priamo pri chate",
-    text: "Sauna pre 6 osôb a vonkajšia kaďa ponúkajú príjemný oddych po výletoch na Kysuciach, pracovnom programe alebo spoločnom dni.",
+    text: "Sauna pre 6 osôb a vonkajšia kaďa ponúkajú príjemný oddych po výletoch v okolí, pracovnom programe alebo spoločnom dni.",
   },
   {
     title: "Priestor na spoločné chvíle",
@@ -651,10 +651,6 @@ export const structuredData = {
         {
           "@type": "Place",
           name: "Lutiše",
-        },
-        {
-          "@type": "Place",
-          name: "Kysuce",
         },
         {
           "@type": "Place",

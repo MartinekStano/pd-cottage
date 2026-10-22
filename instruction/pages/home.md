@@ -17,4 +17,4 @@ Domov stručne predstavuje súkromnú chatu Pallov Dvor v Lutišiach, dve možno
 
 ## Pravidlá
 
-Používať iba novú sadu a mapovanie v `shared/photo-map.md` / `lib/photography.ts`. Dlhé opakované SEO odseky nahradiť stručným prirodzeným textom; zachovať lokalitu Lutiše/Kysuce v obsahu a metadátach. Kapacity, ceny a vybavenie sa redizajnom nemenia. Wellness je spoločné doplnkové zázemie, nie samostatná služba mimo pobytu. Zachovať prírodnú paletu a čitateľnosť na mobile.
+Používať iba novú sadu a mapovanie v `shared/photo-map.md` / `lib/photography.ts`. Dlhé opakované SEO odseky nahradiť stručným prirodzeným textom; zachovať lokalitu Lutiše v obsahu a metadátach. Kapacity, ceny a vybavenie sa redizajnom nemenia. Wellness je spoločné doplnkové zázemie, nie samostatná služba mimo pobytu. Zachovať prírodnú paletu a čitateľnosť na mobile.

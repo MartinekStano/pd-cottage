@@ -17,8 +17,6 @@ Primárne lokálne dopyty:
 - chata Lutiše
 - chata na prenájom Lutiše
 - ubytovanie Lutiše
-- chata Kysuce
-- ubytovanie Kysuce
 - chata pri Žiline
 
 Tieto frázy používaj prirodzene v title, description, nadpisoch a viditeľnom texte. Nepridávaj ich ako umelý zoznam do obsahu stránky.
@@ -118,3 +116,7 @@ Použiteľné kategórie:
 - spoločný priestor
 
 Pri implementácii treba vybrať reálne fotky pre hero sekcie, ubytovanie, wellness a kontakt. Placeholder názvy sú uvedené pri jednotlivých stránkach.
+
+## Označenie lokality
+
+Na pokyn majiteľa z 22. 10. 2026 nepoužívať Kysuce ako označenie chaty ani SEO lokality. Používať Lutiše a okolie. Oficiálne názvy atrakcií, organizátorov a zdrojové odkazy zachovať.
