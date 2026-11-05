@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { propertyImages, propertyPhotos } from "@/lib/photography";
 
 export const siteUrl = "https://www.pallovdvor.sk";
-export const siteLastModified = "2026-10-21";
+export const siteLastModified = "2026-11-05";
 
 export const site = {
   name: "Pallov Dvor",

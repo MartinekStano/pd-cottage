@@ -3,18 +3,19 @@ import { CTASection } from "@/components/cta-section";
 import { EventCard } from "@/components/event-card";
 import { Hero } from "@/components/hero";
 import { SectionHeader } from "@/components/section-header";
-import { octoberEvents, ongoingExhibitions } from "@/lib/events-data";
+import { novemberEvents, ongoingExhibitions } from "@/lib/events-data";
 import { images, pageMetadata, site } from "@/lib/site-data";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Aktuálne udalosti v okolí – október 2026",
+  title: "Aktuálne udalosti v okolí – november 2026",
   description:
-    "Podujatia v okolí Pallovho Dvora počas októbra 2026: divadlo, film, rodinné podujatia a výstavy v Čadci, Žiline a vo Vychylovke.",
+    "Podujatia v okolí Pallovho Dvora počas novembra 2026: koncerty, divadlo, rozprávky pre deti, film, vianočné trhy a výstavy v Žiline, Čadci, Terchovej a na Kysuciach.",
   path: "/aktualne-udalosti",
   image: images.attractionsHero,
   keywords: [
-    "podujatia v okolí Lutiší október 2026",
-    "podujatia Žilina október 2026",
+    "podujatia v okolí Lutiší november 2026",
+    "podujatia Žilina november 2026",
+    "vianočné trhy Žilina 2026",
     "udalosti Čadca",
     "program v okolí Lutiší",
   ],
@@ -24,11 +25,11 @@ export default function CurrentEventsPage() {
   return (
     <>
       <Hero
-        eyebrow="Kalendár podujatí · október 2026"
+        eyebrow="Kalendár podujatí · november 2026"
         image={images.attractionsHero}
         imageAlt="Horská krajina v okolí Pallovho Dvora"
         title="Aktuálne udalosti v okolí"
-        subtitle="Vybrali sme kultúrne, rodinné a gastronomické podujatia aj prebiehajúce výstavy, ktoré môžete spojiť s októbrovým pobytom v Pallovom Dvore."
+        subtitle="Vybrali sme koncerty, divadlo, rodinné podujatia, prvé vianočné trhy aj prebiehajúce výstavy, ktoré môžete spojiť s novembrovým pobytom v Pallovom Dvore."
         actions={[
           { label: site.primaryCta, href: site.ctaHref },
           { label: "Pozrieť atrakcie", href: "/atrakcie" },
@@ -38,7 +39,7 @@ export default function CurrentEventsPage() {
       <section className="border-b border-[var(--border)] bg-[var(--surface)]">
         <div className="mx-auto grid w-full max-w-7xl gap-4 px-5 py-8 text-sm leading-6 text-[var(--muted)] sm:px-8 md:grid-cols-[auto_1fr] md:items-center md:gap-8 lg:px-10">
           <p className="font-semibold uppercase text-[var(--accent)]">
-            Aktualizované 21. októbra 2026
+            Aktualizované 5. novembra 2026
           </p>
           <p>
             Termíny sme overili na stránkach organizátorov a mestských kultúrnych
@@ -51,12 +52,12 @@ export default function CurrentEventsPage() {
       <section className="section-pad">
         <div className="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10">
           <SectionHeader
-            eyebrow="Október 2026"
-            title="Čo ešte môžete zažiť v októbri"
-            text="Zostávajúci októbrový program v Čadci, Žiline a vo Vychylovke, overený k 21. októbru. Vyberte si divadlo, film, tvorivú dielňu alebo program na jesenné prázdniny."
+            eyebrow="November 2026"
+            title="Čo môžete zažiť v novembri"
+            text="Zostávajúci novembrový program v Žiline, Čadci, Terchovej, Kysuckom Novom Meste a okolí, overený k 5. novembru. Koncom mesiaca sa začína advent a prvé vianočné trhy."
           />
           <div className="stagger-list mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {octoberEvents.map((event) => (
+            {novemberEvents.map((event) => (
               <EventCard key={`${event.date}-${event.title}`} {...event} />
             ))}
           </div>
@@ -68,7 +69,7 @@ export default function CurrentEventsPage() {
           <SectionHeader
             eyebrow="Prebiehajúce výstavy"
             title="Tipy aj mimo konkrétneho termínu"
-            text="Tieto výstavy môžete navštíviť aj počas októbrového pobytu. Dátum na karte označuje koniec výstavy; pred cestou si overte otváracie hodiny a vstupné."
+            text="Tieto výstavy môžete navštíviť počas novembrového pobytu. Dátum na karte označuje koniec výstavy; pred cestou si overte otváracie hodiny a vstupné."
           />
           <div className="stagger-list mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {ongoingExhibitions.map((event) => (
@@ -83,7 +84,7 @@ export default function CurrentEventsPage() {
           <SectionHeader
             eyebrow="Praktický tip"
             title="Vyberte si program podľa nálady aj počasia"
-            text="Na podujatia v Žiline, Čadci a vo Vychylovke počítajte s cestou autom. Ak sa zmení počasie, kultúrny program je príjemnou alternatívou k turistike."
+            text="Na podujatia v Žiline, Čadci a okolí počítajte s cestou autom. Skanzen vo Vychylovke je od novembra zatvorený; výnimočne bude otvorený 6. decembra a 27. – 30. decembra od 10:00 do 15:00."
           />
           <div
             className="rounded-lg border border-[var(--border)] bg-[var(--bg)] p-6 sm:p-8"
@@ -123,7 +124,7 @@ export default function CurrentEventsPage() {
       </section>
 
       <CTASection
-        title="Spojte októbrový pobyt so zážitkom v okolí"
+        title="Spojte novembrový pobyt so zážitkom v okolí"
         text="Vyberte si podujatie, naplánujte si výlet a večer sa vráťte do súkromia Pallovho Dvora so saunou a vonkajšou kaďou."
         secondary={{ label: "Pozrieť atrakcie", href: "/atrakcie" }}
       />

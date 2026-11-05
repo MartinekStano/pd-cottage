@@ -31,7 +31,7 @@ Premenné prostredia (vo Verceli pre Production aj Preview, lokálne v `.env.loc
 Hlavné podstránky sú v priečinku `app/`. Atrakcie sú rozdelené podľa sezóny:
 
 - `/atrakcie` – letné a zimné atrakcie v okolí,
-- `/aktualne-udalosti` – časovo obmedzený kalendár miestnych podujatí; aktuálne obsahuje október 2026 (zostávajúci program a prebiehajúce výstavy, overené 21. októbra).
+- `/aktualne-udalosti` – časovo obmedzený kalendár miestnych podujatí; aktuálne obsahuje november 2026 (zostávajúci program a prebiehajúce výstavy, overené 5. novembra).
 
 Dáta atrakcií sú v `lib/site-data.ts`. Udalosti sú v `lib/events-data.ts` a pred ďalším publikovaným obdobím ich treba overiť na stránkach organizátorov. Navigácia a sitemap zahŕňajú obe podstránky.
 

@@ -39,7 +39,7 @@ SEO komunikácia má prirodzene cieliť hlavne na lokálne dopyty ako `chata Lut
 
 Primárny cieľ webu je dostať návštevníka k akcii `Overiť dostupnosť termínu`.
 
-Stránka Atrakcie je rozdelená na letnú a zimnú časť. V jej navigačnom podmenu je aj stránka `Aktuálne udalosti`, ktorá momentálne pokrýva október 2026 (zostávajúci program a prebiehajúce výstavy, overené 21. októbra). Keďže ide o časovo citlivý obsah, údaje sa musia pred každým novým obdobím znovu overiť na oficiálnych stránkach organizátorov.
+Stránka Atrakcie je rozdelená na letnú a zimnú časť. V jej navigačnom podmenu je aj stránka `Aktuálne udalosti`, ktorá momentálne pokrýva november 2026 (zostávajúci program a prebiehajúce výstavy, overené 5. novembra). Keďže ide o časovo citlivý obsah, údaje sa musia pred každým novým obdobím znovu overiť na oficiálnych stránkach organizátorov.
 
 
 ## Pred implementáciou ešte potvrdiť
