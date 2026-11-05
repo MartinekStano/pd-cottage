@@ -1,3 +1,4 @@
+import { plural } from "@/lib/plural";
 import { absoluteUrl, contact, site } from "@/lib/site-data";
 
 // Only the validated choices from the form. Free text (name, message) is left out on purpose:
@@ -40,10 +41,6 @@ function formatDate(isoDate: string) {
 function countNights(from: string, to: string) {
   const nights = Math.round((Date.parse(to) - Date.parse(from)) / 86_400_000);
   return nights > 0 ? nights : null;
-}
-
-function plural(count: number, one: string, few: string, many: string) {
-  return `${count} ${count === 1 ? one : count >= 2 && count <= 4 ? few : many}`;
 }
 
 function summaryRows(summary: InquirySummary) {

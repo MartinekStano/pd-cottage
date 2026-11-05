@@ -200,6 +200,66 @@ summary::-webkit-details-marker {
   opacity: 1;
 }
 
+/* Stay dates calendar (react-day-picker) in the site's colors. */
+.stay-calendar .rdp-root {
+  --rdp-accent-color: var(--pine);
+  --rdp-accent-background-color: color-mix(in srgb, var(--pine) 11%, white);
+  --rdp-range_middle-color: var(--text);
+  --rdp-today-color: var(--clay);
+  --rdp-day-height: 40px;
+  --rdp-day-width: 40px;
+  --rdp-day_button-height: 38px;
+  --rdp-day_button-width: 38px;
+  --rdp-months-gap: 1.75rem;
+  --rdp-nav-height: 2.5rem;
+  --rdp-animation_duration: 0.25s;
+  --rdp-animation_timing: var(--ease-out);
+  margin-inline: auto;
+  width: fit-content;
+  color: var(--text);
+}
+
+.stay-calendar .rdp-caption_label {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.stay-calendar .rdp-weekday {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  opacity: 1;
+}
+
+.stay-calendar .rdp-chevron {
+  fill: var(--accent);
+}
+
+.stay-calendar .rdp-day_button {
+  transition: background-color 150ms var(--ease-out);
+}
+
+/* A lone arrival day (departure not picked yet) is filled like the range ends, not just outlined. */
+.stay-calendar .rdp-selected:not(.rdp-range_middle) .rdp-day_button {
+  background-color: var(--pine);
+  border-color: var(--pine);
+  color: white;
+}
+
+.stay-calendar .rdp-today:not(.rdp-selected) .rdp-day_button {
+  font-weight: 700;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .stay-calendar .rdp-day:not(.rdp-disabled):not(.rdp-selected) .rdp-day_button:hover {
+    background-color: color-mix(in srgb, var(--accent) 12%, white);
+  }
+}
+
 .stagger-list > [data-animate]:nth-child(2) {
   --animate-delay: 30ms;
 }
@@ -280,6 +340,10 @@ summary::-webkit-details-marker {
 
   .lightbox {
     transition-property: opacity, display, overlay;
+  }
+
+  .stay-calendar .rdp-root {
+    --rdp-animation_duration: 0s;
   }
 
   [data-motion="enabled"] [data-animate] {
