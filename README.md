@@ -17,6 +17,15 @@ npm run lint
 npx next build --webpack
 ```
 
+## Kontaktný formulár
+
+Formulár (`app/kontakt/actions.ts`) posiela dopyty cez SMTP schránky `oddych@pallovdvor.sk` (Websupport Biznis Mail) na adresu `contactForm.recipient` v `lib/site-data.ts`. Proti botom ho chráni Cloudflare Turnstile a skryté pole `firma`.
+
+Premenné prostredia (vo Verceli pre Production aj Preview, lokálne v `.env.local`):
+
+- `KEYCLOAK_SMTP_HOST`, `KEYCLOAK_SMTP_PORT`, `KEYCLOAK_SMTP_SSL`, `KEYCLOAK_SMTP_STARTTLS`, `KEYCLOAK_SMTP_AUTH`, `KEYCLOAK_SMTP_USER`, `KEYCLOAK_SMTP_PASSWORD`, `KEYCLOAK_SMTP_FROM` – Websupport: `smtp.m1.websupport.sk`, port `465`, SSL; schránka musí mať vypnutú GeoIP ochranu.
+- `NEXT_PUBLIC_TURNSTILE_SITE_KEY`, `TURNSTILE_SECRET_KEY` – kľúče widgetu z Cloudflare. Lokálne a v Preview stačia testovacie kľúče Cloudflare, ktoré vždy prejdú (`1x00000000000000000000AA` / `1x0000000000000000000000000000000AA`).
+
 ## Obsah webu
 
 Hlavné podstránky sú v priečinku `app/`. Atrakcie sú rozdelené podľa sezóny:

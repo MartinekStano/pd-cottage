@@ -1,13 +1,13 @@
 "use server";
 
 import {
-  contact,
   contactForm,
   rentalTypeOptions,
   site,
   stayTypeOptions,
 } from "@/lib/site-data";
 import { sendSMTPMail } from "@/lib/smtp";
+import { verifyTurnstileToken } from "@/lib/turnstile";
 
 type ContactField =
   | "email"
@@ -132,13 +132,22 @@ export async function submitContactForm(
     };
   }
 
+  const turnstileToken = formData.get("cf-turnstile-response");
+
+  if (!(await verifyTurnstileToken(typeof turnstileToken === "string" ? turnstileToken : ""))) {
+    return {
+      message: "Nepodarilo sa overiť, že dopyt neposiela robot. Skúste ho, prosím, odoslať znova.",
+      status: "error",
+    };
+  }
+
   try {
     await sendSMTPMail({
-      from: process.env.KEYCLOAK_SMTP_FROM ?? contact.email,
+      from: process.env.KEYCLOAK_SMTP_FROM ?? contactForm.recipient,
       replyTo: data.email,
       subject: `Nový dopyt z webu ${site.name}`,
       text: buildEmailText(data),
-      to: contact.email,
+      to: contactForm.recipient,
     });
 
     return {

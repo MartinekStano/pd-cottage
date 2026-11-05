@@ -8,6 +8,9 @@ import {
   rentalTypeOptions,
   stayTypeOptions,
 } from "@/lib/site-data";
+import { TurnstileWidget } from "./turnstile-widget";
+
+const turnstileSiteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
 
 const inputClass =
   "min-h-12 w-full rounded-md border border-[var(--border-strong)] bg-[var(--bg)] px-4 py-3 text-base text-[var(--text)] outline-none transition placeholder:text-[var(--muted)] focus:border-[var(--accent)] focus:bg-[var(--surface)] focus:ring-2 focus:ring-[color-mix(in_srgb,var(--accent)_20%,transparent)] disabled:opacity-60 [color-scheme:light]";
@@ -245,6 +248,10 @@ export function ContactForm() {
           Odoslanie formulára je nezáväzné a slúži na overenie dostupnosti
           termínu.
         </p>
+
+        {turnstileSiteKey ? (
+          <TurnstileWidget resetSignal={state} siteKey={turnstileSiteKey} />
+        ) : null}
 
         {state.status !== "idle" ? (
           <p

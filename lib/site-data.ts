@@ -37,7 +37,9 @@ export const contact = {
 };
 
 export const contactForm = {
-  enabled: false,
+  enabled: true,
+  // Inquiries go to the domain mailbox; Websupport forwards them on from there.
+  recipient: "oddych@pallovdvor.sk",
   statusLabel: "WIP",
   unavailableMessage:
     "Kontaktný formulár pripravujeme. Zatiaľ nás, prosím, kontaktujte telefonicky alebo e-mailom.",
