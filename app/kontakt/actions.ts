@@ -3,11 +3,11 @@
 import {
   contactForm,
   rentalTypeOptions,
-  site,
   stayTypeOptions,
 } from "@/lib/site-data";
 import { after } from "next/server";
 import { buildInquiryConfirmation } from "@/lib/inquiry-confirmation";
+import { buildInquiryNotification } from "@/lib/inquiry-notification";
 import { sendSMTPMail } from "@/lib/smtp";
 import { verifyTurnstileToken } from "@/lib/turnstile";
 
@@ -44,24 +44,6 @@ function readValue(formData: FormData, key: ContactField, maxLength = 500) {
 
 function readSingleLine(formData: FormData, key: ContactField, maxLength = 160) {
   return readValue(formData, key, maxLength).replace(/\s+/g, " ");
-}
-
-function buildEmailText(data: Record<ContactField, string>) {
-  return [
-    `Nový nezáväzný dopyt z webu ${site.name}`,
-    "",
-    `Meno a priezvisko: ${data.meno}`,
-    `E-mail: ${data.email}`,
-    `Telefón: ${data.telefon || "neuvedené"}`,
-    `Termín od: ${data.termin_od || "neuvedené"}`,
-    `Termín do: ${data.termin_do || "neuvedené"}`,
-    `Počet osôb: ${data.pocet_osob || "neuvedené"}`,
-    `Typ prenájmu: ${data.typ_prenajmu || "neuvedené"}`,
-    `Typ pobytu: ${data.typ_pobytu || "neuvedené"}`,
-    "",
-    "Správa:",
-    data.sprava || "neuvedené",
-  ].join("\n");
 }
 
 export async function submitContactForm(
@@ -155,9 +137,19 @@ export async function submitContactForm(
     await sendSMTPMail({
       from: process.env.KEYCLOAK_SMTP_FROM ?? contactForm.recipient,
       replyTo: data.email,
-      subject: `Nový dopyt z webu ${site.name}`,
-      text: buildEmailText(data),
       to: contactForm.recipient,
+      ...buildInquiryNotification({
+        email: data.email,
+        meno: data.meno,
+        pocetOsob: data.pocet_osob,
+        receivedAt: new Date(),
+        sprava: data.sprava,
+        telefon: data.telefon,
+        terminDo: data.termin_do,
+        terminOd: data.termin_od,
+        typPobytu: data.typ_pobytu,
+        typPrenajmu: data.typ_prenajmu,
+      }),
     });
 
     // The guest's confirmation goes out after the response, so a slow or failing send never delays or fails the inquiry.
