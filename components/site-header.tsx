@@ -46,7 +46,7 @@ export function SiteHeader() {
                     className="mt-[-3px] h-1.5 w-1.5 rotate-45 border-b border-r border-current transition group-hover:rotate-[225deg] group-focus-within:rotate-[225deg]"
                   />
                 </NavLink>
-                <div className="invisible absolute left-0 top-full min-w-48 pt-2 opacity-0 transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+                <div className="invisible absolute left-0 top-full min-w-48 origin-top-left translate-y-1 scale-[0.97] pt-2 opacity-0 transition duration-200 group-hover:visible group-hover:translate-y-0 group-hover:scale-100 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:scale-100 group-focus-within:opacity-100 motion-reduce:translate-y-0 motion-reduce:scale-100">
                   <div className="grid gap-1 rounded-lg border border-[var(--border)] bg-[var(--surface)] p-2 shadow-xl">
                     {item.children.map((child) => (
                       <NavLink

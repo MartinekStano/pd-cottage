@@ -24,7 +24,7 @@ export function UnitOverview() {
                 <div className="grid grid-cols-[1.1fr_0.9fr] gap-2 overflow-hidden rounded-lg">
                   {[unit.living, unit.bedroom].map((photo) => (
                     <div className="relative aspect-[3/4] overflow-hidden" key={photo.src}>
-                      <Image src={photo.src} alt={photo.alt} fill sizes="(max-width: 767px) 50vw, 25vw" className="object-cover transition duration-700 group-hover:scale-[1.025]" />
+                      <Image src={photo.src} alt={photo.alt} fill sizes="(max-width: 767px) 50vw, 25vw" className="object-cover transition duration-500 motion-safe:group-hover:scale-[1.025]" />
                     </div>
                   ))}
                 </div>

@@ -42,7 +42,7 @@ export function ImageCard({
       <div className={`relative ${aspectClass[resolvedAspect]}`}>
         <Image
           alt={alt}
-          className="object-cover transition duration-500 hover:scale-[1.03]"
+          className="object-cover transition duration-500 motion-safe:hover:scale-[1.025]"
           fill
           sizes="(max-width: 639px) calc(100vw - 2.5rem), (max-width: 1023px) calc(50vw - 3rem), (max-width: 1279px) 33vw, 384px"
           src={image}

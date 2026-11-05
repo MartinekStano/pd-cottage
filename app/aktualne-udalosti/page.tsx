@@ -94,7 +94,7 @@ export default function CurrentEventsPage() {
             </h2>
             <div className="mt-5 grid gap-3">
               <a
-                className="rounded-md border border-[var(--border)] bg-[var(--surface)] px-4 py-3 text-sm font-semibold text-[var(--accent)] transition hover:border-[var(--accent)] hover:text-[var(--text)]"
+                className="rounded-md border border-[var(--border)] bg-[var(--surface)] px-4 py-3 text-sm font-semibold text-[var(--accent)] transition pressable hover:border-[var(--accent)] hover:text-[var(--text)]"
                 href="https://www.kysuckemuzeum.sk/sk/muzeum-kysuckej-dediny/2186-podujatia-expozicie-a-vystavy-v-roku-2021"
                 rel="noreferrer"
                 target="_blank"
@@ -102,7 +102,7 @@ export default function CurrentEventsPage() {
                 Kysucké múzeum – podujatia vo Vychylovke
               </a>
               <a
-                className="rounded-md border border-[var(--border)] bg-[var(--surface)] px-4 py-3 text-sm font-semibold text-[var(--accent)] transition hover:border-[var(--accent)] hover:text-[var(--text)]"
+                className="rounded-md border border-[var(--border)] bg-[var(--surface)] px-4 py-3 text-sm font-semibold text-[var(--accent)] transition pressable hover:border-[var(--accent)] hover:text-[var(--text)]"
                 href="https://kultura.mestocadca.sk/kulturne-podujatia"
                 rel="noreferrer"
                 target="_blank"
@@ -110,7 +110,7 @@ export default function CurrentEventsPage() {
                 Dom kultúry v Čadci – aktuálny program
               </a>
               <a
-                className="rounded-md border border-[var(--border)] bg-[var(--surface)] px-4 py-3 text-sm font-semibold text-[var(--accent)] transition hover:border-[var(--accent)] hover:text-[var(--text)]"
+                className="rounded-md border border-[var(--border)] bg-[var(--surface)] px-4 py-3 text-sm font-semibold text-[var(--accent)] transition pressable hover:border-[var(--accent)] hover:text-[var(--text)]"
                 href="https://www.tikzilina.eu/"
                 rel="noreferrer"
                 target="_blank"

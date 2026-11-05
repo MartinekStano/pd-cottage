@@ -83,7 +83,7 @@ function ContactIcon({ name }: { name: "phone" | "mail" | "map" | "parking" }) {
 }
 
 const contactItemClass =
-  "flex min-h-16 items-center gap-3 rounded-md border border-[var(--border)] bg-[var(--bg)] p-4 text-base font-semibold text-[var(--text)] transition hover:border-[var(--accent)]";
+  "flex min-h-16 items-center gap-3 rounded-md border border-[var(--border)] bg-[var(--bg)] p-4 text-base font-semibold text-[var(--text)] transition pressable hover:border-[var(--accent)]";
 
 export const metadata: Metadata = pageMetadata({
   title: "Kontakt - chata Lutiše",

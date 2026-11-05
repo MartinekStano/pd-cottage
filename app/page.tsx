@@ -80,7 +80,7 @@ export default function Home() {
         <div className="mx-auto grid w-full max-w-7xl gap-8 px-5 sm:px-8 lg:grid-cols-2 lg:items-center lg:px-10">
           <SectionHeader eyebrow="Jedna jednotka alebo celá chata" title="Koľko vás príde?" text="Jedna jednotka od 159 € za noc, celý objekt od 319 € za noc. Presnú cenu potvrdíme podľa termínu, počtu hostí a dĺžky pobytu." />
           <div className="flex flex-col gap-4 sm:flex-row lg:justify-end">
-            <Link className="rounded-full bg-[var(--dark)] px-7 py-4 text-center text-sm font-semibold text-white transition hover:bg-[var(--pine)]" href="/cennik">Pozrieť cenník</Link>
+            <Link className="rounded-full bg-[var(--dark)] px-7 py-4 text-center text-sm font-semibold text-white transition pressable hover:bg-[var(--pine)]" href="/cennik">Pozrieť cenník</Link>
             <Link className="rounded-full border border-[var(--border-strong)] px-7 py-4 text-center text-sm font-semibold" href="/atrakcie">Tipy na výlety</Link>
           </div>
         </div>

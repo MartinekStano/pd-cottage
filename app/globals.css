@@ -25,6 +25,24 @@
   --font-serif: var(--font-display);
 }
 
+/* Motion tokens: one strong ease-out for UI, also the default for Tailwind's `transition`. */
+@theme {
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+  --default-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* Press feedback for tappable controls; pair with `transition`. */
+@utility pressable {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+
+  &:active {
+    scale: 0.97;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -85,14 +103,17 @@ summary::-webkit-details-marker {
     var(--bg);
 }
 
+/* Unlayered, so it overrides Tailwind's `transition` on cards: list their hover properties too.
+   Only the reveal is staggered; the hover lift uses `translate` so it never waits for the delay. */
 [data-motion="enabled"] [data-animate] {
   opacity: 0;
   transform: translate3d(0, 8px, 0);
   transition:
-    opacity 260ms ease,
-    transform 320ms cubic-bezier(0.22, 1, 0.36, 1);
-  transition-delay: var(--animate-delay, 0ms);
-  will-change: opacity, transform;
+    opacity 260ms var(--ease-out) var(--animate-delay, 0ms),
+    transform 320ms var(--ease-out) var(--animate-delay, 0ms),
+    translate 200ms var(--ease-out),
+    border-color 200ms var(--ease-out),
+    box-shadow 200ms var(--ease-out);
 }
 
 [data-motion="enabled"] [data-animate="fade"] {
@@ -108,16 +129,75 @@ summary::-webkit-details-marker {
   transform: translate3d(0, 0, 0) scale(1);
 }
 
-[data-motion="enabled"] .motion-card[data-visible="true"]:hover {
-  transform: translate3d(0, -4px, 0) scale(1);
+@media (hover: hover) and (pointer: fine) {
+  [data-motion="enabled"] .motion-card[data-visible="true"]:hover {
+    translate: 0 -4px;
+  }
 }
 
 .hero-image {
-  animation: hero-image-settle 900ms ease-out both;
+  animation: hero-image-settle 900ms var(--ease-out) both;
 }
 
 .hero-copy {
-  animation: soft-rise 420ms cubic-bezier(0.22, 1, 0.36, 1) 60ms both;
+  animation: soft-rise 420ms var(--ease-out) 60ms both;
+}
+
+/* Gallery lightbox: modal fade + slight scale, exits a little faster than it enters. */
+.lightbox {
+  transition:
+    opacity 250ms var(--ease-out),
+    scale 250ms var(--ease-out),
+    display 250ms allow-discrete,
+    overlay 250ms allow-discrete;
+}
+
+.lightbox:not([open]) {
+  opacity: 0;
+  scale: 0.96;
+  transition-duration: 200ms;
+}
+
+.lightbox::backdrop {
+  transition:
+    opacity 250ms var(--ease-out),
+    display 250ms allow-discrete,
+    overlay 250ms allow-discrete;
+}
+
+.lightbox:not([open])::backdrop {
+  opacity: 0;
+}
+
+@starting-style {
+  .lightbox[open] {
+    opacity: 0;
+    scale: 0.96;
+  }
+
+  .lightbox[open]::backdrop {
+    opacity: 0;
+  }
+}
+
+/* FAQ answers expand smoothly where ::details-content and interpolate-size exist; elsewhere they open instantly. */
+.faq-item {
+  interpolate-size: allow-keywords;
+}
+
+.faq-item::details-content {
+  block-size: 0;
+  opacity: 0;
+  overflow-y: clip;
+  transition:
+    block-size 200ms var(--ease-out),
+    opacity 200ms var(--ease-out),
+    content-visibility 200ms allow-discrete;
+}
+
+.faq-item[open]::details-content {
+  block-size: auto;
+  opacity: 1;
 }
 
 .stagger-list > [data-animate]:nth-child(2) {
@@ -156,6 +236,16 @@ summary::-webkit-details-marker {
   }
 }
 
+@keyframes soft-fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes hero-image-settle {
   from {
     transform: scale(1.035);
@@ -174,14 +264,22 @@ summary::-webkit-details-marker {
   }
 }
 
+/* Reduced motion: drop movement, keep fades and color changes. */
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    scroll-behavior: auto !important;
-    transition-duration: 0.01ms !important;
+  html {
+    scroll-behavior: auto;
+  }
+
+  .hero-image {
+    animation: none;
+  }
+
+  .hero-copy {
+    animation-name: soft-fade;
+  }
+
+  .lightbox {
+    transition-property: opacity, display, overlay;
   }
 
   [data-motion="enabled"] [data-animate] {

@@ -23,7 +23,7 @@ export function BookingReviewSection() {
           </div>
         </div>
         <a
-          className="inline-flex min-h-12 items-center justify-center rounded-full bg-[var(--dark)] px-6 py-3 text-center text-sm font-semibold text-[var(--surface)] shadow-sm transition hover:bg-[var(--accent)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]"
+          className="inline-flex min-h-12 items-center justify-center rounded-full bg-[var(--dark)] px-6 py-3 text-center text-sm font-semibold text-[var(--surface)] shadow-sm transition pressable hover:bg-[var(--accent)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]"
           href={site.bookingUrl}
           rel="noreferrer"
           target="_blank"

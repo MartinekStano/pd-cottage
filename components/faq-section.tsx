@@ -13,7 +13,7 @@ export function FAQSection() {
         <div className="grid gap-3">
           {faqItems.map((item) => (
             <details
-              className="group rounded-lg border border-[var(--border)] bg-[var(--bg)] px-5 py-4"
+              className="faq-item group rounded-lg border border-[var(--border)] bg-[var(--bg)] px-5 py-4"
               key={item.question}
             >
               <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-[var(--text)] marker:hidden">

@@ -33,7 +33,7 @@ export function AttractionCard({
       <div className="relative aspect-[4/3]">
         <Image
           alt={title}
-          className="object-cover transition duration-700 hover:scale-[1.025]"
+          className="object-cover transition duration-500 motion-safe:hover:scale-[1.025]"
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           src={image}

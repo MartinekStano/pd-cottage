@@ -47,8 +47,8 @@ export function ContactForm() {
         <h2 id="dopyt-title" className="mt-4 font-serif text-3xl sm:text-4xl">Nájdime termín pre váš pobyt.</h2>
         <p className="mt-5 text-base leading-8 text-[var(--muted)]">Zavolajte nám alebo napíšte e-mail. Radi overíme dostupnosť a pripravíme cenu pre vašu rodinu či skupinu.</p>
         <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-          <a className="inline-flex min-h-12 items-center justify-center rounded-full bg-[var(--dark)] px-6 py-3 text-sm font-semibold text-[var(--surface)] transition hover:bg-[var(--accent)]" href={contact.phoneHref}>Zavolať {contact.phone}</a>
-          <a className="inline-flex min-h-12 items-center justify-center rounded-full border border-[var(--border-strong)] px-6 py-3 text-sm font-semibold transition hover:border-[var(--accent)]" href={contact.emailHref}>Napísať e-mail</a>
+          <a className="inline-flex min-h-12 items-center justify-center rounded-full bg-[var(--dark)] px-6 py-3 text-sm font-semibold text-[var(--surface)] transition pressable hover:bg-[var(--accent)]" href={contact.phoneHref}>Zavolať {contact.phone}</a>
+          <a className="inline-flex min-h-12 items-center justify-center rounded-full border border-[var(--border-strong)] px-6 py-3 text-sm font-semibold transition pressable hover:border-[var(--accent)]" href={contact.emailHref}>Napísať e-mail</a>
         </div>
         <div className="mt-8 border-t border-[var(--border)] pt-6">
           <h3 className="font-semibold text-[var(--text)]">Čo nám pomôže pri overení termínu</h3>
@@ -261,7 +261,7 @@ export function ContactForm() {
         ) : null}
 
         <button
-          className="inline-flex min-h-12 w-full items-center justify-center rounded-full bg-[var(--dark)] px-6 py-3 text-sm font-semibold text-[var(--surface)] transition hover:bg-[var(--accent)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)] disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
+          className="inline-flex min-h-12 w-full items-center justify-center rounded-full bg-[var(--dark)] px-6 py-3 text-sm font-semibold text-[var(--surface)] transition pressable hover:bg-[var(--accent)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)] disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
           disabled={!contactForm.enabled || isPending}
           type="submit"
         >

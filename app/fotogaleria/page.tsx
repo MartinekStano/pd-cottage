@@ -28,7 +28,7 @@ export default function GalleryPage() {
       <nav className="border-b border-[var(--border)] bg-[var(--surface)]" aria-label="Albumy fotografií">
         <div className="mx-auto grid max-w-7xl gap-3 px-5 py-7 sm:grid-cols-2 sm:px-8 lg:grid-cols-4 lg:px-10">
           {[...accommodationUnits, ...sharedAlbums].map((album) => (
-            <a href={`#${album.id}`} key={album.id} className="flex items-center justify-between gap-3 rounded-lg border border-[var(--border)] px-4 py-4 text-sm font-semibold text-[var(--text)] transition hover:border-[var(--accent)] hover:text-[var(--accent)]">
+            <a href={`#${album.id}`} key={album.id} className="flex items-center justify-between gap-3 rounded-lg border border-[var(--border)] px-4 py-4 text-sm font-semibold text-[var(--text)] transition pressable hover:border-[var(--accent)] hover:text-[var(--accent)]">
               {album.title}<span className="shrink-0 text-xs text-[var(--muted)]">{album.photos.length} {album.photos.length < 5 ? "zábery" : "záberov"} ↓</span>
             </a>
           ))}

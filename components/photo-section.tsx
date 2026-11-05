@@ -51,7 +51,7 @@ export function PhotoSection({
           <div className={`relative ${portrait ? "aspect-[3/4] max-h-[680px]" : "aspect-[4/3]"} overflow-hidden rounded-lg border border-[var(--border)] shadow-sm`}>
           <Image
             alt={alt}
-            className="object-cover transition duration-700 hover:scale-[1.025]"
+            className="object-cover transition duration-500 motion-safe:hover:scale-[1.025]"
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"
             src={image}
