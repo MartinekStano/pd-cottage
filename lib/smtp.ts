@@ -16,6 +16,7 @@ type SMTPConfig = {
 type MailMessage = {
   to: string;
   from: string;
+  fromName?: string;
   replyTo?: string;
   subject: string;
   text: string;
@@ -75,6 +76,18 @@ function sanitizeHeader(value: string) {
   return value.replace(/[\r\n]+/g, " ").trim();
 }
 
+// `"Pallov Dvor" <oddych@pallovdvor.sk>`; a name with accents is sent RFC 2047-encoded.
+function formatAddress(address: string, name?: string) {
+  const displayName = name ? sanitizeHeader(name).replace(/["\\]/g, "") : "";
+
+  if (!displayName) {
+    return address;
+  }
+
+  const encodedName = /^[\x20-\x7e]*$/.test(displayName) ? `"${displayName}"` : encodeHeader(displayName);
+  return `${encodedName} <${address}>`;
+}
+
 // Base64 keeps every line within SMTP's 998-character limit and never starts a line with a dot.
 function encodeBody(value: string) {
   return Buffer.from(value.replace(/\r?\n/g, "\r\n"), "utf8")
@@ -91,9 +104,9 @@ function bodyPart(type: "text/plain" | "text/html", body: string) {
   ].join("\r\n");
 }
 
-function buildMessage({ to, from, replyTo, subject, text, html }: MailMessage) {
+function buildMessage({ to, from, fromName, replyTo, subject, text, html }: MailMessage) {
   const headers = [
-    `From: ${sanitizeHeader(from)}`,
+    `From: ${formatAddress(sanitizeHeader(from), fromName)}`,
     `To: ${sanitizeHeader(to)}`,
     replyTo ? `Reply-To: ${sanitizeHeader(replyTo)}` : null,
     `Subject: ${encodeHeader(sanitizeHeader(subject))}`,

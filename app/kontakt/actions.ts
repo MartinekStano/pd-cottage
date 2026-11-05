@@ -3,6 +3,7 @@
 import {
   contactForm,
   rentalTypeOptions,
+  site,
   stayTypeOptions,
 } from "@/lib/site-data";
 import { after } from "next/server";
@@ -136,6 +137,7 @@ export async function submitContactForm(
   try {
     await sendSMTPMail({
       from: process.env.KEYCLOAK_SMTP_FROM ?? contactForm.recipient,
+      fromName: site.name,
       replyTo: data.email,
       to: contactForm.recipient,
       ...buildInquiryNotification({
@@ -157,6 +159,7 @@ export async function submitContactForm(
       try {
         await sendSMTPMail({
           from: process.env.KEYCLOAK_SMTP_FROM ?? contactForm.recipient,
+          fromName: site.name,
           to: data.email,
           ...buildInquiryConfirmation({
             pocetOsob: data.pocet_osob,
