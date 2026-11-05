@@ -19,6 +19,7 @@ type MailMessage = {
   replyTo?: string;
   subject: string;
   text: string;
+  html?: string;
 };
 
 type SocketLike = net.Socket | tls.TLSSocket;
@@ -74,15 +75,23 @@ function sanitizeHeader(value: string) {
   return value.replace(/[\r\n]+/g, " ").trim();
 }
 
-function escapeSMTPData(value: string) {
-  return value
-    .replace(/\r?\n/g, "\r\n")
-    .split("\r\n")
-    .map((line) => (line.startsWith(".") ? `.${line}` : line))
-    .join("\r\n");
+// Base64 keeps every line within SMTP's 998-character limit and never starts a line with a dot.
+function encodeBody(value: string) {
+  return Buffer.from(value.replace(/\r?\n/g, "\r\n"), "utf8")
+    .toString("base64")
+    .replace(/.{76}(?=.)/g, "$&\r\n");
 }
 
-function buildMessage({ to, from, replyTo, subject, text }: MailMessage) {
+function bodyPart(type: "text/plain" | "text/html", body: string) {
+  return [
+    `Content-Type: ${type}; charset=utf-8`,
+    "Content-Transfer-Encoding: base64",
+    "",
+    encodeBody(body),
+  ].join("\r\n");
+}
+
+function buildMessage({ to, from, replyTo, subject, text, html }: MailMessage) {
   const headers = [
     `From: ${sanitizeHeader(from)}`,
     `To: ${sanitizeHeader(to)}`,
@@ -91,11 +100,25 @@ function buildMessage({ to, from, replyTo, subject, text }: MailMessage) {
     `Date: ${new Date().toUTCString()}`,
     `Message-ID: <${randomUUID()}@pallovdvor.sk>`,
     "MIME-Version: 1.0",
-    "Content-Type: text/plain; charset=utf-8",
-    "Content-Transfer-Encoding: 8bit",
   ].filter(Boolean);
 
-  return `${headers.join("\r\n")}\r\n\r\n${escapeSMTPData(text)}`;
+  if (!html) {
+    return `${headers.join("\r\n")}\r\n${bodyPart("text/plain", text)}`;
+  }
+
+  // Plain text first, HTML last: mail clients show the last alternative they can render.
+  const boundary = `pallov-dvor-${randomUUID()}`;
+
+  return [
+    ...headers,
+    `Content-Type: multipart/alternative; boundary="${boundary}"`,
+    "",
+    `--${boundary}`,
+    bodyPart("text/plain", text),
+    `--${boundary}`,
+    bodyPart("text/html", html),
+    `--${boundary}--`,
+  ].join("\r\n");
 }
 
 function createSocket(config: SMTPConfig): Promise<SocketLike> {

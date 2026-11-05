@@ -6,6 +6,8 @@ import {
   site,
   stayTypeOptions,
 } from "@/lib/site-data";
+import { after } from "next/server";
+import { buildInquiryConfirmation } from "@/lib/inquiry-confirmation";
 import { sendSMTPMail } from "@/lib/smtp";
 import { verifyTurnstileToken } from "@/lib/turnstile";
 
@@ -26,7 +28,9 @@ export type ContactFormState = {
   status: "idle" | "error" | "success";
 };
 
-const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+// No brackets, quotes or separators: the address ends up in SMTP commands and mail headers.
+const emailPattern = /^[^\s@<>()",;:]+@[^\s@<>()",;:]+\.[^\s@<>()",;:]+$/;
+const isoDatePattern = /^\d{4}-\d{2}-\d{2}$/;
 
 function readValue(formData: FormData, key: ContactField, maxLength = 500) {
   const value = formData.get(key);
@@ -102,11 +106,17 @@ export async function submitContactForm(
     fieldErrors.email = "Uveďte platný e-mail.";
   }
 
-  if (data.pocet_osob && Number(data.pocet_osob) < 1) {
+  if (data.pocet_osob && (!/^\d{1,3}$/.test(data.pocet_osob) || Number(data.pocet_osob) < 1)) {
     fieldErrors.pocet_osob = "Počet osôb musí byť aspoň 1.";
   }
 
-  if (data.termin_od && data.termin_do && data.termin_od > data.termin_do) {
+  if (data.termin_od && !isoDatePattern.test(data.termin_od)) {
+    fieldErrors.termin_od = "Uveďte platný dátum príchodu.";
+  }
+
+  if (data.termin_do && !isoDatePattern.test(data.termin_do)) {
+    fieldErrors.termin_do = "Uveďte platný dátum odchodu.";
+  } else if (data.termin_od && data.termin_do && data.termin_od > data.termin_do) {
     fieldErrors.termin_do = "Dátum odchodu musí byť po dátume príchodu.";
   }
 
@@ -148,6 +158,25 @@ export async function submitContactForm(
       subject: `Nový dopyt z webu ${site.name}`,
       text: buildEmailText(data),
       to: contactForm.recipient,
+    });
+
+    // The guest's confirmation goes out after the response, so a slow or failing send never delays or fails the inquiry.
+    after(async () => {
+      try {
+        await sendSMTPMail({
+          from: process.env.KEYCLOAK_SMTP_FROM ?? contactForm.recipient,
+          to: data.email,
+          ...buildInquiryConfirmation({
+            pocetOsob: data.pocet_osob,
+            terminDo: data.termin_do,
+            terminOd: data.termin_od,
+            typPobytu: data.typ_pobytu,
+            typPrenajmu: data.typ_prenajmu,
+          }),
+        });
+      } catch (error) {
+        console.error("Contact form confirmation SMTP error", error);
+      }
     });
 
     return {
